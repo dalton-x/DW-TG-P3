@@ -77,6 +77,7 @@ header{
 
 /* redimentionnement et placement des images de lien de menus*/
 .img{
+  box-shadow: 1px 1px 20px #aaa;
 	margin-top: 3%;
 	width: 100%;
 }
