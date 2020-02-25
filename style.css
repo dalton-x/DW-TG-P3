@@ -1,4 +1,4 @@
-
+/*
 [class*="grd-"],header, footer{
     background-color: rgba(243, 77, 77, 0.596);
     border: 2px solid black;
@@ -21,9 +21,6 @@
   src: url('./font/P22Underground-Book.otf');
 }
 
-body{  
-  cursor: default;
-}
 
 /*header*/
 header, footer, .soon{
@@ -35,6 +32,9 @@ header, .soon, footer{
 }
 
 header{
+  cursor: default;
+  padding-bottom: 0.6%;
+  padding-top: 0.6%;
   font-family: 'P22Underground-Book';
   letter-spacing: -17px;
   font-size: 5em;
@@ -48,6 +48,7 @@ header{
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 3px;
   grid-auto-rows: minmax(50px, auto);
+  padding-bottom: 10%;
 }
 
 .note, .delice{
@@ -64,6 +65,8 @@ header{
 }
 
 .soon {
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-family: Stem;
   grid-column: 4/7;
   grid-row: 6;
@@ -99,14 +102,38 @@ header{
 }
 @keyframes dot-anim {
 	0% {
-			transform: scale(1.5);
+			transform: scale(2);
 	}
 	50% {
-			transform: scale(0);
+      transform: scale(0.5);
+      background-color: rgba(253, 204, 70, 0.205);
 	}
 	100% {
-			transform: scale(1.5);
+			transform: scale(2);
 	}
 }
 
 /*footer*/
+footer{
+  position: fixed;
+  bottom: 0;left: 0;right: 0;
+  font-family: 'P22Underground-Book';
+  font-size: 3em;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+.legal,.contact{
+  text-decoration:none; 
+  color: #FDCB46;
+  cursor: default;
+}
+
+.legal{
+  margin-left: 2.5%;
+  text-align: left;
+}
+
+.contact{
+  margin-right: 2.5%;
+  float: right;
+}
