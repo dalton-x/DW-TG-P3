@@ -121,6 +121,24 @@ header{
 	}
 }
 
+/* tableau pour la page formulaire */
+form{
+  font-family: 'P22Underground-Book';
+}
+tr{
+  width: 30%;
+}
+input{
+  width: 200;
+}
+textarea{
+  width: 360;
+}
+table{
+  width:30%;
+  border:0;
+}
+
 /*footer*/
 footer{
   position: fixed;
