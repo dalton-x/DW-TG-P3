@@ -42,6 +42,7 @@ header{
 }
 
 /* Main */
+
 /* creation de la grille avec gridCSS*/
 .wrapper {
 	display: grid;
@@ -50,7 +51,6 @@ header{
   grid-auto-rows: minmax(50px, auto);
   padding-bottom: 10%;
 }
-
 .note, .delice{
   grid-column: 5/8;
 }
@@ -64,6 +64,20 @@ header{
   grid-row: 5/6;
 }
 
+/* redimentionnement et placement des images de lien de menus*/
+.img{
+  box-shadow: 1px 1px 20px #aaa;
+	margin-top: 3%;
+	width: 100%;
+  transition: all 1s ease;
+}
+/* augmentation de la taille de l'image au passage du curseur*/
+.img:hover{
+  transform:scale(1.20);
+  box-shadow: 1px 1px 170px rgb(56, 56, 56);
+}
+
+/* Mise forme et couleur de la section prochainement*/
 .soon {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -73,20 +87,6 @@ header{
   border-radius: 20px;
   text-align: center;
   font-size: 4.5em;
-}
-
-/* redimentionnement et placement des images de lien de menus*/
-.img{
-  box-shadow: 1px 1px 20px #aaa;
-	margin-top: 3%;
-	width: 100%;
-  transition: all 1s ease;
-}
-
-/* augmentation de la taille de l'image au passage du curseur*/
-.img:hover{
-  transform:scale(1.20);
-  box-shadow: 1px 1px 170px rgb(56, 56, 56);
 }
 
 /* Animations des 3 points de la section prochainement*/
@@ -139,6 +139,14 @@ table{
   border:0;
 }
 
+/* Mise en page pour les mentions legales*/
+h1.legal{
+  text-align:center;
+}
+p.legal{
+  text-align:justify;
+}
+
 /*footer*/
 footer{
   position: fixed;
@@ -153,20 +161,10 @@ footer{
   color: #FDCB46;
   cursor: default;
 }
-
 .legal{
   margin-left: 2.5%;
   text-align: left;
 }
-
-h1.legal{
-  text-align:center;
-}
-
-p.legal{
-  text-align:justify;
-}
-
 .contact{
   margin-right: 2.5%;
   float: right;
