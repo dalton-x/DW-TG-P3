@@ -86,6 +86,7 @@ header{
 /* augmentation de la taille de l'image au passage du curseur*/
 .img:hover{
   transform:scale(1.20);
+  box-shadow: 1px 1px 170px rgb(56, 56, 56);
 }
 
 /* Animations des 3 points de la section prochainement*/
