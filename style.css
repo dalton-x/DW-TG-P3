@@ -22,11 +22,11 @@
 }
 
 /*header*/
-header, footer, .soon{
+header, footer, .menu_soon{
   background-color: #579C87;
 }
 
-header, .soon, footer{
+header, .menu_soon, footer{
   color: #FDCB46;
 }
 
@@ -38,31 +38,32 @@ header{
   letter-spacing: -13px;
   font-size: 7em;
   text-align: center;
+  margin: -8px -8px -8px;
 }
 
 /* Main */
 
 /* creation de la grille avec gridCSS*/
-.wrapper {
+.menu_wrapper {
 	display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-gap: 3px;
   grid-auto-rows: minmax(50px, auto);
   padding-bottom: 10%;
 }
-.note, .delice{
+.menu_note, .menu_delice{
   grid-column: 5/8;
 }
-.note, .chic {
+.menu_note, .menu_chic {
   grid-row: 2/4;
 }
-.chic, .palette{
+.menu_chic, .menu_palette{
   grid-column: 9/12;
 }
-.delice,.palette{
+.menu_delice,.menu_palette{
   grid-row: 6/7;
 }
-.note, .delice, .chic, .palette{
+.menu_note, .menu_delice, .menu_chic, .menu_palette{
   overflow: hidden;
   position: relative; 
   box-shadow: 1px 1px 20px #aaa;
@@ -81,7 +82,7 @@ header{
 }
 
 /* Mise forme et couleur de la section prochainement*/
-.soon {
+.menu_soon {
   padding-top: 5%;
   padding-bottom: 5%;
   font-family: Stem;
@@ -169,7 +170,7 @@ footer{
     box-shadow: 1px 1px 170px rgb(56, 56, 56);
   }
 
-  .soon {
+  .menu_soon {
     border-radius: 10px;
     margin-bottom: 10%;
     font-size: 1em;
