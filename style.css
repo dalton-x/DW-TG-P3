@@ -21,7 +21,6 @@
   src: url('./font/P22Underground-Book.otf');
 }
 
-
 /*header*/
 header, footer, .soon{
   background-color: #579C87;
@@ -55,26 +54,30 @@ header{
   grid-column: 5/8;
 }
 .note, .chic {
-  grid-row: 1/3;
+  grid-row: 2/4;
 }
 .chic, .palette{
   grid-column: 9/12;
 }
 .delice,.palette{
-  grid-row: 5/6;
+  grid-row: 6/7;
 }
-
+.note, .delice, .chic, .palette{
+  overflow: hidden;
+  position: relative; 
+  box-shadow: 1px 1px 20px #aaa;
+}
 /* redimentionnement et placement des images de lien de menus*/
 .img{
-  box-shadow: 1px 1px 20px #aaa;
-	margin-top: 3%;
-	width: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
   transition: all 1s ease;
 }
 /* augmentation de la taille de l'image au passage du curseur*/
 .img:hover{
   transform:scale(1.20);
-  box-shadow: 1px 1px 170px rgb(56, 56, 56);
+  opacity: 50%;
 }
 
 /* Mise forme et couleur de la section prochainement*/
@@ -82,11 +85,11 @@ header{
   padding-top: 5%;
   padding-bottom: 5%;
   font-family: Stem;
-  grid-column: 5/12;
+  grid-column: 6/11;
   grid-row: 8;
   border-radius: 20px;
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4.1em;
 }
 
 /* Animations des 3 points de la section prochainement*/
@@ -97,7 +100,7 @@ header{
 	border-radius: 100px;
 	background-color: #FDCB46;
 	transform-origin: center;
-	animation: dot-anim 1.4s infinite;
+	animation: dot-anim 3s infinite;
 }
 .dot:nth-child(1) {
 	animation-delay: 0s;
@@ -106,7 +109,7 @@ header{
 	animation-delay: .2s;
 }
 .dot:nth-child(3) {
-	animation-delay: .3s;
+	animation-delay: .4s;
 }
 @keyframes dot-anim {
 	0% {
@@ -119,24 +122,6 @@ header{
 	100% {
 			transform: scale(2);
 	}
-}
-
-/* tableau pour la page formulaire */
-form{
-  font-family: 'P22Underground-Book';
-}
-tr{
-  width: 30%;
-}
-input{
-  width: 200;
-}
-textarea{
-  width: 360;
-}
-table{
-  width:30%;
-  border:0;
 }
 
 /* Mise en page pour les mentions legales*/
@@ -197,8 +182,6 @@ footer{
   }
 
   footer{
-    position: fixed;
-    bottom: 0;left: 0;right: 0;
     font-family: 'P22Underground-Book';
     font-size: 1.5em;
     padding-top: 2%;
