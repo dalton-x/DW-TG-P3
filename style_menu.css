@@ -33,6 +33,60 @@ h1{
   font-family: 'HindKochi-Regular';
 }
 
+/* creation du souligné auto */
+
+.underline_entree, .underline_plat, .underline_dessert {
+  width: 10px;
+  height: 5px;
+  background-color: #3D1319;
+  font-weight: bold;
+  position: relative;  
+  animation-timing-function: ease-in-out;
+  border-radius: 45%;
+}
+
+.underline_entree{  
+  margin-left: 41%;
+  animation: underline_entree_anim 3s infinite;
+}
+.underline_plat{  
+  margin-left: 35%;
+  animation: underline_plat_anim 4s infinite;
+}
+.underline_dessert{  
+  margin-left: 31%;
+  animation: underline_dessert_anim 5s infinite;
+}
+
+@keyframes underline_entree_anim{
+
+  0%{
+    width: 10px;
+  }
+  100%{
+    width: 160px;
+  }
+}
+@keyframes underline_plat_anim{
+
+  0%{
+    width: 10px;
+  }
+  100%{
+    width: 280px;
+  }
+}
+@keyframes underline_dessert_anim{
+
+  0%{
+    width: 10px;
+  }
+  100%{
+    width: 340px;
+  }
+}
+
+
 /* creation de la grille avec gridCSS*/
 .wrapper {
 	display: grid;
@@ -41,7 +95,8 @@ h1{
   grid-auto-rows: minmax(50px, auto);
   padding-bottom: 10%;
   margin: 3% 10% 10% 10%;
-  background-color: #FCDFDB;
+  background-color: #FCDFDB;  
+  box-shadow: 1px 1px 20px #aaa;
 }
 
 .note, .note_enchante, .note_note_enchantee, .entree_titre, .plat_titre, .dessert_titre{
