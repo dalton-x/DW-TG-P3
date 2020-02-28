@@ -33,62 +33,37 @@ h1{
   font-family: 'HindKochi-Regular';
 }
 
+body{ 
+  cursor: default;
+}
+
 /* creation du souligné auto */
 
-.underline_entree, .underline_plat, .underline_dessert {
-  width: 10px;
-  height: 5px;
-  background-color: #3D1319;
-  font-weight: bold;
-  position: relative;  
-  animation-timing-function: ease-in-out;
-  border-radius: 45%;
+.titre{
+  position: relative;
+  text-decoration: none;
+  color: #3D1319;
+  padding: 10px 0;
 }
-
-.underline_entree{  
-  margin-left: 41%;
-  animation: underline_entree_anim 3s infinite;
+ 
+.titre:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3D1319;
+  transition: width 2s ease-in-out;
 }
-.underline_plat{  
-  margin-left: 35%;
-  animation: underline_plat_anim 4s infinite;
+ 
+.titre:hover:after{
+  width: 100%;
 }
-.underline_dessert{  
-  margin-left: 31%;
-  animation: underline_dessert_anim 5s infinite;
-}
-
-@keyframes underline_entree_anim{
-
-  0%{
-    width: 10px;
-  }
-  100%{
-    width: 160px;
-  }
-}
-@keyframes underline_plat_anim{
-
-  0%{
-    width: 10px;
-  }
-  100%{
-    width: 280px;
-  }
-}
-@keyframes underline_dessert_anim{
-
-  0%{
-    width: 10px;
-  }
-  100%{
-    width: 340px;
-  }
-}
-
 
 /* creation de la grille avec gridCSS*/
-.wrapper {
+.wrapper_note {
 	display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3px;
@@ -104,12 +79,12 @@ h1{
 }
 
 .note, .note_enchante, .entree_titre, .plat_titre,.dessert_titre{
-  grid-column: 2/5;
+  grid-column: 3/4;
 }
 
 .entree_titre, .plat_titre, .dessert_titre{
   font-family: 'TYPO_COMICS';
-  font-size: 3em;
+  font-size: 2.5em;
   color: #3D1319;
 }
 
