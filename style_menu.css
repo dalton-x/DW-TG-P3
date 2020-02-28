@@ -79,7 +79,7 @@ body{
 }
 
 .note, .note_enchante, .entree_titre, .plat_titre,.dessert_titre{
-  grid-column: 3/4;
+  grid-column: 2/5;
 }
 
 .entree_titre, .plat_titre, .dessert_titre{
@@ -187,6 +187,6 @@ body{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.entree_prix, .plat_prix{
+.entree_prix, .plat_prix, .dessert_prix{
   text-align: right;
 }
