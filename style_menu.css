@@ -129,7 +129,6 @@ body{
   font-family: 'Caricaturista';
   color: #3D1319;
   font-size: 1.5em;
-  font-style: bold;
 }
 
 .plat_left, .plat_titre, .plat_right{
@@ -185,8 +184,10 @@ body{
   display: block;
   background: linear-gradient(0.25turn,rgb(255, 0, 25), rgb(255, 167, 132));
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-rendering: auto;
 }
+
 .entree_prix, .plat_prix, .dessert_prix{
   text-align: right;
 }
