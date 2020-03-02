@@ -186,12 +186,11 @@ body{
 
 /* alignement et mise en forme */
 .fa{
-  font-size: 8em;
+  font-size: 7em;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-right: 5%;
   color: #9c47fc;
-  display: block;
-  background: linear-gradient(0.25turn,rgb(255, 0, 25), rgb(255, 167, 132));
+  background: -webkit-linear-gradient(0deg, rgb(246, 106, 106), rgb(231, 108, 37));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
