@@ -36,7 +36,7 @@ header{
   padding-bottom: 2%;
   font-family: 'P22Underground-Book';
   letter-spacing: -13px;
-  font-size: 7em;
+  font-size: 6.5em;
   text-align: center;
   margin: -8px -8px -8px;
 }
@@ -52,13 +52,13 @@ header{
   padding-bottom: 10%;
 }
 .menu_note, .menu_delice{
-  grid-column: 5/8;
+  grid-column: 3/8;
 }
 .menu_note, .menu_chic {
   grid-row: 2/4;
 }
 .menu_chic, .menu_palette{
-  grid-column: 9/12;
+  grid-column: 9/14;
 }
 .menu_delice,.menu_palette{
   grid-row: 6/7;
@@ -85,12 +85,13 @@ header{
 .menu_soon {
   padding-top: 5%;
   padding-bottom: 5%;
-  font-family: Stem;
-  grid-column: 6/11;
+  margin: 5%;
+  font-family: "Stem";
+  grid-column: 5/12;
   grid-row: 8;
   border-radius: 20px;
   text-align: center;
-  font-size: 4.1em;
+  font-size: 3.7em;
 }
 
 /* Animations des 3 points de la section prochainement*/
@@ -112,17 +113,31 @@ header{
 .dot:nth-child(3) {
 	animation-delay: .4s;
 }
+
 @keyframes dot-anim {
-	0% {
+	0%, 100% {
 			transform: scale(2);
 	}
 	50% {
       transform: scale(0.5);
       background-color: rgba(253, 204, 70, 0.205);
 	}
-	100% {
-			transform: scale(2);
-	}
+}
+
+/* Animations du wiggle */
+.legal:hover, .contact:hover {
+	display: inline-block;
+	transform-origin: center;
+	animation: wiggle-anim 0.52s cubic-bezier(1,.28,0,.97) infinite;
+}
+
+@keyframes wiggle-anim {
+	10%, 90%, 40%, 60% {
+    transform: translate3d(4px, 0,0);
+  }
+  20%, 80%, 30%, 50%, 70% {
+    transform: translate3d(-4px, 0,0);
+  }
 }
 
 /* Mise en page pour les mentions legales*/
@@ -188,7 +203,8 @@ footer{
     padding-top: 2%;
     padding-bottom: 2%;
   }
-	
+  
+  
 }
 
 /*****TABLETTE*****/
