@@ -228,6 +228,13 @@ h1{
 }
 
 /*******    LE CHIC A LA FRANCAISE    ******/
+
+.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
 .prix_chic, .plat_prix_chic, .dessert_prix_chic{
   font-family: 'Caricaturista';
   color: #3D1319;
@@ -240,19 +247,13 @@ h1{
   font-size: 1.5em;
 }
 
-.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
-  font-family: 'TYPO_COMICS';
-  font-size: 2.5em;
-  color: #3D1319;
-}
-
 .dessert_chic{
   font-family: 'Caricaturista';
   color: #3D1319;
   font-size: 1.5em;
 }
 
-.chic_enchantee{
+.nom_restaurant, .nom_fin{
   font-family: 'MaShanZheng-Regular';
   font-size: 5em;
   color: #3D1319 ;
@@ -267,12 +268,20 @@ h1{
 }
 
 /* creation du souligné auto */
+.entree_titre{
+  color: #C67412;
+}
+.titre_chic:after{
+  background: #C67412;
+}
+
 .titre_chic{
   position: relative;
   text-decoration: none;
-  color: #3D1319;
+  font-size: 0.6em;
   padding: 10px 0;
 }
+
 .titre_chic:after{
   content: '';
   position: absolute;
@@ -281,7 +290,6 @@ h1{
   width: 0;
   height: 8px;
   border-radius: 35%;
-  background: #3D1319;
   transition: width 2s ease-in-out;
 }
 .titre_chic:hover:after{
