@@ -1,5 +1,5 @@
 /* debug */
-
+/*
 [class*="grd-"],header, footer{
     background-color: rgba(243, 77, 77, 0.596);
     border: 2px solid black;
@@ -80,8 +80,8 @@ h1{
 
 /* Debut organisation de GridCSS */
 /* Creation de la grille avec gridCSS*/
-.wrapper_note {
-	display: grid;
+.wrapper {
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3px;
   grid-auto-rows: minmax(50px, auto);
@@ -91,7 +91,7 @@ h1{
   box-shadow: 1px 1px 20px #aaa;
 }
 
-.note, .nom_restaurant, .note_note_enchantee{
+.note, .nom_restaurant, .nom_fin{
   grid-column: 2/5;
 }
 
@@ -112,6 +112,7 @@ h1{
   grid-column: 4/6;
   margin-right: 20%;
 }
+
 /* Placement de la font-awesome du haut */
 .note{
   margin-top: 5%;
@@ -131,6 +132,11 @@ h1{
 /* Placement sur la ligne 5 */
 .entree, .entree_prix{
   grid-row: 5;
+}
+
+.entree, .plat, .dessert{
+  grid-column: 1/4;
+  margin-left: 13.5%;
 }
 
 /* Placement sur la ligne 7 */
@@ -161,7 +167,7 @@ h1{
 
 
 /* Alignement des titres */
-.note, .nom_restaurant,.nom_fin, .entree_titre, .plat_titre, .dessert_titre, .h1{
+.note, .nom_restaurant,.nom_fin, .entree_titre, .plat_titre, .dessert_titre{
   text-align: center;
 }
 
@@ -189,8 +195,6 @@ h1{
 }
 
 .plat_note, .dessert_prix, .entree_note{
-  grid-column: 1/4;
-  margin-left: 13.5%;
   font-family: 'Caricaturista';
   color: #3D1319;
   font-size: 1.5em;
@@ -209,8 +213,12 @@ h1{
 }
 
 /* alignement et mise en forme */
-.fa{
+.note .fa{
   font-size: 7em;
+}
+
+.fa{
+  font-size: 1em;
   padding-top: 5%;
   padding-right: 5%;
   color: #9c47fc;
