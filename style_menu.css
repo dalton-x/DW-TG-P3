@@ -40,44 +40,6 @@ h1{
   font-family: 'HindKochi-Regular';
 }
 
-/* Mise en forme du nom du restaurant dans le menu */
-.note_enchante{
-  grid-row: 2;
-  font-family: 'MaShanZheng-Regular';
-  font-size: 5em;
-  color: #3D1319 ;
-}
-
-/* Mise en forme des barre de decoration des titres du menu */
-.barre_note{
-  width: 60%;
-  height: 8px;
-  margin: auto;
-  background: #3D1319;
-}
-
-/* creation du souligné auto */
-.titre{
-  position: relative;
-  text-decoration: none;
-  color: #3D1319;
-  padding: 10px 0;
-}
-.titre:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  background: #3D1319;
-  transition: width 2s ease-in-out;
-}
-.titre:hover:after{
-  width: 100%;
-}
-
 /* Debut organisation de GridCSS */
 /* Creation de la grille avec gridCSS*/
 .wrapper {
@@ -113,15 +75,20 @@ h1{
   margin-right: 20%;
 }
 
+.dessert_no_prix{
+  grid-column: 1/6;
+  margin: 0% 8%;
+}
+
 /* Placement de la font-awesome du haut */
 .note{
   margin-top: 5%;
   grid-row: 1;
 }
 
-.dessert_no_prix{
-  grid-column: 1/6;
-  margin: 0% 8%;
+/* Mise en forme du nom du restaurant dans le menu */
+.note_enchante{
+  grid-row: 2;
 }
 
 /* Placement sur la ligne 4 */
@@ -171,13 +138,6 @@ h1{
   text-align: center;
 }
 
-/* Mise en forme "La note enchantée*/
-.entree_titre_note, .plat_titre_note, .dessert_titre_note{
-  font-family: 'TYPO_COMICS';
-  font-size: 2.5em;
-  color: #3D1319;
-}
-
 /* Creation du border-radius pour les lignes */
 .right{
   border-radius: 2000% 300% 780% 500%;
@@ -200,6 +160,12 @@ h1{
   font-size: 1.5em;
 }
 
+.entree_titre_note, .plat_titre_note, .dessert_titre_note{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
 .dessert_note{
   font-family: 'Caricaturista';
   color: #3D1319;
@@ -210,6 +176,36 @@ h1{
   font-family: 'MaShanZheng-Regular';
   font-size: 5em;
   color: #3D1319 ;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_note{
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: #3D1319;
+}
+
+/* creation du souligné auto */
+.titre_note{
+  position: relative;
+  text-decoration: none;
+  color: #3D1319;
+  padding: 10px 0;
+}
+.titre_note:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3D1319;
+  transition: width 2s ease-in-out;
+}
+.titre_note:hover:after{
+  width: 100%;
 }
 
 /* alignement et mise en forme */
@@ -229,4 +225,65 @@ h1{
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
+}
+
+/*******    LE CHIC A LA FRANCAISE    ******/
+.prix_chic, .plat_prix_chic, .dessert_prix_chic{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.plat_chic, .dessert_prix, .entree_chic{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
+.dessert_chic{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.chic_enchantee{
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  color: #3D1319 ;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_chic{
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: #3D1319;
+}
+
+/* creation du souligné auto */
+.titre_chic{
+  position: relative;
+  text-decoration: none;
+  color: #3D1319;
+  padding: 10px 0;
+}
+.titre_chic:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3D1319;
+  transition: width 2s ease-in-out;
+}
+.titre_chic:hover:after{
+  width: 100%;
 }
