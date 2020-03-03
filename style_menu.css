@@ -1,5 +1,5 @@
 /* debug */
-/*
+
 [class*="grd-"],header, footer{
     background-color: rgba(243, 77, 77, 0.596);
     border: 2px solid black;
@@ -8,7 +8,6 @@
 }
 
 /* import des polices d'ecriture*/
-
 @font-face {      
 	font-family: 'MaShanZheng-Regular';
 	src: url('../font/MaShanZheng-Regular.ttf');
@@ -26,26 +25,44 @@
 	src: url('../font/HindKochi-Regular.ttf');
 }
 
-/* Mide en forme titre H1 */
-h1{
-  font-size: 5em;
-  font-family: 'HindKochi-Regular';
-  text-align: center;
-}
-
+/* fix du curseur */
 body{ 
   cursor: default;
 }
 
-/* creation du souligné auto */
+/* Mise en forme titre H1 */
+h1{
+  text-align: center;
+}
+ /* Mise en forme du nom du restaurant hors du menu */
+.h1_note{
+  font-size: 5em;
+  font-family: 'HindKochi-Regular';
+}
 
+/* Mise en forme du nom du restaurant dans le menu */
+.note_enchante{
+  grid-row: 2;
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  color: #3D1319 ;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_note{
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: #3D1319;
+}
+
+/* creation du souligné auto */
 .titre{
   position: relative;
   text-decoration: none;
   color: #3D1319;
   padding: 10px 0;
 }
- 
 .titre:after{
   content: '';
   position: absolute;
@@ -57,12 +74,12 @@ body{
   background: #3D1319;
   transition: width 2s ease-in-out;
 }
- 
 .titre:hover:after{
   width: 100%;
 }
 
-/* creation de la grille avec gridCSS*/
+/* Debut organisation de GridCSS */
+/* Creation de la grille avec gridCSS*/
 .wrapper_note {
 	display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -74,20 +91,12 @@ body{
   box-shadow: 1px 1px 20px #aaa;
 }
 
-.note, .note_enchante, .note_note_enchantee, .entree_titre, .plat_titre, .dessert_titre, .h1{
-  text-align: center;
-}
-
-.note, .note_enchante, .note_note_enchantee{
+.note, .nom_restaurant, .note_note_enchantee{
   grid-column: 2/5;
 }
 
-
 .entree_titre, .plat_titre, .dessert_titre{
   grid-column: 3/4;
-  font-family: 'TYPO_COMICS';
-  font-size: 2.5em;
-  color: #3D1319;
 }
 
 .entree_left, .plat_left, .dessert_left{
@@ -95,61 +104,91 @@ body{
   margin-left: 20%;
 }
 
-.entree_left, .plat_left, .dessert_left, .entree_right, .plat_right, .dessert_right{
-  width: 60%;
-  height: 8px;
-  margin: auto;
-  background: #3D1319;
-}
-
-.entree_right, .plat_right, .dessert_right{
-  border-radius: 2000% 300% 780% 500%;
-}
-
-.entree_left, .plat_left, .dessert_left{
-  border-radius: 300% 2000% 500% 780%;
+.entree_prix, .plat_prix, .dessert_prix{
+  text-align: right;
 }
 
 .entree_right, .plat_right, .dessert_right, .entree_prix, .plat_prix, .dessert_prix{
   grid-column: 4/6;
   margin-right: 20%;
 }
-
+/* Placement de la font-awesome du haut */
 .note{
   margin-top: 5%;
   grid-row: 1;
 }
 
-.note_enchante{
-  grid-row: 2;
-  font-family: 'MaShanZheng-Regular';
-  font-size: 5em;
-  color: #3D1319 ;
+.dessert_no_prix{
+  grid-column: 1/6;
+  margin: 0% 8%;
 }
 
+/* Placement sur la ligne 4 */
 .entree_left, .entree_titre, .entree_right{
   grid-row: 4;
 }
 
+/* Placement sur la ligne 5 */
 .entree, .entree_prix{
   grid-row: 5;
 }
 
-.entree_prix, .plat_prix, .dessert_prix{
+/* Placement sur la ligne 7 */
+.plat_left, .plat_titre, .plat_right{
+  grid-row: 7;
+}
+
+/* Placement sur la ligne 8 */
+.plat, .plat_prix{
+  grid-row: 8;
+}
+
+/* Placement sur la ligne 10 */
+.dessert_left, .dessert_titre, .dessert_right{
+  grid-row: 10; 
+}
+
+/* Placement sur la ligne 11 */
+.dessert, .dessert_prix, .dessert_no_prix{
+  grid-row: 11;
+}
+
+/* Placement sur la ligne 13 */
+.nom_fin{
+  grid-row: 13; 
+}
+/* Fin organisation de GridCSS */
+
+
+/* Alignement des titres */
+.note, .nom_restaurant,.nom_fin, .entree_titre, .plat_titre, .dessert_titre, .h1{
+  text-align: center;
+}
+
+/* Mise en forme "La note enchantée*/
+.entree_titre_note, .plat_titre_note, .dessert_titre_note{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
+/* Creation du border-radius pour les lignes */
+.right{
+  border-radius: 2000% 300% 780% 500%;
+}
+.left{
+  border-radius: 300% 2000% 500% 780%;
+}
+
+/******* MISE EN FORME DES MENUS ******/
+/*******    LA NOTE ENCHANTEE    ******/
+.prix_note, .plat_prix_note, .dessert_prix_note{
   font-family: 'Caricaturista';
   color: #3D1319;
   font-size: 1.5em;
 }
 
-.plat_left, .plat_titre, .plat_right{
-  grid-row: 7;
-}
-
-.plat, .plat_prix{
-  grid-row: 8;
-}
-
-.plat, .dessert, .entree{
+.plat_note, .dessert_prix, .entree_note{
   grid-column: 1/4;
   margin-left: 13.5%;
   font-family: 'Caricaturista';
@@ -157,25 +196,10 @@ body{
   font-size: 1.5em;
 }
 
-.dessert_no_prix{
-  grid-column: 1/6;
-  grid-row: 11;
-  margin: 0% 8%;
+.dessert_note{
   font-family: 'Caricaturista';
   color: #3D1319;
   font-size: 1.5em;
-}
-
-.dessert_left, .dessert_titre, .dessert_right{
-  grid-row: 10; 
-}
-
-.dessert, .dessert_prix{
-  grid-row: 11;
-}
-
-.note_note_enchantee{
-  grid-row: 13; 
 }
 
 .note_enchantee{
@@ -197,8 +221,4 @@ body{
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
-}
-
-.entree_prix, .plat_prix, .dessert_prix{
-  text-align: right;
 }
