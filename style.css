@@ -1,3 +1,4 @@
+/* DEBUG GRIDCSS */
 /*
 [class*="grd-"],header, footer{
     background-color: rgba(243, 77, 77, 0.596);
@@ -144,7 +145,7 @@ header{
 h1.legal{
   text-align:center;
 }
-p.legal{
+p.legal_text{
   text-align:justify;
 }
 
@@ -171,45 +172,585 @@ footer{
   float: right;
 }
 
+/****************************************************************/
+/* CSS POUR PAGES DES MENUS */
 
-/*****MOBILE*****/
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  
-  header{    
-    letter-spacing: -9px;
-    font-size: 4em;
-  }
-
-  .img:hover{
-    transform:scale(2);
-    box-shadow: 1px 1px 170px rgb(56, 56, 56);
-  }
-
-  .menu_soon {
-    border-radius: 10px;
-    margin-bottom: 10%;
-    font-size: 1em;
-  }
-
-  .dot {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-  }
-
-  footer{
-    font-family: 'P22Underground-Book';
-    font-size: 1.5em;
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-  
-  
+/* import des polices d'ecriture*/
+@font-face {      
+	font-family: 'MaShanZheng-Regular';
+	src: url('../font/MaShanZheng-Regular.ttf');
+}
+@font-face {      
+	font-family: 'TYPO_COMICS';
+	src: url('../font/TYPO_COMICS.otf');
+}
+@font-face {      
+	font-family: 'Caricaturista';
+	src: url('../font/Caricaturista.ttf');
+}
+@font-face {      
+	font-family: 'HindKochi-Regular';
+	src: url('../font/HindKochi-Regular.ttf');
 }
 
-/*****TABLETTE*****/
+/* fix du curseur */
+body{ 
+  cursor: default;
+}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* Mise en forme titre H1 */
+h1{
+  text-align: center;
+  font-size: 5em;
+  font-family: 'HindKochi-Regular';
+}
 
-	
+/* Debut organisation de GridCSS */
+/* Creation de la grille avec gridCSS*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(50px, auto);
+  padding-bottom: 10%;
+  margin: 3% 10% 10% 10%; 
+  box-shadow: 1px 1px 20px #aaa;
+}
+
+.note, .note_enchantee, .nom_fin, .nom_restaurant{
+  grid-column:1/6;
+}
+
+.entree_titre, .plat_titre, .dessert_titre{
+  grid-column: 2/5;
+  z-index: 5;
+}
+
+.entree_left, .plat_left, .dessert_left{
+  grid-column: 1/3;
+  margin-left: 20%;
+}
+
+.entree_prix, .plat_prix, .dessert_prix{
+  text-align: right;
+}
+
+.entree_right, .plat_right, .dessert_right, .entree_prix, .plat_prix, .dessert_prix{
+  grid-column: 4/6;
+  margin-right: 20%;
+}
+
+.dessert_no_prix{
+  grid-column: 1/6;
+  margin: 0% 8%;
+}
+
+.dessert_prix_gout{
+  grid-column: 1/4;
+  margin: 0% 8%;
+}
+
+/* Placement de la font-awesome du haut */
+.note{
+  margin-top: 5%;
+  grid-row: 1;
+}
+
+/* Mise en forme du nom du restaurant dans le menu */
+.note_enchante, .nom_restaurant{
+  grid-row: 2;
+}
+
+/* Placement sur la ligne 4 */
+.entree_left, .entree_titre, .entree_right{
+  grid-row: 4;
+}
+
+/* Placement sur la ligne 5 */
+.entree, .entree_prix{
+  grid-row: 5;
+}
+
+.entree, .plat, .dessert{
+  grid-column: 1/4;
+  margin-left: 13.5%;
+}
+
+/* Placement sur la ligne 7 */
+.plat_left, .plat_titre, .plat_right{
+  grid-row: 7;
+}
+
+/* Placement sur la ligne 8 */
+.plat, .plat_prix{
+  grid-row: 8;
+}
+
+/* Placement sur la ligne 10 */
+.dessert_left, .dessert_titre, .dessert_right{
+  grid-row: 10; 
+}
+
+/* Placement sur la ligne 11 */
+.dessert, .dessert_prix, .dessert_no_prix, .dessert_prix_gout{
+  grid-row: 11;
+}
+
+/* Placement sur la ligne 13 */
+.nom_fin{
+  grid-row: 13; 
+}
+/* Fin organisation de GridCSS */
+
+
+/* Alignement des titres */
+.note, .nom_restaurant,.nom_fin, .entree_titre, .plat_titre, .dessert_titre{
+  text-align: center;
+}
+
+/******* MISE EN FORME DES MENUS ******/
+/*******    LA NOTE ENCHANTEE    ******/
+.background_note{
+  background-color: #FCDFDB; 
+}
+
+.prix_note, .plat_prix_note, .dessert_prix_note{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.plat_note, .dessert_prix, .entree_note{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.entree_titre_note, .plat_titre_note, .dessert_titre_note{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
+.dessert_note{
+  font-family: 'Caricaturista';
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.note_enchantee{
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  color: #3D1319 ;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_note{
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: #3D1319;
+}
+
+/* Creation du border-radius pour les lignes */
+.barre_note.right{
+  border-radius: 2000% 300% 780% 500%;
+}
+.barre_note.left{
+  border-radius: 300% 2000% 500% 780%;
+}
+
+/* creation du souligné auto */
+.titre_note{
+  position: relative;
+  text-decoration: none;
+  color: #3D1319;
+  padding: 10px 0;
+}
+.titre_note:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3D1319;
+  transition: width 2s ease-in-out;
+}
+.titre_note:hover:after{
+  width: 100%;
+}
+
+/* alignement et mise en forme */
+.note .fa{
+  font-size: 7em;
+}
+
+.fa{
+  font-size: 1em;
+  padding-top: 5%;
+  padding-right: 5%;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(0deg, rgb(246, 106, 106), rgb(231, 108, 37));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/*******    LE CHIC A LA FRANCAISE    ******/
+.background_chic{
+  background-color: #FFF5FE; 
+}
+
+.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+}
+
+.entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic{
+  font-family: 'Caricaturista';
+  font-size: 1.5em;
+}
+
+.entree_chic, .entree_prix_chic{
+  color: #925CF9;
+}
+.plat_chic, .plat_prix_chic{
+  color: #A56799;
+} 
+.dessert_chic, .dessert_prix_chic{
+  color: #6E4CCC
+} 
+
+.chic_francaise, .nom_fin_chic{
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_chic{
+  width: 60%;
+  height: 25px;
+  margin: auto;
+}
+
+.entree_barre{
+  background: #C67412;
+}
+.plat_barre{
+  background: #A56799;
+}
+.dessert_barre{
+  background: #6E4CCC;
+}
+
+/* creation des cercles pour masquer les angles*/
+.top_left_R,.top_right_R,.bottom_left_R,.bottom_right_R,.top_left_L,.top_right_L,.bottom_left_L,.bottom_right_L{
+  background-color: #FFF5FE /*  rgb(128, 15, 116); /*debug couleur*/
+}
+
+.top_left_R,.bottom_left_R,.top_left_L,.bottom_left_L{
+	width: 120px;
+	height: 30px;
+  border-radius: 100%;
+}
+.top_right_R,.bottom_right_R,.top_right_L,.bottom_right_L{
+	width: 300px;
+	height: 22px;
+}
+
+.top_right_L,.bottom_right_L{
+  border-radius: 0% 100% 100% 0%;
+}
+.top_right_R,.bottom_right_R{  
+  border-radius: 100% 0% 0% 100%;
+}
+
+/* Placement des cercles pour masquer les angles a droite*/
+.top_left_R{
+  margin-top: -5%;
+  margin-left: -15%;
+}
+.bottom_left_R{
+  margin-top: 0%;
+  margin-left: -15%;
+}
+.bottom_right_R{
+  margin-top: -7.3%;
+  margin-left: 18.8%;
+}
+.top_right_R{
+  margin-top: -6.3%;
+  margin-left: 18.8%;
+}
+
+/* Placement des cercles pour masquer les angles a gauche*/
+.top_left_L{
+  margin-top: -5%;
+  margin-left: 80%;
+}
+.bottom_left_L{
+  margin-top: 0%;
+  margin-left: 80%;
+}
+.bottom_right_L{
+  margin-top: -7.3%;
+  margin-left: -4%;
+}
+.top_right_L{
+  margin-top: -6.3%;
+  margin-left: -4%;
+}
+
+/* creation du souligné auto */
+.entree_titre .titre_chic{
+  color: #C67412;
+}
+.plat_titre .titre_chic{
+  color: #A56799;
+}
+.dessert_titre .titre_chic{
+  color: #6E4CCC;
+}
+.entree_titre .titre_chic:after{
+  background: #C67412;
+}
+.plat_titre .titre_chic:after{
+  background: #A56799;
+}
+.dessert_titre .titre_chic:after{
+  background: #6E4CCC;
+}
+.titre_chic{
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+.titre_chic:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+.titre_chic:hover:after{
+  width: 100%;
+}
+
+
+/*******    LA PALLETTE DU GOUT    ******/
+
+.entree_titre_gout, .plat_titre_gout, .dessert_titre_gout{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: rgb(56, 13, 211);
+}
+
+.prix_gout, .plat_prix_gout, .dessert_prix_gout{
+  font-family: 'Caricaturista';
+  color: rgb(13, 211, 56);
+  font-size: 1.5em;
+}
+
+.plat_gout, .dessert_prix, .entree_gout{
+  font-family: 'Caricaturista';
+  color: rgb(13, 211, 56);
+  font-size: 1.5em;
+}
+
+.dessert_gout{
+  font-family: 'Caricaturista';
+  color: rgb(13, 211, 56);
+  font-size: 1.5em;
+}
+
+.palette_gout, .nom_fin_gout{
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  color: rgb(13, 211, 56);
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_gout{
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: rgb(13, 211, 56);
+}
+
+/* Creation du border-radius pour les lignes */
+.barre_gout.right{
+  border-radius: 2000% 300% 780% 500%;
+}
+.barre_gout.left{
+  border-radius: 300% 2000% 500% 780%;
+}
+
+/* creation du souligné auto */
+.titre_gout{
+  color: rgb(13, 211, 56);
+}
+.titre_gout:after{
+  background: rgb(13, 211, 56);
+}
+
+.titre_gout{
+  position: relative;
+  text-decoration: none;
+  font-size: 0.6em;
+  padding: 10px 0;
+}
+
+.titre_gout:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+.titre_gout:hover:after{
+  width: 100%;
+}
+
+
+
+/*******    LE DELICE DES PAPILLES    ******/
+
+.entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+  color: rgb(58, 9, 236);
+}
+
+.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles{
+  font-family: 'Caricaturista';
+  color: rgb(58, 9, 236);
+  font-size: 1.5em;
+}
+
+.plat_papilles, .dessert_prix, .entree_papilles{
+  font-family: 'Caricaturista';
+  color: rgb(58, 9, 236);
+  font-size: 1.5em;
+}
+
+.dessert_papilles{
+  font-family: 'Caricaturista';
+  color: rgb(58, 9, 236);
+  font-size: 1.5em;
+}
+
+.delice_papilles, .nom_fin_papilles{
+  font-family: 'MaShanZheng-Regular';
+  font-size: 5em;
+  color: rgb(58, 9, 236);
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+/* creation des cercles pour masquer les angles*//*
+.top_left_R_papilles,.top_right_R_papilles,.top_left_L_papilles,.top_right_L_papilles{
+  background-color: #3A09EC /*  rgb(128, 15, 116); /*debug couleur*//*
+}*/
+
+.top_left_R_papilles,.top_left_L_papilles{
+	width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #3A09EC;
+}
+.top_right_R_papilles,.top_right_L_papilles{
+	width: 347px;
+  height: 22px;
+  background-color: rgb(236, 9, 39);
+}
+/*
+.top_right_L_papilles{
+  border-radius: 0% 100% 100% 0%;
+}
+.top_right_R_papilles{  
+  border-radius: 100% 0% 0% 100%;
+}
+
+/* Placement des cercles pour masquer les angles a droite*/
+
+.top_left_R{
+  margin-top: -5%;
+  margin-left: -15%;
+}
+.bottom_left_R{
+  margin-top: 0%;
+  margin-left: -15%;
+}
+.bottom_right_R{
+  margin-top: -7.3%;
+  margin-left: 18.8%;
+}
+.top_right_R{
+  margin-top: -6.3%;
+  margin-left: 18.8%;
+}
+
+/* Placement des cercles pour masquer les angles a gauche*/
+.top_left_L{
+  margin-top: -5%;
+  margin-left: 80%;
+}
+.bottom_left_L{
+  margin-top: 0%;
+  margin-left: 80%;
+}
+.bottom_right_L{
+  margin-top: -7.3%;
+  margin-left: -4%;
+}
+.top_right_L{
+  margin-top: -6.3%;
+  margin-left: -4%;
+}
+
+/* creation du souligné auto */
+.titre_papilles{
+  color: rgb(58, 9, 236);
+}
+.titre_papilles:after{
+  background: rgb(58, 9, 236);
+}
+
+.titre_papilles{
+  position: relative;
+  text-decoration: none;
+  font-size: 0.6em;
+  padding: 10px 0;
+}
+
+.titre_papilles:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+.titre_papilles:hover:after{
+  width: 100%;
 }
