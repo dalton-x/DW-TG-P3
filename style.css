@@ -574,7 +574,6 @@ h1{
 }
 
 /*******    LA PALETTE DU GOUT    ******/
-
 /* Modification de GridCSS */
 .entree_gout, .plat_gout, .dessert_gout{
   grid-column: 1/5;
@@ -655,12 +654,8 @@ h1{
   width: 100%;
 }
 
-
-
 /*******    LE DELICE DES PAPILLES    ******/
 /* alignement */
-
-
 .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles{
   font-family: 'TYPO_COMICS';
   font-size: 4.5em;
