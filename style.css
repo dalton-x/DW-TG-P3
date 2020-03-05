@@ -177,8 +177,8 @@ footer{
 
 /* import des polices d'ecriture*/
 @font-face {      
-	font-family: 'MaShanZheng-Regular';
-	src: url('../font/MaShanZheng-Regular.ttf');
+	font-family: 'Devonshire-Regular';
+	src: url('../font/Devonshire-Regular.ttf');
 }
 @font-face {      
 	font-family: 'TYPO_COMICS';
@@ -191,6 +191,22 @@ footer{
 @font-face {      
 	font-family: 'HindKochi-Regular';
 	src: url('../font/HindKochi-Regular.ttf');
+}
+@font-face {      
+	font-family: 'DancingScript-Bold';
+	src: url('../font/DancingScript-Bold.ttf');
+}
+@font-face {      
+	font-family: 'DancingScript-Regular';
+	src: url('../font/DancingScript-Regular.ttf');
+}
+@font-face {      
+	font-family: 'CroissantOne-Regular';
+	src: url('../font/CroissantOne-Regular.ttf');
+}
+@font-face {      
+	font-family: 'KaushanScript-Regular';
+	src: url('../font/KaushanScript-Regular.ttf');
 }
 
 /* fix du curseur */
@@ -223,7 +239,6 @@ h1{
 
 .entree_titre, .plat_titre, .dessert_titre{
   grid-column: 2/5;
-  z-index: 5;
 }
 
 .entree_left, .plat_left, .dessert_left{
@@ -245,7 +260,7 @@ h1{
   margin: 0% 8%;
 }
 
-.dessert_prix_gout{
+.dessert_gout{
   grid-column: 1/4;
   margin: 0% 8%;
 }
@@ -339,9 +354,10 @@ h1{
 }
 
 .note_enchantee{
-  font-family: 'MaShanZheng-Regular';
+  font-family: 'Devonshire-Regular';
   font-size: 5em;
   color: #3D1319 ;
+  margin-top: -5%;
 }
 
 /* Mise en forme des barre de decoration des titres du menu */
@@ -402,6 +418,11 @@ h1{
 }
 
 /*******    LE CHIC A LA FRANCAISE    ******/
+/* alignement */
+.chic_francaise{
+  margin-bottom: 5%;
+}
+
 .background_chic{
   background-color: #FFF5FE; 
 }
@@ -427,8 +448,8 @@ h1{
 } 
 
 .chic_francaise, .nom_fin_chic{
-  font-family: 'MaShanZheng-Regular';
-  font-size: 5em;
+  font-family: 'CroissantOne-Regular';
+  font-size: 4em;
   background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -552,61 +573,65 @@ h1{
   width: 100%;
 }
 
+/*******    LA PALETTE DU GOUT    ******/
 
-/*******    LA PALLETTE DU GOUT    ******/
+/* Modification de GridCSS */
+.entree_gout, .plat_gout, .dessert_gout{
+  grid-column: 1/5;
+  margin-left: 15%;
+}
 
 .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout{
   font-family: 'TYPO_COMICS';
-  font-size: 2.5em;
-  color: rgb(56, 13, 211);
+  font-size: 5em;
 }
 
 .prix_gout, .plat_prix_gout, .dessert_prix_gout{
   font-family: 'Caricaturista';
-  color: rgb(13, 211, 56);
-  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  font-size: 1.8em;
+  margin-right: 25%;
+  line-height: 1.4em;
 }
 
-.plat_gout, .dessert_prix, .entree_gout{
+.plat_gout, .dessert_gout, .entree_gout{
   font-family: 'Caricaturista';
-  color: rgb(13, 211, 56);
-  font-size: 1.5em;
-}
-
-.dessert_gout{
-  font-family: 'Caricaturista';
-  color: rgb(13, 211, 56);
-  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  font-size: 1.7em;
+  line-height: 1.5em;
 }
 
 .palette_gout, .nom_fin_gout{
-  font-family: 'MaShanZheng-Regular';
+  font-family: 'KaushanScript-Regular';
   font-size: 5em;
-  color: rgb(13, 211, 56);
+  background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 
 /* Mise en forme des barre de decoration des titres du menu */
-.barre_gout{
-  width: 60%;
-  height: 8px;
-  margin: auto;
-  background: rgb(13, 211, 56);
+.barre_gout.right{
+  margin-left: 25%;
 }
 
-/* Creation du border-radius pour les lignes */
-.barre_gout.right{
-  border-radius: 2000% 300% 780% 500%;
-}
 .barre_gout.left{
-  border-radius: 300% 2000% 500% 780%;
+  margin-left: 10%;
+}
+
+.barre_gout{
+  margin-top: 10%;
 }
 
 /* creation du souligné auto */
 .titre_gout{
-  color: rgb(13, 211, 56);
+  color: rgb(0, 0, 0);
 }
 .titre_gout:after{
-  background: rgb(13, 211, 56);
+  background: -webkit-linear-gradient(0deg, #B6F87A, #41963C,#B6F87A);
 }
 
 .titre_gout{
@@ -633,114 +658,73 @@ h1{
 
 
 /*******    LE DELICE DES PAPILLES    ******/
+/* alignement */
+
 
 .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles{
   font-family: 'TYPO_COMICS';
-  font-size: 2.5em;
-  color: rgb(58, 9, 236);
+  font-size: 4.5em;
+  color: rgb(0, 0, 0);
 }
 
-.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles{
+.prix_papilles, .plat_prix_papilles, .dessert_papilles{
   font-family: 'Caricaturista';
-  color: rgb(58, 9, 236);
+  color: rgb(0, 0, 0);
   font-size: 1.5em;
+  margin-top: 1%;
 }
 
-.plat_papilles, .dessert_prix, .entree_papilles{
+.plat_papilles, .dessert_prix_papilles, .entree_papilles{
   font-family: 'Caricaturista';
-  color: rgb(58, 9, 236);
-  font-size: 1.5em;
-}
-
-.dessert_papilles{
-  font-family: 'Caricaturista';
-  color: rgb(58, 9, 236);
-  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  font-size: 1.6em;
 }
 
 .delice_papilles, .nom_fin_papilles{
-  font-family: 'MaShanZheng-Regular';
-  font-size: 5em;
-  color: rgb(58, 9, 236);
+  font-family: 'DancingScript-Regular';
+  font-size: 6em;
+  background: -webkit-linear-gradient(0deg, #0228DD, rgba(34, 156, 249, 0.548));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 
-/* Mise en forme des barre de decoration des titres du menu */
-/* creation des cercles pour masquer les angles*//*
-.top_left_R_papilles,.top_right_R_papilles,.top_left_L_papilles,.top_right_L_papilles{
-  background-color: #3A09EC /*  rgb(128, 15, 116); /*debug couleur*//*
-}*/
-
-.top_left_R_papilles,.top_left_L_papilles{
-	width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #3A09EC;
+/* Alignements des <img> */
+.barre_papilles_left{
+  margin-top: 8%;
+  margin-left: 27%;
 }
-.top_right_R_papilles,.top_right_L_papilles{
-	width: 347px;
-  height: 22px;
-  background-color: rgb(236, 9, 39);
-}
-/*
-.top_right_L_papilles{
-  border-radius: 0% 100% 100% 0%;
-}
-.top_right_R_papilles{  
-  border-radius: 100% 0% 0% 100%;
+.barre_papilles_right{
+  margin-top: 8%;
+  margin-left: 15%;
 }
 
-/* Placement des cercles pour masquer les angles a droite*/
-
-.top_left_R{
-  margin-top: -5%;
-  margin-left: -15%;
-}
-.bottom_left_R{
-  margin-top: 0%;
-  margin-left: -15%;
-}
-.bottom_right_R{
-  margin-top: -7.3%;
-  margin-left: 18.8%;
-}
-.top_right_R{
-  margin-top: -6.3%;
-  margin-left: 18.8%;
+/* Modification de GridCSS */
+.entree_papilles, .plat_papilles, .dessert_papilles{
+  grid-column: 1/5;
+  margin-left: 25%;
 }
 
-/* Placement des cercles pour masquer les angles a gauche*/
-.top_left_L{
-  margin-top: -5%;
-  margin-left: 80%;
-}
-.bottom_left_L{
-  margin-top: 0%;
-  margin-left: 80%;
-}
-.bottom_right_L{
-  margin-top: -7.3%;
-  margin-left: -4%;
-}
-.top_right_L{
-  margin-top: -6.3%;
-  margin-left: -4%;
+.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles{
+  margin-right: 50%;
 }
 
 /* creation du souligné auto */
 .titre_papilles{
-  color: rgb(58, 9, 236);
+  color: rgb(0, 0, 0);
 }
 .titre_papilles:after{
-  background: rgb(58, 9, 236);
+  background: -webkit-linear-gradient(0deg, #0228DD, #229DF9,#0228DD);
 }
-
 .titre_papilles{
   position: relative;
   text-decoration: none;
   font-size: 0.6em;
   padding: 10px 0;
 }
-
 .titre_papilles:after{
   content: '';
   position: absolute;
