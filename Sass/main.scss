@@ -1,15 +1,17 @@
-@import "./Utils/animations";
 @import "./Utils/functions";
 @import "./Utils/variables";
 @import "./Utils/debug";
+@import "./Utils/mixins";
+@import "./Base/fonts";
 
 @import "./Base/_base.scss";
-@import "./Base/fonts";
 
 @import "./Layouts/header";
 @import "./Layouts/footer";
 
+@import "./Pages/common";
 @import "./Pages/index";
 @import "./Pages/la_note_enchantee";
-@import "./Pages/la_palette_enchantee";
-
+@import "./Pages/la_palette_du_gout";
+@import "./Pages/le_delice_des_papilles";
+@import "./Pages/le_chic_a_la_francaise";

@@ -1,28 +1,40 @@
 @charset "UTF-8";
 
-/* creation de la grille avec gridCSS*/
-.menu_wrapper {
-	display: grid;
-  grid-template-columns: repeat(15, 1fr);
-  grid-gap: 3px;
-  grid-auto-rows: minmax(50px, auto);
-  padding-bottom: 10%;
-}
-.menu_note, .menu_delice{
-  grid-column: 3/8;
-}
-.menu_note, .menu_chic {
-  grid-row: 2/4;
-}
-.menu_chic, .menu_palette{
-  grid-column: 9/14;
-}
-.menu_delice,.menu_palette{
-  grid-row: 6/7;
+
+/* fix du curseur */
+header,footer,main,img{ 
+    cursor: default;
 }
 
-/* Debut organisation de GridCSS */
+/* creation de la grille avec gridCSS*/
+/* INDEX */
+.menu_wrapper {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-gap: 3px;
+    grid-auto-rows: minmax(50px, auto);
+    padding-bottom: 10%;
+}
+.menu_note, .menu_delice{
+    grid-column: 3/8;
+}
+.menu_note, .menu_chic {
+    grid-row: 2/4;
+}
+.menu_chic, .menu_palette{
+    grid-column: 9/14;
+}
+.menu_delice,.menu_palette{
+    grid-row: 6/7;
+}
+.menu_note, .menu_delice, .menu_chic, .menu_palette{
+    overflow: hidden;
+    position: relative; 
+    box-shadow: $box-shadow;
+}
+
 /* Creation de la grille avec gridCSS*/
+/* MENU */
 .wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -30,7 +42,7 @@
     grid-auto-rows: minmax(50px, auto);
     padding-bottom: 10%;
     margin: 3% 10% 10% 10%; 
-    box-shadow: 1px 1px 20px #aaa;
+    box-shadow: $box-shadow;
 }
 
 .note, .note_enchantee, .nom_fin, .nom_restaurant{
@@ -65,23 +77,23 @@
     margin: 0% 8%;
 }
 
-    /* Placement de la font-awesome du haut */
+/* Placement de la font-awesome du haut */
 .note{
     margin-top: 5%;
     grid-row: 1;
 }
 
-    /* Mise en forme du nom du restaurant dans le menu */
+/* Mise en forme du nom du restaurant dans le menu */
 .note_enchante, .nom_restaurant{
     grid-row: 2;
 }
 
-    /* Placement sur la ligne 4 */
+/* Placement sur la ligne 4 */
 .entree_left, .entree_titre, .entree_right{
     grid-row: 4;
 }
 
-    /* Placement sur la ligne 5 */
+/* Placement sur la ligne 5 */
 .entree, .entree_prix{
     grid-row: 5;
 }
@@ -91,27 +103,27 @@
     margin-left: 13.5%;
 }
 
-    /* Placement sur la ligne 7 */
+/* Placement sur la ligne 7 */
 .plat_left, .plat_titre, .plat_right{
     grid-row: 7;
 }
 
-    /* Placement sur la ligne 8 */
+/* Placement sur la ligne 8 */
 .plat, .plat_prix{
     grid-row: 8;
 }
 
-    /* Placement sur la ligne 10 */
+/* Placement sur la ligne 10 */
 .dessert_left, .dessert_titre, .dessert_right{
     grid-row: 10; 
 }
 
-    /* Placement sur la ligne 11 */
+/* Placement sur la ligne 11 */
 .dessert, .dessert_prix, .dessert_no_prix, .dessert_prix_gout{
     grid-row: 11;
 }
 
-    /* Placement sur la ligne 13 */
+/* Placement sur la ligne 13 */
 .nom_fin{
     grid-row: 13; 
 }
@@ -120,4 +132,4 @@
   grid-column: 5/12;
   grid-row: 8;
 }
-    /* Fin organisation de GridCSS */
+/* Fin organisation de GridCSS */

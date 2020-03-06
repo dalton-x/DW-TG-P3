@@ -1,0 +1,79 @@
+/*******    LE DELICE DES PAPILLES    ******/
+/* alignement */
+.entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles{
+  font-family: 'TYPO_COMICS';
+  font-size: 4.5em;
+  color: $black;
+}
+
+.prix_papilles, .plat_prix_papilles, .dessert_papilles{
+  font-family: 'Caricaturista';
+  color: $black;
+  font-size: 1.5em;
+  margin-top: 1%;
+}
+
+.plat_papilles, .dessert_prix_papilles, .entree_papilles{
+  font-family: 'Caricaturista';
+  color: $black;
+  font-size: 1.6em;
+}
+
+.delice_papilles, .nom_fin_papilles{
+  font-family: 'DancingScript-Regular';
+  font-size: 6em;
+  background: -webkit-linear-gradient(0deg, $blue, $blue-clear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Alignements des <img> */
+.barre_papilles_left{
+  margin-top: 8%;
+  margin-left: 27%;
+}
+.barre_papilles_right{
+  margin-top: 8%;
+  margin-left: 15%;
+}
+
+/* Modification de GridCSS */
+.entree_papilles, .plat_papilles, .dessert_papilles{
+  grid-column: 1/5;
+  margin-left: 25%;
+}
+
+.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles{
+  margin-right: 50%;
+}
+
+/* creation du souligné auto */
+.titre_papilles{
+  color: $black;
+}
+.titre_papilles:after{
+  background: -webkit-linear-gradient(0deg, $blue, $sky-blue,$blue);
+}
+.titre_papilles{
+  position: relative;
+  text-decoration: none;
+  font-size: 0.6em;
+  padding: 10px 0;
+}
+.titre_papilles:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+.titre_papilles:hover:after{
+  width: 100%;
+}

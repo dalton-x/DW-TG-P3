@@ -14,7 +14,7 @@ footer{
     text-decoration:none; 
     color: $yellow;
     cursor: default;
-  }
+}
 .legal{
     margin-left: 2.5%;
     text-align: left;
@@ -22,4 +22,20 @@ footer{
 .contact{
     margin-right: 2.5%;
     float: right;
+}
+
+/* Animations du wiggle */
+.legal:hover, .contact:hover {
+	display: inline-block;
+	transform-origin: center;
+	animation: wiggle-anim 0.52s cubic-bezier(1,.28,0,.97) infinite;
+}
+
+@keyframes wiggle-anim {
+	10%, 90%, 40%, 60% {
+    	transform: translate3d(4px, 0,0);
+  	}
+  	20%, 80%, 30%, 50%, 70% {
+    	transform: translate3d(-4px, 0,0);
+  	}
 }

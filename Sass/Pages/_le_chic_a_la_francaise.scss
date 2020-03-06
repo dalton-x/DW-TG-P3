@@ -1,0 +1,156 @@
+/*******    LE CHIC A LA FRANCAISE    ******/
+/* alignement */
+.chic_francaise{
+    margin-bottom: 5%;
+  }
+  
+  .background_chic{
+    background-color: $white; 
+  }
+  
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+    font-family: 'TYPO_COMICS';
+    font-size: 2.5em;
+  }
+  
+  .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic{
+    font-family: 'Caricaturista';
+    font-size: 1.5em;
+  }
+  
+  .entree_chic, .entree_prix_chic{
+    color: $purple-clear;
+  }
+  .plat_chic, .plat_prix_chic{
+    color: $dark-pink;
+  } 
+  .dessert_chic, .dessert_prix_chic, .dessert_chic{
+    color: $dark-purple;
+  }
+  
+  .chic_francaise, .nom_fin_chic{
+    font-family: 'CroissantOne-Regular';
+    font-size: 4em;
+    background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+  }
+  
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_chic{
+    width: 60%;
+    height: 25px;
+    margin: auto;
+  }
+  
+  .entree_barre{
+    background: #C67412;
+  }
+  .plat_barre{
+    background: #A56799;
+  }
+  .dessert_barre{
+    background: #6E4CCC;
+  }
+  
+  /* creation des cercles pour masquer les angles*/
+  .top_left_R,.top_right_R,.bottom_left_R,.bottom_right_R,.top_left_L,.top_right_L,.bottom_left_L,.bottom_right_L{
+    background-color: #FFF5FE /*  rgb(128, 15, 116); /*debug couleur*/
+  }
+  
+  .top_left_R,.bottom_left_R,.top_left_L,.bottom_left_L{
+      width: 120px;
+      height: 30px;
+    border-radius: 100%;
+  }
+  .top_right_R,.bottom_right_R,.top_right_L,.bottom_right_L{
+      width: 300px;
+      height: 22px;
+  }
+  
+  .top_right_L,.bottom_right_L{
+    border-radius: 0% 100% 100% 0%;
+  }
+  .top_right_R,.bottom_right_R{  
+    border-radius: 100% 0% 0% 100%;
+  }
+  
+  /* Placement des cercles pour masquer les angles a droite*/
+  .top_left_R{
+    margin-top: -5%;
+    margin-left: -15%;
+  }
+  .bottom_left_R{
+    margin-top: 0%;
+    margin-left: -15%;
+  }
+  .bottom_right_R{
+    margin-top: -7.3%;
+    margin-left: 18.8%;
+  }
+  .top_right_R{
+    margin-top: -6.3%;
+    margin-left: 18.8%;
+  }
+  
+  /* Placement des cercles pour masquer les angles a gauche*/
+  .top_left_L{
+    margin-top: -5%;
+    margin-left: 80%;
+  }
+  .bottom_left_L{
+    margin-top: 0%;
+    margin-left: 80%;
+  }
+  .bottom_right_L{
+    margin-top: -7.3%;
+    margin-left: -4%;
+  }
+  .top_right_L{
+    margin-top: -6.3%;
+    margin-left: -4%;
+  }
+  
+  /* creation du souligné auto */
+  .entree_titre .titre_chic{
+    color: #C67412;
+  }
+  .plat_titre .titre_chic{
+    color: #A56799;
+  }
+  .dessert_titre .titre_chic{
+    color: #6E4CCC;
+  }
+  .entree_titre .titre_chic:after{
+    background: #C67412;
+  }
+  .plat_titre .titre_chic:after{
+    background: #A56799;
+  }
+  .dessert_titre .titre_chic:after{
+    background: #6E4CCC;
+  }
+  .titre_chic{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+  .titre_chic:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    border-radius: 35%;
+    transition: width 2s ease-in-out;
+  }
+  .titre_chic:hover:after{
+    width: 100%;
+  }
+  

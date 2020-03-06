@@ -1,13 +1,64 @@
+@charset "UTF-8";
 /* DEBUG GRIDCSS */
+/*
+[class*="grd-"],header, footer{
+    background-color: rgba(243, 77, 77, 0.596);
+    border: 2px solid black;
+    line-height: 40px;
+    border-radius: 6px;
+}
+
+/* FIN DEBUG */
+/* import des polices d'ecriture*/
 @import url(//db.onlinewebfonts.com/c/7f657883f3f087c0e9864ae86af80411?family=Stem);
-[class*=grd-], header, footer {
-  background-color: rgba(243, 77, 77, 0.596);
-  border: 2px solid black;
-  line-height: 40px;
-  border-radius: 6px;
+@font-face {
+  font-family: "Stem";
+  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot");
+  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff") format("woff"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.svg#Stem") format("svg");
+}
+@font-face {
+  font-family: "P22Underground-Book";
+  src: url("../fonts/P22Underground-Book.ttf");
+}
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("../fonts/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "TYPO_COMICS";
+  src: url("../fonts/TYPO_COMICS.otf");
+}
+@font-face {
+  font-family: "Caricaturista";
+  src: url("../fonts/Caricaturista.ttf");
+}
+@font-face {
+  font-family: "HindKochi-Regular";
+  src: url("../fonts/HindKochi-Regular.ttf");
+}
+@font-face {
+  font-family: "DancingScript-Bold";
+  src: url("../fonts/DancingScript-Bold.ttf");
+}
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("../fonts/DancingScript-Regular.ttf");
+}
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("../fonts/CroissantOne-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+/* fix du curseur */
+header, footer, main, img {
+  cursor: default;
 }
 
 /* creation de la grille avec gridCSS*/
+/* INDEX */
 .menu_wrapper {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
@@ -32,8 +83,14 @@
   grid-row: 6/7;
 }
 
-/* Debut organisation de GridCSS */
+.menu_note, .menu_delice, .menu_chic, .menu_palette {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 20px #aaa;
+}
+
 /* Creation de la grille avec gridCSS*/
+/* MENU */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -133,56 +190,572 @@
 }
 
 /* Fin organisation de GridCSS */
-/* import des polices d'ecriture*/
-@font-face {
-  font-family: "Stem";
-  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot");
-  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff") format("woff"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.svg#Stem") format("svg");
-}
-@font-face {
-  font-family: "P22Underground-Book";
-  src: url("./font/P22Underground-Book.otf");
-}
-@font-face {
-  font-family: "Devonshire-Regular";
-  src: url("../font/Devonshire-Regular.ttf");
-}
-@font-face {
-  font-family: "TYPO_COMICS";
-  src: url("../font/TYPO_COMICS.otf");
-}
-@font-face {
-  font-family: "Caricaturista";
-  src: url("../font/Caricaturista.ttf");
-}
-@font-face {
-  font-family: "HindKochi-Regular";
-  src: url("../font/HindKochi-Regular.ttf");
-}
-@font-face {
-  font-family: "DancingScript-Bold";
-  src: url("../font/DancingScript-Bold.ttf");
-}
-@font-face {
-  font-family: "DancingScript-Regular";
-  src: url("../font/DancingScript-Regular.ttf");
-}
-@font-face {
-  font-family: "CroissantOne-Regular";
-  src: url("../font/CroissantOne-Regular.ttf");
-}
-@font-face {
-  font-family: "KaushanScript-Regular";
-  src: url("../font/KaushanScript-Regular.ttf");
-}
 header {
   background-color: #579C87;
+  color: #FDCB46;
+  cursor: default;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "P22Underground-Book";
+  letter-spacing: -13px;
+  font-size: 6.5em;
+  text-align: center;
+  margin: -8px -8px -8px;
 }
 
 /* Mise en couleur du fond du footer */
 footer {
   background-color: #579C87;
   color: #FDCB46;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "P22Underground-Book";
+  font-size: 3em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.yellow {
+  text-decoration: none;
+  color: #FDCB46;
+  cursor: default;
+}
+
+.legal {
+  margin-left: 2.5%;
+  text-align: left;
+}
+
+.contact {
+  margin-right: 2.5%;
+  float: right;
+}
+
+/* Animations du wiggle */
+.legal:hover, .contact:hover {
+  display: inline-block;
+  transform-origin: center;
+  animation: wiggle-anim 0.52s cubic-bezier(1, 0.28, 0, 0.97) infinite;
+}
+
+@keyframes wiggle-anim {
+  10%, 90%, 40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+  20%, 80%, 30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+}
+/* Mise en forme titre H1 */
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: "HindKochi-Regular";
+}
+
+/* Alignement des titres */
+.note, .nom_restaurant, .nom_fin, .entree_titre, .plat_titre, .dessert_titre {
+  text-align: center;
+}
+
+.menu_soon {
+  background-color: #579C87;
+  color: #FDCB46;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 5%;
+  font-family: "Stem";
+  border-radius: 20px;
+  text-align: center;
+  font-size: 3.7em;
+}
+
+/* redimentionnement et placement des images de lien de menus*/
+.img {
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  transition: all 1s ease;
+}
+
+/* augmentation de la taille de l'image au passage du curseur*/
+.img:hover {
+  transform: scale(1.2);
+  opacity: 50%;
+}
+
+/* Animations des 3 points de la section prochainement*/
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #FDCB46;
+  transform-origin: center;
+  animation: dot-anim 3s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dot-anim {
+  0%, 100% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(0.5);
+    background-color: #fdcc4634;
+  }
+}
+/*******    LA NOTE ENCHANTEE    ******/
+.background_note {
+  background-color: #FCDFDB;
+}
+
+.prix_note, .plat_prix_note, .dessert_prix_note {
+  font-family: "Caricaturista";
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.plat_note, .dessert_prix, .entree_note {
+  font-family: "Caricaturista";
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.entree_titre_note, .plat_titre_note, .dessert_titre_note {
+  font-family: "TYPO_COMICS";
+  font-size: 2.5em;
+  color: #3D1319;
+}
+
+.dessert_note {
+  font-family: "Caricaturista";
+  color: #3D1319;
+  font-size: 1.5em;
+}
+
+.note_enchantee {
+  font-family: "Devonshire-Regular";
+  font-size: 5em;
+  color: #3D1319;
+  margin-top: -5%;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_note {
+  width: 60%;
+  height: 8px;
+  margin: auto;
+  background: #3D1319;
+}
+
+/* Creation du border-radius pour les lignes */
+.barre_note.right {
+  border-radius: 2000% 300% 780% 500%;
+}
+
+.barre_note.left {
+  border-radius: 300% 2000% 500% 780%;
+}
+
+/* creation du souligné auto */
+.titre_note {
+  position: relative;
+  text-decoration: none;
+  color: #3D1319;
+  padding: 10px 0;
+}
+
+.titre_note:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3D1319;
+  transition: width 2s ease-in-out;
+}
+
+.titre_note:hover:after {
+  width: 100%;
+}
+
+/* alignement et mise en forme */
+.note .fa {
+  font-size: 7em;
+}
+
+.fa {
+  font-size: 1em;
+  padding-top: 5%;
+  padding-right: 5%;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(0deg, #f66a6a, #e76c25);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/*******    LA PALETTE DU GOUT    ******/
+/* Modification de GridCSS */
+.entree_gout, .plat_gout, .dessert_gout {
+  grid-column: 1/5;
+  margin-left: 15%;
+}
+
+.entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+  font-family: "TYPO_COMICS";
+  font-size: 5em;
+}
+
+.prix_gout, .plat_prix_gout, .dessert_prix_gout {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.8em;
+  margin-right: 25%;
+  line-height: 1.4em;
+}
+
+.plat_gout, .dessert_gout, .entree_gout {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.7em;
+  line-height: 1.5em;
+}
+
+.palette_gout, .nom_fin_gout {
+  font-family: "KaushanScript-Regular";
+  font-size: 5em;
+  background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_gout.right {
+  margin-left: 25%;
+}
+
+.barre_gout.left {
+  margin-left: 10%;
+}
+
+.barre_gout {
+  margin-top: 10%;
+}
+
+/* creation du souligné auto */
+.titre_gout {
+  color: #000000;
+}
+
+.titre_gout:after {
+  background: -webkit-linear-gradient(0deg, #B6F87A, #41963C, #B6F87A);
+}
+
+.titre_gout {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.6em;
+  padding: 10px 0;
+}
+
+.titre_gout:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+
+.titre_gout:hover:after {
+  width: 100%;
+}
+
+/*******    LE DELICE DES PAPILLES    ******/
+/* alignement */
+.entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
+  font-family: "TYPO_COMICS";
+  font-size: 4.5em;
+  color: #000000;
+}
+
+.prix_papilles, .plat_prix_papilles, .dessert_papilles {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.5em;
+  margin-top: 1%;
+}
+
+.plat_papilles, .dessert_prix_papilles, .entree_papilles {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.6em;
+}
+
+.delice_papilles, .nom_fin_papilles {
+  font-family: "DancingScript-Regular";
+  font-size: 6em;
+  background: -webkit-linear-gradient(0deg, #0228DD, #229cf98c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Alignements des <img> */
+.barre_papilles_left {
+  margin-top: 8%;
+  margin-left: 27%;
+}
+
+.barre_papilles_right {
+  margin-top: 8%;
+  margin-left: 15%;
+}
+
+/* Modification de GridCSS */
+.entree_papilles, .plat_papilles, .dessert_papilles {
+  grid-column: 1/5;
+  margin-left: 25%;
+}
+
+.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles {
+  margin-right: 50%;
+}
+
+/* creation du souligné auto */
+.titre_papilles {
+  color: #000000;
+}
+
+.titre_papilles:after {
+  background: -webkit-linear-gradient(0deg, #0228DD, #229DF9, #0228DD);
+}
+
+.titre_papilles {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.6em;
+  padding: 10px 0;
+}
+
+.titre_papilles:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+
+.titre_papilles:hover:after {
+  width: 100%;
+}
+
+/*******    LE CHIC A LA FRANCAISE    ******/
+/* alignement */
+.chic_francaise {
+  margin-bottom: 5%;
+}
+
+.background_chic {
+  background-color: #FFF5FE;
+}
+
+.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+  font-family: "TYPO_COMICS";
+  font-size: 2.5em;
+}
+
+.entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic {
+  font-family: "Caricaturista";
+  font-size: 1.5em;
+}
+
+.entree_chic, .entree_prix_chic {
+  color: #925CF9;
+}
+
+.plat_chic, .plat_prix_chic {
+  color: #A56799;
+}
+
+.dessert_chic, .dessert_prix_chic, .dessert_chic {
+  color: #6e4ccc;
+}
+
+.chic_francaise, .nom_fin_chic {
+  font-family: "CroissantOne-Regular";
+  font-size: 4em;
+  background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_chic {
+  width: 60%;
+  height: 25px;
+  margin: auto;
+}
+
+.entree_barre {
+  background: #C67412;
+}
+
+.plat_barre {
+  background: #A56799;
+}
+
+.dessert_barre {
+  background: #6E4CCC;
+}
+
+/* creation des cercles pour masquer les angles*/
+.top_left_R, .top_right_R, .bottom_left_R, .bottom_right_R, .top_left_L, .top_right_L, .bottom_left_L, .bottom_right_L {
+  background-color: #FFF5FE;
+}
+
+.top_left_R, .bottom_left_R, .top_left_L, .bottom_left_L {
+  width: 120px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.top_right_R, .bottom_right_R, .top_right_L, .bottom_right_L {
+  width: 300px;
+  height: 22px;
+}
+
+.top_right_L, .bottom_right_L {
+  border-radius: 0% 100% 100% 0%;
+}
+
+.top_right_R, .bottom_right_R {
+  border-radius: 100% 0% 0% 100%;
+}
+
+/* Placement des cercles pour masquer les angles a droite*/
+.top_left_R {
+  margin-top: -5%;
+  margin-left: -15%;
+}
+
+.bottom_left_R {
+  margin-top: 0%;
+  margin-left: -15%;
+}
+
+.bottom_right_R {
+  margin-top: -7.3%;
+  margin-left: 18.8%;
+}
+
+.top_right_R {
+  margin-top: -6.3%;
+  margin-left: 18.8%;
+}
+
+/* Placement des cercles pour masquer les angles a gauche*/
+.top_left_L {
+  margin-top: -5%;
+  margin-left: 80%;
+}
+
+.bottom_left_L {
+  margin-top: 0%;
+  margin-left: 80%;
+}
+
+.bottom_right_L {
+  margin-top: -7.3%;
+  margin-left: -4%;
+}
+
+.top_right_L {
+  margin-top: -6.3%;
+  margin-left: -4%;
+}
+
+/* creation du souligné auto */
+.entree_titre .titre_chic {
+  color: #C67412;
+}
+
+.plat_titre .titre_chic {
+  color: #A56799;
+}
+
+.dessert_titre .titre_chic {
+  color: #6E4CCC;
+}
+
+.entree_titre .titre_chic:after {
+  background: #C67412;
+}
+
+.plat_titre .titre_chic:after {
+  background: #A56799;
+}
+
+.dessert_titre .titre_chic:after {
+  background: #6E4CCC;
+}
+
+.titre_chic {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+
+.titre_chic:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+
+.titre_chic:hover:after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

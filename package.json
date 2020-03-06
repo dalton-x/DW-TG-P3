@@ -2,17 +2,16 @@
   "name": "dw-tg-p3",
   "version": "1.0.0",
   "description": "version Sass du Projet 3",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dalton-x/DW-TG-P3.git"
   },
-  "author": "Dalton_X",
-  "license": "ISC",
+  "author": "GIRARD Thomas",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dalton-x/DW-TG-P3/issues"
   },

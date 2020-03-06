@@ -1,0 +1,92 @@
+/*******    LA NOTE ENCHANTEE    ******/
+.background_note{
+    background-color: #FCDFDB; 
+  }
+  
+.prix_note, .plat_prix_note, .dessert_prix_note{
+    font-family: 'Caricaturista';
+    color: $burgundy;
+    font-size: 1.5em;
+}
+  
+.plat_note, .dessert_prix, .entree_note{
+    font-family: 'Caricaturista';
+    color: $burgundy;
+    font-size: 1.5em;
+}
+  
+.entree_titre_note, .plat_titre_note, .dessert_titre_note{
+    font-family: 'TYPO_COMICS';
+    font-size: 2.5em;
+    color: $burgundy;
+}
+  
+.dessert_note{
+    font-family: 'Caricaturista';
+    color: $burgundy;
+    font-size: 1.5em;
+}
+  
+.note_enchantee{
+    font-family: 'Devonshire-Regular';
+    font-size: 5em;
+    color: $burgundy ;
+    margin-top: -5%;
+}
+  
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_note{
+    width: 60%;
+    height: 8px;
+    margin: auto;
+    background: $burgundy;
+}
+  
+/* Creation du border-radius pour les lignes */
+.barre_note.right{
+    border-radius: 2000% 300% 780% 500%;
+}
+.barre_note.left{
+    border-radius: 300% 2000% 500% 780%;
+}
+  
+/* creation du souligné auto */
+.titre_note{
+    position: relative;
+    text-decoration: none;
+    color: $burgundy;
+    padding: 10px 0;
+}
+.titre_note:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    border-radius: 35%;
+    background: $burgundy;
+    transition: width 2s ease-in-out;
+}
+.titre_note:hover:after{
+    width: 100%;
+}
+  
+/* alignement et mise en forme */
+.note .fa{
+    font-size: 7em;
+}
+  
+.fa{
+    font-size: 1em;
+    padding-top: 5%;
+    padding-right: 5%;
+    color: $purple;
+    background: -webkit-linear-gradient(0deg, $pink, $orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+}
