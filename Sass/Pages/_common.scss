@@ -8,4 +8,22 @@ h1{
 /* Alignement des titres */
 .note, .nom_restaurant,.nom_fin, .entree_titre, .plat_titre, .dessert_titre{
     text-align: center;
-  }
+}
+
+  /*****MOBILE*****/ /* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    h1{
+        font-size: 2em;
+    }
+
+}
+
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+    
+    h1{
+        font-size: 3em;
+    }
+}

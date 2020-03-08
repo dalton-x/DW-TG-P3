@@ -154,3 +154,33 @@
     width: 100%;
   }
   
+
+  
+
+/*****MOBILE*****/ /* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  
+  .chic_francaise, .nom_fin_chic{
+    font-size: 1.5em;
+  }
+  
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+    font-size: 0.5em;
+  }
+
+  .titre_chic{
+    margin-top: 15%; 
+  }
+
+}
+
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  
+  .chic_francaise, .nom_fin_chic{
+    font-size: 1.5em;
+  }
+
+
+}

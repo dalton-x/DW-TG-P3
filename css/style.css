@@ -190,6 +190,82 @@ header, footer, main, img {
 }
 
 /* Fin organisation de GridCSS */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 375px) and (max-width: 666px) {
+  .menu_note, .menu_delice, .menu_chic, .menu_palette {
+    grid-column: 2/15;
+  }
+
+  .menu_note {
+    grid-row: 2/4;
+  }
+
+  .menu_chic {
+    grid-row: 5/9;
+  }
+
+  .menu_delice {
+    grid-row: 10/12;
+  }
+
+  .menu_palette {
+    grid-row: 13/15;
+  }
+
+  .menu_soon {
+    grid-column: 2/15;
+    grid-row: 16;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .menu_note, .menu_delice {
+    grid-column: 3/8;
+  }
+
+  .menu_note, .menu_chic {
+    grid-row: 2/4;
+  }
+
+  .menu_chic, .menu_palette {
+    grid-column: 9/14;
+  }
+
+  .menu_delice, .menu_palette {
+    grid-row: 5/6;
+  }
+
+  .menu_soon {
+    grid-column: 2/15;
+    grid-row: 7;
+  }
+}
+/*****TABLETTE***/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu_note, .menu_delice {
+    grid-column: 3/8;
+  }
+
+  .menu_note, .menu_chic {
+    grid-row: 2/4;
+  }
+
+  .menu_chic, .menu_palette {
+    grid-column: 9/14;
+  }
+
+  .menu_delice, .menu_palette {
+    grid-row: 6/7;
+  }
+
+  .menu_note, .menu_delice, .menu_chic, .menu_palette {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 20px #aaa;
+  }
+}
 header {
   background-color: #579C87;
   color: #FDCB46;
@@ -203,6 +279,22 @@ header {
   margin: -8px -8px -8px;
 }
 
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  header {
+    letter-spacing: -10px;
+    font-size: 5.5em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  header {
+    letter-spacing: -10px;
+    font-size: 4.5em;
+  }
+}
 /* Mise en couleur du fond du footer */
 footer {
   background-color: #579C87;
@@ -248,6 +340,11 @@ footer {
     transform: translate3d(-4px, 0, 0);
   }
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  footer {
+    font-size: 1.5em;
+  }
+}
 /* Mise en forme titre H1 */
 h1 {
   text-align: center;
@@ -260,6 +357,20 @@ h1 {
   text-align: center;
 }
 
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 .menu_soon {
   background-color: #579C87;
   color: #FDCB46;
@@ -318,6 +429,31 @@ h1 {
     background-color: #fdcc4634;
   }
 }
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .menu_soon {
+    font-size: 1.5em;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .menu_soon {
+    font-size: 3em;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+}
+/*****TABLETTE***/
 /*******    LA NOTE ENCHANTEE    ******/
 .background_note {
   background-color: #FCDFDB;
@@ -414,6 +550,65 @@ h1 {
   -ms-text-fill-color: transparent;
 }
 
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .note_enchantee {
+    font-size: 1.8em;
+  }
+
+  .prix_note, .plat_prix_note, .dessert_prix_note {
+    font-size: 1.35em;
+  }
+
+  .plat_note, .dessert_prix, .entree_note, .dessert_note {
+    font-size: 0.8em;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    margin-top: 5%;
+    font-size: 1.5em;
+  }
+
+  .plat_titre_note {
+    margin-top: 9%;
+    font-size: 1em;
+  }
+
+  .dessert_titre_note {
+    margin-top: 11%;
+    font-size: 0.8em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_note {
+    height: 4px;
+  }
+
+  .titre_note:after {
+    height: 4px;
+  }
+
+  /* alignement et mise en forme */
+  .note .fa {
+    font-size: 4em;
+  }
+
+  .fa {
+    font-size: 1em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .prix_note, .plat_prix_note, .dessert_prix_note {
+    font-size: 1.15em;
+  }
+
+  .plat_note {
+    line-height: 1.3em;
+  }
+}
 /*******    LA PALETTE DU GOUT    ******/
 /* Modification de GridCSS */
 .entree_gout, .plat_gout, .dessert_gout {
@@ -497,6 +692,133 @@ h1 {
   width: 100%;
 }
 
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .palette_gout, .nom_fin_gout {
+    font-size: 1.5em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_gout.right {
+    margin-left: 25%;
+    width: 20%;
+  }
+
+  .barre_gout.left {
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  .barre_gout {
+    margin-top: 10%;
+    width: 20%;
+  }
+
+  img.palette {
+    width: 350%;
+  }
+
+  .entree_titre_gout {
+    margin-top: -5%;
+    font-size: 2.3em;
+  }
+
+  .plat_titre_gout {
+    font-size: 1.7em;
+  }
+
+  .dessert_titre_gout {
+    margin-top: 7%;
+    font-size: 1em;
+  }
+
+  .titre_gout:after {
+    height: 4px;
+  }
+
+  .entree_gout, .plat_gout, .dessert_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout {
+    line-height: 3.5em;
+  }
+
+  .plat_prix_gout {
+    line-height: 4em;
+  }
+
+  .dessert_prix_gout {
+    line-height: 3.3em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .palette_gout, .nom_fin_gout {
+    font-size: 1.5em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_gout.right {
+    margin-left: 25%;
+    width: 20%;
+  }
+
+  .barre_gout.left {
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  .barre_gout {
+    margin-top: 10%;
+    width: 20%;
+  }
+
+  img.palette {
+    width: 350%;
+  }
+
+  .entree_titre_gout {
+    margin-top: 1%;
+    font-size: 2.3em;
+  }
+
+  .plat_titre_gout {
+    margin-top: 2%;
+    font-size: 2em;
+  }
+
+  .dessert_titre_gout {
+    margin-top: 2%;
+    font-size: 2em;
+  }
+
+  .entree_gout, .plat_gout, .dessert_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout {
+    line-height: 2em;
+  }
+
+  .plat_prix_gout {
+    line-height: 2.8em;
+  }
+
+  .dessert_prix_gout {
+    line-height: 2.2em;
+  }
+}
 /*******    LE DELICE DES PAPILLES    ******/
 /* alignement */
 .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
@@ -756,6 +1078,110 @@ h1 {
 
 .titre_chic:hover:after {
   width: 100%;
+}
+
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .chic_francaise, .nom_fin_chic {
+    font-size: 1.5em;
+  }
+
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 0.5em;
+  }
+
+  .titre_chic {
+    margin-top: 15%;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_chic {
+    width: 60%;
+    height: 25px;
+    margin: auto;
+  }
+
+  .entree_barre {
+    background: #C67412;
+  }
+
+  .plat_barre {
+    background: #A56799;
+  }
+
+  .dessert_barre {
+    background: #6E4CCC;
+  }
+
+  /* creation des cercles pour masquer les angles*/
+  .top_left_R, .top_right_R, .bottom_left_R, .bottom_right_R, .top_left_L, .top_right_L, .bottom_left_L, .bottom_right_L {
+    background-color: #FFF5FE;
+  }
+
+  .top_left_R, .bottom_left_R, .top_left_L, .bottom_left_L {
+    width: 120px;
+    height: 30px;
+    border-radius: 100%;
+  }
+
+  .top_right_R, .bottom_right_R, .top_right_L, .bottom_right_L {
+    width: 300px;
+    height: 22px;
+  }
+
+  .top_right_L, .bottom_right_L {
+    border-radius: 0% 100% 100% 0%;
+  }
+
+  .top_right_R, .bottom_right_R {
+    border-radius: 100% 0% 0% 100%;
+  }
+
+  /* Placement des cercles pour masquer les angles a droite*/
+  /*
+  .top_left_R{
+    margin-top: -5%;
+    margin-left: -15%;
+  }
+  .bottom_left_R{
+    margin-top: 0%;
+    margin-left: -15%;
+  }
+  .bottom_right_R{
+    margin-top: -7.3%;
+    margin-left: 18.8%;
+  }
+  .top_right_R{
+    margin-top: -6.3%;
+    margin-left: 18.8%;
+  }
+
+  /* Placement des cercles pour masquer les angles a gauche*/
+  /*
+  .top_left_L{
+    margin-top: -5%;
+    margin-left: 80%;
+  }
+  .bottom_left_L{
+    margin-top: 0%;
+    margin-left: 80%;
+  }
+  .bottom_right_L{
+    margin-top: -7.3%;
+    margin-left: -4%;
+  }
+  .top_right_L{
+    margin-top: -6.3%;
+    margin-left: -4%;
+  }*/
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .chic_francaise, .nom_fin_chic {
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
