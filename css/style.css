@@ -52,6 +52,7 @@
   font-family: "KaushanScript-Regular";
   src: url("../fonts/KaushanScript-Regular.ttf");
 }
+/* BASE */
 /* fix du curseur */
 header, footer, main, img {
   cursor: default;
@@ -190,85 +191,9 @@ header, footer, main, img {
 }
 
 /* Fin organisation de GridCSS */
-/*****MOBILE*****/
-/* portrait */
-@media screen and (min-width: 375px) and (max-width: 666px) {
-  .menu_note, .menu_delice, .menu_chic, .menu_palette {
-    grid-column: 2/15;
-  }
-
-  .menu_note {
-    grid-row: 2/4;
-  }
-
-  .menu_chic {
-    grid-row: 5/9;
-  }
-
-  .menu_delice {
-    grid-row: 10/12;
-  }
-
-  .menu_palette {
-    grid-row: 13/15;
-  }
-
-  .menu_soon {
-    grid-column: 2/15;
-    grid-row: 16;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  .menu_note, .menu_delice {
-    grid-column: 3/8;
-  }
-
-  .menu_note, .menu_chic {
-    grid-row: 2/4;
-  }
-
-  .menu_chic, .menu_palette {
-    grid-column: 9/14;
-  }
-
-  .menu_delice, .menu_palette {
-    grid-row: 5/6;
-  }
-
-  .menu_soon {
-    grid-column: 2/15;
-    grid-row: 7;
-  }
-}
-/*****TABLETTE***/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu_note, .menu_delice {
-    grid-column: 3/8;
-  }
-
-  .menu_note, .menu_chic {
-    grid-row: 2/4;
-  }
-
-  .menu_chic, .menu_palette {
-    grid-column: 9/14;
-  }
-
-  .menu_delice, .menu_palette {
-    grid-row: 6/7;
-  }
-
-  .menu_note, .menu_delice, .menu_chic, .menu_palette {
-    overflow: hidden;
-    position: relative;
-    box-shadow: 1px 1px 20px #aaa;
-  }
-}
 header {
-  background-color: #579C87;
-  color: #FDCB46;
+  background-color: #579c87;
+  color: #fdcb46;
   cursor: default;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -279,26 +204,10 @@ header {
   margin: -8px -8px -8px;
 }
 
-/*****MOBILE*****/
-/* Portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  header {
-    letter-spacing: -10px;
-    font-size: 5.5em;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  header {
-    letter-spacing: -10px;
-    font-size: 4.5em;
-  }
-}
 /* Mise en couleur du fond du footer */
 footer {
-  background-color: #579C87;
-  color: #FDCB46;
+  background-color: #579c87;
+  color: #fdcb46;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -311,7 +220,7 @@ footer {
 
 .yellow {
   text-decoration: none;
-  color: #FDCB46;
+  color: #fdcb46;
   cursor: default;
 }
 
@@ -340,11 +249,6 @@ footer {
     transform: translate3d(-4px, 0, 0);
   }
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  footer {
-    font-size: 1.5em;
-  }
-}
 /* Mise en forme titre H1 */
 h1 {
   text-align: center;
@@ -353,13 +257,18 @@ h1 {
 }
 
 /* Alignement des titres */
-.note, .nom_restaurant, .nom_fin, .entree_titre, .plat_titre, .dessert_titre {
+.note,
+.nom_restaurant,
+.nom_fin,
+.entree_titre,
+.plat_titre,
+.dessert_titre {
   text-align: center;
 }
 
 .menu_soon {
-  background-color: #579C87;
-  color: #FDCB46;
+  background-color: #579c87;
+  color: #fdcb46;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: 5%;
@@ -389,7 +298,7 @@ h1 {
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  background-color: #FDCB46;
+  background-color: #fdcb46;
   transform-origin: center;
   animation: dot-anim 3s infinite;
 }
@@ -417,37 +326,43 @@ h1 {
 }
 /*******    LA NOTE ENCHANTEE    ******/
 .background_note {
-  background-color: #FCDFDB;
+  background-color: #fcdfdb;
 }
 
-.prix_note, .plat_prix_note, .dessert_prix_note {
+.prix_note,
+.plat_prix_note,
+.dessert_prix_note {
   font-family: "Caricaturista";
-  color: #3D1319;
+  color: #3d1319;
   font-size: 1.5em;
 }
 
-.plat_note, .dessert_prix, .entree_note {
+.plat_note,
+.dessert_prix,
+.entree_note {
   font-family: "Caricaturista";
-  color: #3D1319;
+  color: #3d1319;
   font-size: 1.5em;
 }
 
-.entree_titre_note, .plat_titre_note, .dessert_titre_note {
+.entree_titre_note,
+.plat_titre_note,
+.dessert_titre_note {
   font-family: "TYPO_COMICS";
   font-size: 2.5em;
-  color: #3D1319;
+  color: #3d1319;
 }
 
 .dessert_note {
   font-family: "Caricaturista";
-  color: #3D1319;
+  color: #3d1319;
   font-size: 1.5em;
 }
 
 .note_enchantee {
   font-family: "Devonshire-Regular";
   font-size: 5em;
-  color: #3D1319;
+  color: #3d1319;
   margin-top: -5%;
 }
 
@@ -456,7 +371,7 @@ h1 {
   width: 60%;
   height: 8px;
   margin: auto;
-  background: #3D1319;
+  background: #3d1319;
 }
 
 /* Creation du border-radius pour les lignes */
@@ -472,7 +387,7 @@ h1 {
 .titre_note {
   position: relative;
   text-decoration: none;
-  color: #3D1319;
+  color: #3d1319;
   padding: 10px 0;
 }
 
@@ -484,7 +399,7 @@ h1 {
   width: 0;
   height: 8px;
   border-radius: 35%;
-  background: #3D1319;
+  background: #3d1319;
   transition: width 2s ease-in-out;
 }
 
@@ -513,17 +428,23 @@ h1 {
 
 /*******    LA PALETTE DU GOUT    ******/
 /* Modification de GridCSS */
-.entree_gout, .plat_gout, .dessert_gout {
+.entree_gout,
+.plat_gout,
+.dessert_gout {
   grid-column: 1/5;
   margin-left: 15%;
 }
 
-.entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+.entree_titre_gout,
+.plat_titre_gout,
+.dessert_titre_gout {
   font-family: "TYPO_COMICS";
   font-size: 5em;
 }
 
-.prix_gout, .plat_prix_gout, .dessert_prix_gout {
+.prix_gout,
+.plat_prix_gout,
+.dessert_prix_gout {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.8em;
@@ -531,14 +452,17 @@ h1 {
   line-height: 1.4em;
 }
 
-.plat_gout, .dessert_gout, .entree_gout {
+.plat_gout,
+.dessert_gout,
+.entree_gout {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.7em;
   line-height: 1.5em;
 }
 
-.palette_gout, .nom_fin_gout {
+.palette_gout,
+.nom_fin_gout {
   font-family: "KaushanScript-Regular";
   font-size: 5em;
   background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
@@ -569,7 +493,7 @@ h1 {
 }
 
 .titre_gout:after {
-  background: -webkit-linear-gradient(0deg, #B6F87A, #41963C, #B6F87A);
+  background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
 }
 
 .titre_gout {
@@ -596,29 +520,36 @@ h1 {
 
 /*******    LE DELICE DES PAPILLES    ******/
 /* alignement */
-.entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
+.entree_titre_papilles,
+.plat_titre_papilles,
+.dessert_titre_papilles {
   font-family: "TYPO_COMICS";
   font-size: 4.5em;
   color: #000000;
 }
 
-.prix_papilles, .plat_prix_papilles, .dessert_papilles {
+.prix_papilles,
+.plat_prix_papilles,
+.dessert_papilles {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.5em;
   margin-top: 1%;
 }
 
-.plat_papilles, .dessert_prix_papilles, .entree_papilles {
+.plat_papilles,
+.dessert_prix_papilles,
+.entree_papilles {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.6em;
 }
 
-.delice_papilles, .nom_fin_papilles {
+.delice_papilles,
+.nom_fin_papilles {
   font-family: "DancingScript-Regular";
   font-size: 6em;
-  background: -webkit-linear-gradient(0deg, #0228DD, #229cf98c);
+  background: -webkit-linear-gradient(0deg, #0228dd, #229cf98c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -639,12 +570,16 @@ h1 {
 }
 
 /* Modification de GridCSS */
-.entree_papilles, .plat_papilles, .dessert_papilles {
+.entree_papilles,
+.plat_papilles,
+.dessert_papilles {
   grid-column: 1/5;
   margin-left: 25%;
 }
 
-.prix_papilles, .plat_prix_papilles, .dessert_prix_papilles {
+.prix_papilles,
+.plat_prix_papilles,
+.dessert_prix_papilles {
   margin-right: 50%;
 }
 
@@ -654,7 +589,7 @@ h1 {
 }
 
 .titre_papilles:after {
-  background: -webkit-linear-gradient(0deg, #0228DD, #229DF9, #0228DD);
+  background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
 }
 
 .titre_papilles {
@@ -686,35 +621,47 @@ h1 {
 }
 
 .background_chic {
-  background-color: #FFF5FE;
+  background-color: #fff5fe;
 }
 
-.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+.entree_titre_chic,
+.plat_titre_chic,
+.dessert_titre_chic {
   font-family: "TYPO_COMICS";
   font-size: 2.5em;
 }
 
-.entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic {
+.entree_prix_chic,
+.plat_prix_chic,
+.dessert_prix_chic,
+.plat_chic,
+.dessert_chic,
+.entree_chic {
   font-family: "Caricaturista";
   font-size: 1.5em;
 }
 
-.entree_chic, .entree_prix_chic {
-  color: #925CF9;
+.entree_chic,
+.entree_prix_chic {
+  color: #925cf9;
 }
 
-.plat_chic, .plat_prix_chic {
-  color: #A56799;
+.plat_chic,
+.plat_prix_chic {
+  color: #a56799;
 }
 
-.dessert_chic, .dessert_prix_chic, .dessert_chic {
+.dessert_chic,
+.dessert_prix_chic,
+.dessert_chic {
   color: #6e4ccc;
 }
 
-.chic_francaise, .nom_fin_chic {
+.chic_francaise,
+.nom_fin_chic {
   font-family: "CroissantOne-Regular";
   font-size: 4em;
-  background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
+  background: -webkit-linear-gradient(0deg, #e38913, #8f5bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -736,27 +683,27 @@ img.chic.left {
 
 /* creation du souligné auto */
 .entree_titre .titre_chic {
-  color: #C67412;
+  color: #c67412;
 }
 
 .plat_titre .titre_chic {
-  color: #A56799;
+  color: #a56799;
 }
 
 .dessert_titre .titre_chic {
-  color: #6E4CCC;
+  color: #6e4ccc;
 }
 
 .entree_titre .titre_chic:after {
-  background: #C67412;
+  background: #c67412;
 }
 
 .plat_titre .titre_chic:after {
-  background: #A56799;
+  background: #a56799;
 }
 
 .dessert_titre .titre_chic:after {
-  background: #6E4CCC;
+  background: #6e4ccc;
 }
 
 .titre_chic {
@@ -838,15 +785,22 @@ p.legal_text {
     font-size: 1.8em;
   }
 
-  .prix_note, .plat_prix_note, .dessert_prix_note {
+  .prix_note,
+.plat_prix_note,
+.dessert_prix_note {
     font-size: 1.35em;
   }
 
-  .plat_note, .dessert_prix, .entree_note, .dessert_note {
+  .plat_note,
+.dessert_prix,
+.entree_note,
+.dessert_note {
     font-size: 0.8em;
   }
 
-  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+  .entree_titre_note,
+.plat_titre_note,
+.dessert_titre_note {
     margin-top: 5%;
     font-size: 1.5em;
   }
@@ -882,7 +836,9 @@ p.legal_text {
 /*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-  .prix_note, .plat_prix_note, .dessert_prix_note {
+  .prix_note,
+.plat_prix_note,
+.dessert_prix_note {
     font-size: 1.15em;
   }
 
@@ -894,7 +850,8 @@ p.legal_text {
 /*****MOBILE*****/
 /* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .palette_gout, .nom_fin_gout {
+  .palette_gout,
+.nom_fin_gout {
     font-size: 1.5em;
   }
 
@@ -936,11 +893,15 @@ p.legal_text {
     height: 4px;
   }
 
-  .entree_gout, .plat_gout, .dessert_gout {
+  .entree_gout,
+.plat_gout,
+.dessert_gout {
     font-size: 1em;
   }
 
-  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+  .prix_gout,
+.plat_prix_gout,
+.dessert_prix_gout {
     font-size: 1em;
   }
 
@@ -959,7 +920,8 @@ p.legal_text {
 /*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-  .palette_gout, .nom_fin_gout {
+  .palette_gout,
+.nom_fin_gout {
     font-size: 1.5em;
   }
 
@@ -998,11 +960,15 @@ p.legal_text {
     font-size: 2em;
   }
 
-  .entree_gout, .plat_gout, .dessert_gout {
+  .entree_gout,
+.plat_gout,
+.dessert_gout {
     font-size: 1em;
   }
 
-  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+  .prix_gout,
+.plat_prix_gout,
+.dessert_prix_gout {
     font-size: 1em;
   }
 
@@ -1049,16 +1015,22 @@ p.legal_text {
   }
 
   /* alignement */
-  .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
+  .entree_titre_papilles,
+.plat_titre_papilles,
+.dessert_titre_papilles {
     font-size: 2.5em;
   }
 
-  .prix_papilles, .plat_prix_papilles, .dessert_prix_papilles {
+  .prix_papilles,
+.plat_prix_papilles,
+.dessert_prix_papilles {
     font-size: 0.5em;
     margin-top: 1%;
   }
 
-  .plat_papilles, .dessert_papilles, .entree_papilles {
+  .plat_papilles,
+.dessert_papilles,
+.entree_papilles {
     font-size: 0.6em;
     margin-left: 10%;
     padding-right: 10%;
@@ -1082,11 +1054,14 @@ p.legal_text {
 /*****MOBILE*****/
 /* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .chic_francaise, .nom_fin_chic {
+  .chic_francaise,
+.nom_fin_chic {
     font-size: 1.5em;
   }
 
-  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+  .entree_titre_chic,
+.plat_titre_chic,
+.dessert_titre_chic {
     font-size: 0.5em;
   }
 
@@ -1120,7 +1095,12 @@ p.legal_text {
     height: 3px;
   }
 
-  .plat_chic, .dessert_chic, .entree_chic, .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic {
+  .plat_chic,
+.dessert_chic,
+.entree_chic,
+.entree_prix_chic,
+.plat_prix_chic,
+.dessert_prix_chic {
     font-size: 0.6em;
   }
 
@@ -1128,14 +1108,94 @@ p.legal_text {
     line-height: 150%;
   }
 
-  .plat_prix_chic, .dessert_prix_chic {
+  .plat_prix_chic,
+.dessert_prix_chic {
     line-height: 250%;
   }
 }
 /*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-  .chic_francaise, .nom_fin_chic {
+  .chic_francaise,
+.nom_fin_chic {
+    font-size: 1.5em;
+  }
+}
+/* BASE */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 375px) and (max-width: 666px) {
+  .menu_note, .menu_delice, .menu_chic, .menu_palette {
+    grid-column: 2/15;
+  }
+
+  .menu_note {
+    grid-row: 2/4;
+  }
+
+  .menu_chic {
+    grid-row: 5/9;
+  }
+
+  .menu_delice {
+    grid-row: 10/12;
+  }
+
+  .menu_palette {
+    grid-row: 13/15;
+  }
+
+  .menu_soon {
+    grid-column: 2/15;
+    grid-row: 16;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .menu_note, .menu_delice {
+    grid-column: 3/8;
+  }
+
+  .menu_note, .menu_chic {
+    grid-row: 2/4;
+  }
+
+  .menu_chic, .menu_palette {
+    grid-column: 9/14;
+  }
+
+  .menu_delice, .menu_palette {
+    grid-row: 5/6;
+  }
+
+  .menu_soon {
+    grid-column: 2/15;
+    grid-row: 7;
+  }
+}
+/* HEADER */
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  header {
+    letter-spacing: -10px;
+    font-size: 5.5em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  header {
+    letter-spacing: -10px;
+    font-size: 4.5em;
+  }
+}
+/* FOOTER */
+/** Mobile **/
+/* Portrait/paysage */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  footer {
     font-size: 1.5em;
   }
 }

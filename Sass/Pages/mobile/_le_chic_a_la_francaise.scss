@@ -1,62 +1,68 @@
 /*****LE CHIC A LA FRANCAISE*****/
-/*****MOBILE*****/ 
+/*****MOBILE*****/
 /* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  
-  .chic_francaise, .nom_fin_chic{
+  .chic_francaise,
+  .nom_fin_chic {
     font-size: 1.5em;
   }
-  
-  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+
+  .entree_titre_chic,
+  .plat_titre_chic,
+  .dessert_titre_chic {
     font-size: 0.5em;
   }
 
-  .titre_chic{
-    margin-top: 15%; 
+  .titre_chic {
+    margin-top: 15%;
   }
 
-  .barre_chic.right{
-    margin-left: 50%; 
+  .barre_chic.right {
+    margin-left: 50%;
   }
-  .barre_chic.left{
-    margin-left: 50%; 
+  .barre_chic.left {
+    margin-left: 50%;
   }
 
   /* Placement des images du menu */
-  img.chic.right{
+  img.chic.right {
     width: 200%;
     margin-left: -60%;
     margin-bottom: 15%;
   }
-  img.chic.left{
+  img.chic.left {
     width: 135%;
     margin-left: -90%;
     margin-bottom: 10%;
   }
 
   /* Soulignement */
-  .titre_chic:after{
+  .titre_chic:after {
     height: 3px;
   }
 
-  .plat_chic, .dessert_chic, .entree_chic, .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic{
+  .plat_chic,
+  .dessert_chic,
+  .entree_chic,
+  .entree_prix_chic,
+  .plat_prix_chic,
+  .dessert_prix_chic {
     font-size: 0.6em;
   }
-  .entree_prix_chic{
+  .entree_prix_chic {
     line-height: 150%;
   }
 
-  .plat_prix_chic, .dessert_prix_chic{
+  .plat_prix_chic,
+  .dessert_prix_chic {
     line-height: 250%;
   }
 }
-/*****MOBILE*****/ 
+/*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-  
-  .chic_francaise, .nom_fin_chic{
+  .chic_francaise,
+  .nom_fin_chic {
     font-size: 1.5em;
   }
-
-
 }

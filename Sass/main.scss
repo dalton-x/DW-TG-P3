@@ -4,10 +4,12 @@
 @import "./Utils/mixins";
 @import "./Base/fonts";
 
-@import "./Base/_base.scss";
 
-@import "./Layouts/header";
-@import "./Layouts/footer";
+//DESKTOP
+@import "./Base/desktop/base";
+
+@import "./Layouts/desktop/header";
+@import "./Layouts/desktop/footer";
 
 @import "./Pages/desktop/common";
 @import "./Pages/desktop/index";
@@ -17,6 +19,7 @@
 @import "./Pages/desktop/le_chic_a_la_francaise";
 @import "./Pages/desktop/legal";
 
+//MOBILE
 @import "./Pages/mobile/common";
 @import "./Pages/mobile/index";
 @import "./Pages/mobile/la_note_enchantee";
@@ -24,8 +27,19 @@
 @import "./Pages/mobile/le_delice_des_papilles";
 @import "./Pages/mobile/le_chic_a_la_francaise";
 
+@import "./Base/mobile/base";
+
+@import "./Layouts/mobile/header";
+@import "./Layouts/mobile/footer";
+
+//TABLETTE 
 // @import "./Pages/tablette/index";
 // @import "./Pages/tablette/la_note_enchantee";
 // @import "./Pages/tablette/la_palette_du_gout";
 // @import "./Pages/tablette/le_delice_des_papilles";
 // @import "./Pages/tablette/le_chic_a_la_francaise";
+
+// @import "./Base/tablette/base";
+
+// @import "./Layouts/tablette/header";
+// @import "./Layouts/tablette/footer";

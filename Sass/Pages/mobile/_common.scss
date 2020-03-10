@@ -1,19 +1,16 @@
 /*****COMMON*****/
-/*****MOBILE*****/ 
+/*****MOBILE*****/
 /* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-
-    h1{
-        font-size: 2em;
-    }
-
+  h1 {
+    font-size: 2em;
+  }
 }
 
-/*****MOBILE*****/ 
+/*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-    
-    h1{
-        font-size: 3em;
-    }
+  h1 {
+    font-size: 3em;
+  }
 }
