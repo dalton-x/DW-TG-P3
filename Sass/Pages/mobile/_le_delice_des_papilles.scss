@@ -1,0 +1,64 @@
+/*****LE DELICE DES PAPILLES*****/
+/*****MOBILE*****/ 
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .delice_papilles{
+    font-size: 1.5em;
+  }
+  
+  .titre_papilles{
+    font-size: 0.2em;
+  }
+
+  /* Placement des images du menu */
+  img.delice.right{
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: -23%;
+  }
+  img.delice.left{
+    width: 100%;
+    margin-left: -15%;
+    margin-bottom: -20%;
+  } 
+
+  /* Soulignement */
+  .titre_papilles:after{
+    height: 2px;
+  }
+
+  /* alignement */
+  .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles{
+    font-size: 2.5em;
+  }
+
+  .prix_papilles, .plat_prix_papilles, .dessert_prix_papilles{
+    font-size: 0.5em;
+    margin-top: 1%;
+  }
+
+  .plat_papilles, .dessert_papilles, .entree_papilles{
+    font-size: 0.6em;
+    margin-left: 10%;
+    padding-right: 10%;
+  }
+
+  .prix_papilles{
+    line-height: 200%;
+  }
+
+  .plat_prix_papilles{
+    line-height: 280%;
+  }
+
+  .dessert_prix_papilles{
+    line-height: 160%; 
+  }
+}
+/*****MOBILE*****/ 
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  
+
+}

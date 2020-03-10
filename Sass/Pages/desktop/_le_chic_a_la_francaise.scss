@@ -1,0 +1,90 @@
+/*******    LE CHIC A LA FRANCAISE    ******/
+/* alignement */
+.chic_francaise{
+  margin-bottom: 5%;
+}
+
+.background_chic{
+  background-color: $white; 
+}
+
+.entree_titre_chic, .plat_titre_chic, .dessert_titre_chic{
+  font-family: 'TYPO_COMICS';
+  font-size: 2.5em;
+}
+
+.entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic{
+  font-family: 'Caricaturista';
+  font-size: 1.5em;
+}
+
+.entree_chic, .entree_prix_chic{
+  color: $purple-clear;
+}
+.plat_chic, .plat_prix_chic{
+  color: $dark-pink;
+} 
+.dessert_chic, .dessert_prix_chic, .dessert_chic{
+  color: $dark-purple;
+}
+
+.chic_francaise, .nom_fin_chic{
+  font-family: 'CroissantOne-Regular';
+  font-size: 4em;
+  background: -webkit-linear-gradient(0deg, #E38913, #8F5BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Placement des images du menu */
+img.chic.right{
+  margin-top: 5%;
+  margin-left: 45%; 
+}
+img.chic.left{
+  margin-top: 5%;
+  margin-left: -15%; 
+}
+  
+/* creation du souligné auto */
+.entree_titre .titre_chic{
+  color: #C67412; 
+}
+.plat_titre .titre_chic{
+  color: #A56799;
+}
+.dessert_titre .titre_chic{
+  color: #6E4CCC;
+}
+.entree_titre .titre_chic:after{
+  background: #C67412;
+}
+.plat_titre .titre_chic:after{
+  background: #A56799;
+}
+.dessert_titre .titre_chic:after{
+  background: #6E4CCC;
+}
+.titre_chic{
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+.titre_chic:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  transition: width 2s ease-in-out;
+}
+.titre_chic:hover:after{
+  width: 100%;
+}

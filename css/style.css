@@ -357,20 +357,6 @@ h1 {
   text-align: center;
 }
 
-/*****MOBILE*****/
-/* Portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  h1 {
-    font-size: 3em;
-  }
-}
 .menu_soon {
   background-color: #579C87;
   color: #FDCB46;
@@ -429,31 +415,6 @@ h1 {
     background-color: #fdcc4634;
   }
 }
-/*****MOBILE*****/
-/* Portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .menu_soon {
-    font-size: 1.5em;
-  }
-
-  .dot {
-    width: 5px;
-    height: 5px;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  .menu_soon {
-    font-size: 3em;
-  }
-
-  .dot {
-    width: 7px;
-    height: 7px;
-  }
-}
-/*****TABLETTE***/
 /*******    LA NOTE ENCHANTEE    ******/
 .background_note {
   background-color: #FCDFDB;
@@ -550,65 +511,6 @@ h1 {
   -ms-text-fill-color: transparent;
 }
 
-/*****MOBILE*****/
-/* Portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .note_enchantee {
-    font-size: 1.8em;
-  }
-
-  .prix_note, .plat_prix_note, .dessert_prix_note {
-    font-size: 1.35em;
-  }
-
-  .plat_note, .dessert_prix, .entree_note, .dessert_note {
-    font-size: 0.8em;
-  }
-
-  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
-    margin-top: 5%;
-    font-size: 1.5em;
-  }
-
-  .plat_titre_note {
-    margin-top: 9%;
-    font-size: 1em;
-  }
-
-  .dessert_titre_note {
-    margin-top: 11%;
-    font-size: 0.8em;
-  }
-
-  /* Mise en forme des barre de decoration des titres du menu */
-  .barre_note {
-    height: 4px;
-  }
-
-  .titre_note:after {
-    height: 4px;
-  }
-
-  /* alignement et mise en forme */
-  .note .fa {
-    font-size: 4em;
-  }
-
-  .fa {
-    font-size: 1em;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  .prix_note, .plat_prix_note, .dessert_prix_note {
-    font-size: 1.15em;
-  }
-
-  .plat_note {
-    line-height: 1.3em;
-  }
-}
 /*******    LA PALETTE DU GOUT    ******/
 /* Modification de GridCSS */
 .entree_gout, .plat_gout, .dessert_gout {
@@ -692,133 +594,6 @@ h1 {
   width: 100%;
 }
 
-/*****MOBILE*****/
-/* Portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .palette_gout, .nom_fin_gout {
-    font-size: 1.5em;
-  }
-
-  /* Mise en forme des barre de decoration des titres du menu */
-  .barre_gout.right {
-    margin-left: 25%;
-    width: 20%;
-  }
-
-  .barre_gout.left {
-    margin-left: 10%;
-    width: 20%;
-  }
-
-  .barre_gout {
-    margin-top: 10%;
-    width: 20%;
-  }
-
-  img.palette {
-    width: 350%;
-  }
-
-  .entree_titre_gout {
-    margin-top: -5%;
-    font-size: 2.3em;
-  }
-
-  .plat_titre_gout {
-    font-size: 1.7em;
-  }
-
-  .dessert_titre_gout {
-    margin-top: 7%;
-    font-size: 1em;
-  }
-
-  .titre_gout:after {
-    height: 4px;
-  }
-
-  .entree_gout, .plat_gout, .dessert_gout {
-    font-size: 1em;
-  }
-
-  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
-    font-size: 1em;
-  }
-
-  .prix_gout {
-    line-height: 3.5em;
-  }
-
-  .plat_prix_gout {
-    line-height: 4em;
-  }
-
-  .dessert_prix_gout {
-    line-height: 3.3em;
-  }
-}
-/*****MOBILE*****/
-/* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-  .palette_gout, .nom_fin_gout {
-    font-size: 1.5em;
-  }
-
-  /* Mise en forme des barre de decoration des titres du menu */
-  .barre_gout.right {
-    margin-left: 25%;
-    width: 20%;
-  }
-
-  .barre_gout.left {
-    margin-left: 10%;
-    width: 20%;
-  }
-
-  .barre_gout {
-    margin-top: 10%;
-    width: 20%;
-  }
-
-  img.palette {
-    width: 350%;
-  }
-
-  .entree_titre_gout {
-    margin-top: 1%;
-    font-size: 2.3em;
-  }
-
-  .plat_titre_gout {
-    margin-top: 2%;
-    font-size: 2em;
-  }
-
-  .dessert_titre_gout {
-    margin-top: 2%;
-    font-size: 2em;
-  }
-
-  .entree_gout, .plat_gout, .dessert_gout {
-    font-size: 1em;
-  }
-
-  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
-    font-size: 1em;
-  }
-
-  .prix_gout {
-    line-height: 2em;
-  }
-
-  .plat_prix_gout {
-    line-height: 2.8em;
-  }
-
-  .dessert_prix_gout {
-    line-height: 2.2em;
-  }
-}
 /*******    LE DELICE DES PAPILLES    ******/
 /* alignement */
 .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
@@ -948,6 +723,17 @@ h1 {
   -ms-text-fill-color: transparent;
 }
 
+/* Placement des images du menu */
+img.chic.right {
+  margin-top: 5%;
+  margin-left: 45%;
+}
+
+img.chic.left {
+  margin-top: 5%;
+  margin-left: -15%;
+}
+
 /* creation du souligné auto */
 .entree_titre .titre_chic {
   color: #C67412;
@@ -995,6 +781,304 @@ h1 {
   width: 100%;
 }
 
+/* Mise en page pour les mentions legales*/
+h1.legal {
+  text-align: center;
+}
+
+p.legal_text {
+  text-align: justify;
+}
+
+/*****COMMON*****/
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+/******INDEX*****/
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .menu_soon {
+    font-size: 1.5em;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .menu_soon {
+    font-size: 3em;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+}
+/*****NOTE ENCHANTEE*****/
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .note_enchantee {
+    font-size: 1.8em;
+  }
+
+  .prix_note, .plat_prix_note, .dessert_prix_note {
+    font-size: 1.35em;
+  }
+
+  .plat_note, .dessert_prix, .entree_note, .dessert_note {
+    font-size: 0.8em;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    margin-top: 5%;
+    font-size: 1.5em;
+  }
+
+  .plat_titre_note {
+    margin-top: 9%;
+    font-size: 1em;
+  }
+
+  .dessert_titre_note {
+    margin-top: 11%;
+    font-size: 0.8em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_note {
+    height: 4px;
+  }
+
+  .titre_note:after {
+    height: 4px;
+  }
+
+  /* alignement et mise en forme */
+  .note .fa {
+    font-size: 4em;
+  }
+
+  .fa {
+    font-size: 1em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .prix_note, .plat_prix_note, .dessert_prix_note {
+    font-size: 1.15em;
+  }
+
+  .plat_note {
+    line-height: 1.3em;
+  }
+}
+/*****LA PALLETTE DU GOUT*****/
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .palette_gout, .nom_fin_gout {
+    font-size: 1.5em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_gout.right {
+    margin-left: 25%;
+    width: 20%;
+  }
+
+  .barre_gout.left {
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  .barre_gout {
+    margin-top: 10%;
+    width: 20%;
+  }
+
+  img.palette {
+    width: 350%;
+  }
+
+  .entree_titre_gout {
+    margin-top: -5%;
+    font-size: 2.3em;
+  }
+
+  .plat_titre_gout {
+    font-size: 1.7em;
+  }
+
+  .dessert_titre_gout {
+    margin-top: 7%;
+    font-size: 1em;
+  }
+
+  .titre_gout:after {
+    height: 4px;
+  }
+
+  .entree_gout, .plat_gout, .dessert_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout {
+    line-height: 3.5em;
+  }
+
+  .plat_prix_gout {
+    line-height: 4em;
+  }
+
+  .dessert_prix_gout {
+    line-height: 3.3em;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .palette_gout, .nom_fin_gout {
+    font-size: 1.5em;
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_gout.right {
+    margin-left: 25%;
+    width: 20%;
+  }
+
+  .barre_gout.left {
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  .barre_gout {
+    margin-top: 10%;
+    width: 20%;
+  }
+
+  img.palette {
+    width: 350%;
+  }
+
+  .entree_titre_gout {
+    margin-top: 1%;
+    font-size: 2.3em;
+  }
+
+  .plat_titre_gout {
+    margin-top: 2%;
+    font-size: 2em;
+  }
+
+  .dessert_titre_gout {
+    margin-top: 2%;
+    font-size: 2em;
+  }
+
+  .entree_gout, .plat_gout, .dessert_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    font-size: 1em;
+  }
+
+  .prix_gout {
+    line-height: 2em;
+  }
+
+  .plat_prix_gout {
+    line-height: 2.8em;
+  }
+
+  .dessert_prix_gout {
+    line-height: 2.2em;
+  }
+}
+/*****LE DELICE DES PAPILLES*****/
+/*****MOBILE*****/
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .delice_papilles {
+    font-size: 1.5em;
+  }
+
+  .titre_papilles {
+    font-size: 0.2em;
+  }
+
+  /* Placement des images du menu */
+  img.delice.right {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: -23%;
+  }
+
+  img.delice.left {
+    width: 100%;
+    margin-left: -15%;
+    margin-bottom: -20%;
+  }
+
+  /* Soulignement */
+  .titre_papilles:after {
+    height: 2px;
+  }
+
+  /* alignement */
+  .entree_titre_papilles, .plat_titre_papilles, .dessert_titre_papilles {
+    font-size: 2.5em;
+  }
+
+  .prix_papilles, .plat_prix_papilles, .dessert_prix_papilles {
+    font-size: 0.5em;
+    margin-top: 1%;
+  }
+
+  .plat_papilles, .dessert_papilles, .entree_papilles {
+    font-size: 0.6em;
+    margin-left: 10%;
+    padding-right: 10%;
+  }
+
+  .prix_papilles {
+    line-height: 200%;
+  }
+
+  .plat_prix_papilles {
+    line-height: 280%;
+  }
+
+  .dessert_prix_papilles {
+    line-height: 160%;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+/*****LE CHIC A LA FRANCAISE*****/
 /*****MOBILE*****/
 /* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -1010,16 +1094,42 @@ h1 {
     margin-top: 15%;
   }
 
-  img.chic {
-    width: 270%;
-  }
-
   .barre_chic.right {
     margin-left: 50%;
   }
 
   .barre_chic.left {
     margin-left: 50%;
+  }
+
+  /* Placement des images du menu */
+  img.chic.right {
+    width: 200%;
+    margin-left: -60%;
+    margin-bottom: 15%;
+  }
+
+  img.chic.left {
+    width: 135%;
+    margin-left: -90%;
+    margin-bottom: 10%;
+  }
+
+  /* Soulignement */
+  .titre_chic:after {
+    height: 3px;
+  }
+
+  .plat_chic, .dessert_chic, .entree_chic, .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic {
+    font-size: 0.6em;
+  }
+
+  .entree_prix_chic {
+    line-height: 150%;
+  }
+
+  .plat_prix_chic, .dessert_prix_chic {
+    line-height: 250%;
   }
 }
 /*****MOBILE*****/

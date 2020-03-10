@@ -1,0 +1,28 @@
+/******INDEX*****/
+/*****MOBILE*****/ 
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .menu_soon{
+        font-size: 1.5em;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
+}
+/*****MOBILE*****/ 
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+    
+    .menu_soon{
+        font-size: 3em;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}

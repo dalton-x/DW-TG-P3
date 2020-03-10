@@ -1,0 +1,60 @@
+/*****NOTE ENCHANTEE*****/
+/*****MOBILE*****/ 
+/* Portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .note_enchantee{
+        font-size: 1.8em;
+    }
+      
+    .prix_note, .plat_prix_note, .dessert_prix_note{
+        font-size: 1.35em;
+    }
+      
+    .plat_note, .dessert_prix, .entree_note, .dessert_note{
+        font-size: 0.8em;
+    }
+      
+    .entree_titre_note, .plat_titre_note, .dessert_titre_note{
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    .plat_titre_note{
+        margin-top: 9%;
+        font-size: 1em;
+    }
+    .dessert_titre_note{
+        margin-top: 11%;
+        font-size: 0.8em;
+    }
+      
+    /* Mise en forme des barre de decoration des titres du menu */
+    .barre_note{
+        height: 4px;
+    }
+    .titre_note:after{
+        height: 4px;
+    }
+      
+    /* alignement et mise en forme */
+    .note .fa{
+        font-size: 4em;
+    }
+      
+    .fa{
+        font-size: 1em;
+    }
+
+}
+/*****MOBILE*****/ 
+/* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {     
+    
+    .prix_note, .plat_prix_note, .dessert_prix_note{
+        font-size: 1.15em; 
+    }
+
+    .plat_note{
+        line-height: 1.3em; 
+    }
+}

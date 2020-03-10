@@ -9,9 +9,23 @@
 @import "./Layouts/header";
 @import "./Layouts/footer";
 
-@import "./Pages/common";
-@import "./Pages/index";
-@import "./Pages/la_note_enchantee";
-@import "./Pages/la_palette_du_gout";
-@import "./Pages/le_delice_des_papilles";
-@import "./Pages/le_chic_a_la_francaise";
+@import "./Pages/desktop/common";
+@import "./Pages/desktop/index";
+@import "./Pages/desktop/la_note_enchantee";
+@import "./Pages/desktop/la_palette_du_gout";
+@import "./Pages/desktop/le_delice_des_papilles";
+@import "./Pages/desktop/le_chic_a_la_francaise";
+@import "./Pages/desktop/legal";
+
+@import "./Pages/mobile/common";
+@import "./Pages/mobile/index";
+@import "./Pages/mobile/la_note_enchantee";
+@import "./Pages/mobile/la_palette_du_gout";
+@import "./Pages/mobile/le_delice_des_papilles";
+@import "./Pages/mobile/le_chic_a_la_francaise";
+
+// @import "./Pages/tablette/index";
+// @import "./Pages/tablette/la_note_enchantee";
+// @import "./Pages/tablette/la_palette_du_gout";
+// @import "./Pages/tablette/le_delice_des_papilles";
+// @import "./Pages/tablette/le_chic_a_la_francaise";

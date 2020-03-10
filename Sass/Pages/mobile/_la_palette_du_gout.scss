@@ -1,92 +1,11 @@
-/*******    LA PALETTE DU GOUT    ******/
-/* Modification de GridCSS */
-.entree_gout, .plat_gout, .dessert_gout{
-    grid-column: 1/5;
-    margin-left: 15%;
-}
-  
-.entree_titre_gout, .plat_titre_gout, .dessert_titre_gout{
-    font-family: 'TYPO_COMICS';
-    font-size: 5em;
-}
-  
-.prix_gout, .plat_prix_gout, .dessert_prix_gout{
-    font-family: 'Caricaturista';
-    color: $black;
-    font-size: 1.8em;
-    margin-right: 25%;
-    line-height: 1.4em;
-}
-  
-.plat_gout, .dessert_gout, .entree_gout{
-    font-family: 'Caricaturista';
-    color: $black;
-    font-size: 1.7em;
-    line-height: 1.5em;
-}
-  
-.palette_gout, .nom_fin_gout{
-    font-family: 'KaushanScript-Regular';
-    font-size: 5em;
-    background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
-}
-  
-/* Mise en forme des barre de decoration des titres du menu */
-.barre_gout.right{
-    margin-left: 25%;
-}
-  
-.barre_gout.left{
-    margin-left: 10%;
-}
-  
-.barre_gout{
-    margin-top: 10%;
-}
-  
-/* creation du souligné auto */
-.titre_gout{
-    color: $black;
-}
-.titre_gout:after{
-    background: -webkit-linear-gradient(0deg, #B6F87A, #41963C,#B6F87A);
-}
-  
-.titre_gout{
-    position: relative;
-    text-decoration: none;
-    font-size: 0.6em;
-    padding: 10px 0;
-}
-  
-.titre_gout:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 8px;
-    border-radius: 35%;
-    transition: width 2s ease-in-out;
-}
-.titre_gout:hover:after{
-    width: 100%;
-}
-
-
-/*****MOBILE*****/ /* Portrait */
+/*****LA PALLETTE DU GOUT*****/
+/*****MOBILE*****/ 
+/* Portrait */
 @media screen and (min-width: 375px) and (max-width: 767px) {
   
     .palette_gout, .nom_fin_gout{
         font-size: 1.5em;
     }
-
     /* Mise en forme des barre de decoration des titres du menu */
     .barre_gout.right{
         margin-left: 25%;
@@ -140,12 +59,9 @@
         line-height: 3.3em;
     }
 }
-
-
-/*****MOBILE*****/ /* paysage */
+/*****MOBILE*****/ 
+/* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
-    
-      
     
     .palette_gout, .nom_fin_gout{
         font-size: 1.5em;
