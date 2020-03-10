@@ -37,7 +37,7 @@
 .nom_fin_gout {
   font-family: "KaushanScript-Regular";
   font-size: 5em;
-  background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
+  background: -webkit-linear-gradient(0deg, $dark-green, $yellow-sky);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -64,7 +64,7 @@
   color: $black;
 }
 .titre_gout:after {
-  background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+  background: -webkit-linear-gradient(0deg, $green-light, $sky-green, $green-light);
 }
 
 .titre_gout {

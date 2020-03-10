@@ -64,22 +64,22 @@ img.chic.left {
 
 /* creation du souligné auto */
 .entree_titre .titre_chic {
-  color: #c67412;
+  color: $dark-orange;
 }
 .plat_titre .titre_chic {
-  color: #a56799;
+  color: $violet;
 }
 .dessert_titre .titre_chic {
-  color: #6e4ccc;
+  color: $dark-violet;
 }
 .entree_titre .titre_chic:after {
-  background: #c67412;
+  background: $dark-orange;
 }
 .plat_titre .titre_chic:after {
-  background: #a56799;
+  background: $violet;
 }
 .dessert_titre .titre_chic:after {
-  background: #6e4ccc;
+  background: $dark-violet;
 }
 .titre_chic {
   position: relative;
