@@ -66,25 +66,7 @@
 .titre_papilles {
   color: $black;
 }
-.titre_papilles:after {
-  background: -webkit-linear-gradient(0deg, $blue, $sky-blue, $blue);
-}
 .titre_papilles {
-  position: relative;
-  text-decoration: none;
+  @include soulignementDouble($blue, $sky-blue);
   font-size: 0.6em;
-  padding: 10px 0;
-}
-.titre_papilles:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  transition: width 2s ease-in-out;
-}
-.titre_papilles:hover:after {
-  width: 100%;
 }

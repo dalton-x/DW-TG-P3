@@ -1,0 +1,40 @@
+@mixin soulignement($color) {
+    position: relative;
+    text-decoration: none;
+    color: $color;
+    padding: 10px 0;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 8px;
+        border-radius: 35%;
+        background: $color;
+        transition: width 2s ease-in-out;
+      }
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+@mixin soulignementDouble($color1,$color2) {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 8px;
+        border-radius: 35%;
+        background: -webkit-linear-gradient(0deg, $color1, $color2, $color1);
+        transition: width 2s ease-in-out;
+      }
+    &:hover:after {
+        width: 100%;
+    }
+}

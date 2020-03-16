@@ -33,13 +33,14 @@
 @import "./Layouts/mobile/footer";
 
 //TABLETTE 
-// @import "./Pages/tablette/index";
-// @import "./Pages/tablette/la_note_enchantee";
-// @import "./Pages/tablette/la_palette_du_gout";
-// @import "./Pages/tablette/le_delice_des_papilles";
-// @import "./Pages/tablette/le_chic_a_la_francaise";
+@import "./Pages/mobile/common";
+@import "./Pages/tablette/index";
+@import "./Pages/tablette/la_note_enchantee";
+@import "./Pages/tablette/la_palette_du_gout";
+@import "./Pages/tablette/le_delice_des_papilles";
+@import "./Pages/tablette/le_chic_a_la_francaise";
 
-// @import "./Base/tablette/base";
+@import "./Base/tablette/base";
 
-// @import "./Layouts/tablette/header";
-// @import "./Layouts/tablette/footer";
+@import "./Layouts/tablette/header";
+@import "./Layouts/tablette/footer";

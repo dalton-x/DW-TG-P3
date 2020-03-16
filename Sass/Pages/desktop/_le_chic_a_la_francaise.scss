@@ -81,22 +81,7 @@ img.chic.left {
 .dessert_titre .titre_chic:after {
   background: $dark-violet;
 }
+
 .titre_chic {
-  position: relative;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px 0;
-}
-.titre_chic:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  transition: width 2s ease-in-out;
-}
-.titre_chic:hover:after {
-  width: 100%;
+  @include soulignement($invisible);
 }

@@ -57,25 +57,8 @@
 }
 
 /* creation du souligné auto */
-.titre_note {
-  position: relative;
-  text-decoration: none;
-  color: $burgundy;
-  padding: 10px 0;
-}
-.titre_note:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  background: $burgundy;
-  transition: width 2s ease-in-out;
-}
-.titre_note:hover:after {
-  width: 100%;
+.titre_note {  
+  @include soulignement($burgundy);
 }
 
 /* alignement et mise en forme */

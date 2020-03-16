@@ -63,27 +63,8 @@
 .titre_gout {
   color: $black;
 }
-.titre_gout:after {
-  background: -webkit-linear-gradient(0deg, $green-light, $sky-green, $green-light);
-}
 
 .titre_gout {
-  position: relative;
-  text-decoration: none;
+  @include soulignementDouble($green-light, $sky-green);
   font-size: 0.6em;
-  padding: 10px 0;
-}
-
-.titre_gout:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  transition: width 2s ease-in-out;
-}
-.titre_gout:hover:after {
-  width: 100%;
 }
