@@ -10,16 +10,13 @@
 .entree_titre_gout,
 .plat_titre_gout,
 .dessert_titre_gout {
-  font-family: "TYPO_COMICS";
-  font-size: 5em;
+  @include setfont ('TYPO_COMICS',$invisible,5em);
 }
 
 .prix_gout,
 .plat_prix_gout,
 .dessert_prix_gout {
-  font-family: "Caricaturista";
-  color: $black;
-  font-size: 1.8em;
+  @include setfont ('Caricaturista',$black,1.8em);
   margin-right: 25%;
   line-height: 1.4em;
 }
@@ -27,23 +24,13 @@
 .plat_gout,
 .dessert_gout,
 .entree_gout {
-  font-family: "Caricaturista";
-  color: $black;
-  font-size: 1.7em;
+  @include setfont ('Caricaturista',$black,1.7em);
   line-height: 1.5em;
 }
 
 .palette_gout,
 .nom_fin_gout {
-  font-family: "KaushanScript-Regular";
-  font-size: 5em;
-  background: -webkit-linear-gradient(0deg, $dark-green, $yellow-sky);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
+  @include gradient( 'KaushanScript-Regular',5em,$dark-green,$yellow-sky);
 }
 
 /* Mise en forme des barre de decoration des titres du menu */

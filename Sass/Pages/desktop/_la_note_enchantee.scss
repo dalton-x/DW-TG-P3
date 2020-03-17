@@ -5,38 +5,22 @@
 
 .prix_note,
 .plat_prix_note,
-.dessert_prix_note {
-  font-family: "Caricaturista";
-  color: $burgundy;
-  font-size: 1.5em;
-}
-
+.dessert_prix_note,
 .plat_note,
 .dessert_prix,
-.entree_note {
-  font-family: "Caricaturista";
-  color: $burgundy;
-  font-size: 1.5em;
+.entree_note,
+.dessert_note {
+  @include setfont ('Caricaturista',$burgundy,1.5em);
 }
 
 .entree_titre_note,
 .plat_titre_note,
 .dessert_titre_note {
-  font-family: "TYPO_COMICS";
-  font-size: 2.5em;
-  color: $burgundy;
-}
-
-.dessert_note {
-  font-family: "Caricaturista";
-  color: $burgundy;
-  font-size: 1.5em;
+  @include setfont ('TYPO_COMICS',$burgundy,2.5em);
 }
 
 .note_enchantee {
-  font-family: "Devonshire-Regular";
-  font-size: 5em;
-  color: $burgundy;
+  @include setfont ('Devonshire-Regular',$burgundy,5em);
   margin-top: -5%;
 }
 
@@ -67,15 +51,8 @@
 }
 
 .fa {
-  font-size: 1em;
+  @include gradient ("Font Awesome 5 Free",1em,$pink,$orange);
   padding-top: 5%;
   padding-right: 5%;
   color: $purple;
-  background: -webkit-linear-gradient(0deg, $pink, $orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
 }

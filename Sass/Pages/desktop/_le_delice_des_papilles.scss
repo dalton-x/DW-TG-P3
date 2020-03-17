@@ -3,39 +3,25 @@
 .entree_titre_papilles,
 .plat_titre_papilles,
 .dessert_titre_papilles {
-  font-family: "TYPO_COMICS";
-  font-size: 4.5em;
-  color: $black;
+  @include setfont ('TYPO_COMICS',$black,4.5em);
 }
 
 .prix_papilles,
 .plat_prix_papilles,
 .dessert_papilles {
-  font-family: "Caricaturista";
-  color: $black;
-  font-size: 1.5em;
+  @include setfont ('Caricaturista',$black,1.5em);
   margin-top: 1%;
 }
 
 .plat_papilles,
 .dessert_prix_papilles,
 .entree_papilles {
-  font-family: "Caricaturista";
-  color: $black;
-  font-size: 1.6em;
+  @include setfont ('Caricaturista',$black,1.6em);
 }
 
 .delice_papilles,
 .nom_fin_papilles {
-  font-family: "DancingScript-Regular";
-  font-size: 6em;
-  background: -webkit-linear-gradient(0deg, $blue, $blue-clear);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
+  @include gradient( 'DancingScript-Regular',6em,$blue,$blue-clear);
 }
 
 /* Alignements des <img> */

@@ -38,3 +38,40 @@
         width: 100%;
     }
 }
+
+@mixin wiggle {
+    cursor: default;
+    &:hover{
+        display: inline-block;
+        transform-origin: center;
+        animation: wiggle-anim 0.52s cubic-bezier(1,.28,0,.97) infinite;
+    }
+
+    @keyframes wiggle-anim {
+        10%, 90%, 40%, 60% {
+            transform: translate3d(4px, 0,0);
+          }
+          20%, 80%, 30%, 50%, 70% {
+            transform: translate3d(-4px, 0,0);
+          }
+    }
+    
+}
+
+@mixin gradient ($font,$fontSize,$color1,$color2) {
+    font-family: $font;
+    font-size: $fontSize;
+    background: -webkit-linear-gradient(0deg, $color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+}
+
+@mixin setfont ($font,$color,$fontSize) {
+    font-family: $font;
+    color: $color;
+    font-size: $fontSize;
+}

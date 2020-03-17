@@ -234,13 +234,14 @@ footer {
   float: right;
 }
 
-/* Animations du wiggle */
+.legal, .contact {
+  cursor: default;
+}
 .legal:hover, .contact:hover {
   display: inline-block;
   transform-origin: center;
   animation: wiggle-anim 0.52s cubic-bezier(1, 0.28, 0, 0.97) infinite;
 }
-
 @keyframes wiggle-anim {
   10%, 90%, 40%, 60% {
     transform: translate3d(4px, 0, 0);
@@ -249,6 +250,7 @@ footer {
     transform: translate3d(-4px, 0, 0);
   }
 }
+
 /* Mise en forme titre H1 */
 h1 {
   text-align: center;
@@ -331,15 +333,11 @@ h1 {
 
 .prix_note,
 .plat_prix_note,
-.dessert_prix_note {
-  font-family: "Caricaturista";
-  color: #3d1319;
-  font-size: 1.5em;
-}
-
+.dessert_prix_note,
 .plat_note,
 .dessert_prix,
-.entree_note {
+.entree_note,
+.dessert_note {
   font-family: "Caricaturista";
   color: #3d1319;
   font-size: 1.5em;
@@ -349,20 +347,14 @@ h1 {
 .plat_titre_note,
 .dessert_titre_note {
   font-family: "TYPO_COMICS";
+  color: #3d1319;
   font-size: 2.5em;
-  color: #3d1319;
-}
-
-.dessert_note {
-  font-family: "Caricaturista";
-  color: #3d1319;
-  font-size: 1.5em;
 }
 
 .note_enchantee {
   font-family: "Devonshire-Regular";
-  font-size: 5em;
   color: #3d1319;
+  font-size: 5em;
   margin-top: -5%;
 }
 
@@ -411,10 +403,8 @@ h1 {
 }
 
 .fa {
+  font-family: "Font Awesome 5 Free";
   font-size: 1em;
-  padding-top: 5%;
-  padding-right: 5%;
-  color: #9c47fc;
   background: -webkit-linear-gradient(0deg, #f66a6a, #e76c25);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -422,6 +412,9 @@ h1 {
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
+  padding-top: 5%;
+  padding-right: 5%;
+  color: #9c47fc;
 }
 
 /*******    LA PALETTE DU GOUT    ******/
@@ -437,6 +430,7 @@ h1 {
 .plat_titre_gout,
 .dessert_titre_gout {
   font-family: "TYPO_COMICS";
+  color: rgba(255, 255, 255, 0);
   font-size: 5em;
 }
 
@@ -517,8 +511,8 @@ h1 {
 .plat_titre_papilles,
 .dessert_titre_papilles {
   font-family: "TYPO_COMICS";
-  font-size: 4.5em;
   color: #000000;
+  font-size: 4.5em;
 }
 
 .prix_papilles,
@@ -586,7 +580,6 @@ h1 {
   text-decoration: none;
   padding: 10px 0;
   font-size: 0.6em;
-  padding: 10px 0;
 }
 .titre_papilles:after {
   content: "";
@@ -599,21 +592,6 @@ h1 {
   background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
   transition: width 2s ease-in-out;
 }
-.titre_papilles:hover:after {
-  width: 100%;
-}
-
-.titre_papilles:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  transition: width 2s ease-in-out;
-}
-
 .titre_papilles:hover:after {
   width: 100%;
 }
@@ -632,6 +610,7 @@ h1 {
 .plat_titre_chic,
 .dessert_titre_chic {
   font-family: "TYPO_COMICS";
+  color: rgba(255, 255, 255, 0);
   font-size: 2.5em;
 }
 
@@ -642,6 +621,7 @@ h1 {
 .dessert_chic,
 .entree_chic {
   font-family: "Caricaturista";
+  color: rgba(255, 255, 255, 0);
   font-size: 1.5em;
 }
 

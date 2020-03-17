@@ -11,8 +11,7 @@
 .entree_titre_chic,
 .plat_titre_chic,
 .dessert_titre_chic {
-  font-family: "TYPO_COMICS";
-  font-size: 2.5em;
+  @include setfont ('TYPO_COMICS',$invisible,2.5em);
 }
 
 .entree_prix_chic,
@@ -21,8 +20,7 @@
 .plat_chic,
 .dessert_chic,
 .entree_chic {
-  font-family: "Caricaturista";
-  font-size: 1.5em;
+  @include setfont ('Caricaturista',$invisible,1.5em);
 }
 
 .entree_chic,
@@ -41,15 +39,7 @@
 
 .chic_francaise,
 .nom_fin_chic {
-  font-family: "CroissantOne-Regular";
-  font-size: 4em;
-  background: -webkit-linear-gradient(0deg, #e38913, #8f5bfd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
+  @include gradient( 'CroissantOne-Regular',4em,$orange-gradient,$violet-gradient);
 }
 
 /* Placement des images du menu */
