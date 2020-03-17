@@ -1,0 +1,46 @@
+/* Mise en couleur du fond du footer */
+footer{
+    @include setfont ('P22Underground-Book',$yellow,3em);
+    background-color: $green;
+    position: fixed;
+    bottom: 0;left: 0;right: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.yellow{
+    text-decoration:none; 
+    color: $yellow;
+    cursor: default;
+}
+
+.legal{
+    margin-left: 2.5%;
+    text-align: left;
+}
+.contact{
+    margin-right: 2.5%;
+    float: right;
+}
+
+.legal, .contact{
+    @include wiggle
+}
+
+/* FOOTER */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    footer{
+        @include setfont ('P22Underground-Book',$yellow,1.5em);
+    }
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+    footer{
+        @include setfont ('P22Underground-Book',$yellow,2em);
+    }
+
+}

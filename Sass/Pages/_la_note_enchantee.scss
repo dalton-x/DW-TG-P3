@@ -34,10 +34,10 @@
 
 /* Creation du border-radius pour les lignes */
 .barre_note.right {
-  border-radius: 2000% 300% 780% 500%;
+  border-radius: 2000% 300% 780% 500%;  //clip-path ?? ou SVG ??
 }
 .barre_note.left {
-  border-radius: 300% 2000% 500% 780%;
+  border-radius: 300% 2000% 500% 780%;  //clip-path ?? ou SVG ??
 }
 
 /* creation du souligné auto */

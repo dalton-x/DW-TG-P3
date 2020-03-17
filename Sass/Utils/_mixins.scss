@@ -1,7 +1,10 @@
 @mixin soulignement($color) {
     position: relative;
     text-decoration: none;
-    color: $color;
+    @if($color == ''){}
+    @else{
+        color: $color;
+    }
     padding: 10px 0;
     &:after{
         content: "";
@@ -51,9 +54,9 @@
         10%, 90%, 40%, 60% {
             transform: translate3d(4px, 0,0);
           }
-          20%, 80%, 30%, 50%, 70% {
-            transform: translate3d(-4px, 0,0);
-          }
+        20%, 80%, 30%, 50%, 70% {
+        transform: translate3d(-4px, 0,0);
+        }
     }
     
 }
@@ -72,6 +75,10 @@
 
 @mixin setfont ($font,$color,$fontSize) {
     font-family: $font;
-    color: $color;
+    @if ($color == ''){
+    }
+    @else{
+        color:$color;
+    }
     font-size: $fontSize;
 }

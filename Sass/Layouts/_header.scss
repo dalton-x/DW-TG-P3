@@ -1,0 +1,29 @@
+header{
+    @include setfont ('P22Underground-Book',$yellow,6.5em);
+    background-color: $green;
+    cursor: default;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    letter-spacing: -13px;
+    text-align: center;
+    margin: -8px -8px -8px;
+}
+
+/* HEADER */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    header{
+        @include setfont ('P22Underground-Book',$yellow,4.5em);
+        letter-spacing: -8px;
+    }
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+    header{
+        @include setfont ('P22Underground-Book',$yellow,6em);
+        letter-spacing: -11px;
+    }
+}

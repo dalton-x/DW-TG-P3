@@ -45,8 +45,8 @@ header,footer,main,img{
     box-shadow: $box-shadow;
 }
 
-.note, .note_enchantee, .nom_fin, .nom_restaurant{
-    grid-column:1/6;
+.note, .note_enchantee, .nom_fin, .nom_restaurant, .dessert_no_prix{
+    grid-column: 1/6;
 }
 
 .entree_titre, .plat_titre, .dessert_titre{
@@ -67,13 +67,7 @@ header,footer,main,img{
     margin-right: 20%;
 }
 
-.dessert_no_prix{
-    grid-column: 1/6;
-    margin: 0% 8%;
-}
-
-.dessert_gout{
-    grid-column: 1/4;
+.dessert_no_prix, .dessert_gout{
     margin: 0% 8%;
 }
 
@@ -98,7 +92,7 @@ header,footer,main,img{
     grid-row: 5;
 }
 
-.entree, .plat, .dessert{
+.entree, .plat, .dessert, .dessert_gout{
     grid-column: 1/4;
     margin-left: 13.5%;
 }
@@ -109,7 +103,7 @@ header,footer,main,img{
 }
 
 /* Placement sur la ligne 8 */
-.plat, .plat_prix{
+.plat, .plat_prix, .menu_soon{
     grid-row: 8;
 }
 
@@ -129,7 +123,55 @@ header,footer,main,img{
 }
 
 .menu_soon{
-  grid-column: 5/12;
-  grid-row: 8;
+    grid-column: 5/12;
 }
 /* Fin organisation de GridCSS */
+
+/* BASE */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .menu_note,.menu_delice,.menu_chic,.menu_palette{
+        grid-column: 2/15;
+    }
+
+    .menu_note{
+        grid-row: 2/4;
+    }
+    .menu_chic {
+        grid-row: 5/9;
+    }
+    .menu_delice{
+        grid-row: 10/12;
+    }
+    .menu_palette{
+        grid-row: 13/15;
+    }
+
+    .menu_soon{
+        grid-column: 4/13;
+        grid-row: 16;
+    }
+}
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+        
+    .menu_note, .menu_delice{
+        grid-column: 3/8;
+    }
+    .menu_note, .menu_chic {
+        grid-row: 2/4;
+    }
+    .menu_chic, .menu_palette{
+        grid-column: 9/14;
+    }
+    .menu_delice,.menu_palette{
+        grid-row: 5/6;
+    }
+
+    .menu_soon{
+        grid-column: 4/13;
+        grid-row: 7;
+    }
+}
