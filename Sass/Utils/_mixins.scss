@@ -1,10 +1,7 @@
-@mixin soulignement($color) {
+@mixin soulignement($color: color($color)) {
     position: relative;
     text-decoration: none;
-    @if($color == ''){}
-    @else{
-        color: $color;
-    }
+    color: $color;
     padding: 10px 0;
     &:after{
         content: "";
@@ -73,12 +70,8 @@
     -ms-text-fill-color: transparent;
 }
 
-@mixin setfont ($font,$color,$fontSize) {
+@mixin setfont ($font,$color: color($color),$fontSize) {
     font-family: $font;
-    @if ($color == ''){
-    }
-    @else{
-        color:$color;
-    }
+    color:$color;
     font-size: $fontSize;
 }

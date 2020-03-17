@@ -546,6 +546,7 @@ h1 {
 .plat_titre_gout,
 .dessert_titre_gout {
   font-family: "TYPO_COMICS";
+  color: "";
   font-size: 5em;
 }
 
@@ -725,6 +726,7 @@ h1 {
 .plat_titre_chic,
 .dessert_titre_chic {
   font-family: "TYPO_COMICS";
+  color: "";
   font-size: 2.5em;
 }
 
@@ -735,6 +737,7 @@ h1 {
 .dessert_chic,
 .entree_chic {
   font-family: "Caricaturista";
+  color: "";
   font-size: 1.5em;
 }
 
@@ -806,6 +809,7 @@ img.chic.left {
 .titre_chic {
   position: relative;
   text-decoration: none;
+  color: "";
   padding: 10px 0;
 }
 .titre_chic:after {
