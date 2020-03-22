@@ -56,3 +56,87 @@
   padding-right: 5%;
   color: $purple;
 }
+
+/* Note */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .note_titre_h2{
+    font-size: 0.5em;
+  }
+
+  .prix_note,
+  .plat_prix_note,
+  .dessert_prix_note,
+  .plat_note,
+  .dessert_prix,
+  .entree_note,
+  .dessert_note {
+    font-size: 0.6em;
+  }
+
+  .prix_note_entree{
+    line-height: 24.5px;
+  }
+  .prix_note_plat{
+    line-height: 20px;
+  }
+
+  .entree_titre_note,
+  .plat_titre_note,
+  .dessert_titre_note {
+    font-size: 1.2em;
+  }
+
+
+  /* creation du souligné auto */
+  .titre_note {  
+    padding-top: 15%;
+    @include soulignement(5px,20px 0px,$burgundy);
+  }
+
+  /* Mise en forme des barre de decoration des titres du menu */
+  .barre_note {
+    width: 35%;
+    height: 5px;
+    margin-top: 10px;
+    background: $burgundy;
+  }
+
+  /* Creation du border-radius pour les lignes */
+  .barre_note.right {
+    border-radius: 2000% 300% 780% 500%;  //clip-path ?? ou SVG ??
+  }
+  .barre_note.left {
+    border-radius: 300% 2000% 500% 780%;  //clip-path ?? ou SVG ??
+  }
+
+  .nom_fin.note_enchantee .fa{
+    font-size: 1.2em;
+  }
+
+  /* alignement et mise en forme */
+  .note .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.note_enchantee .fa {
+    font-size:  0.4em;
+  }
+
+  h2.note_note_enchantee{
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+  h2.note_note_enchantee{
+    font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
+  }
+}
