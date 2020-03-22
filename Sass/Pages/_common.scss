@@ -1,6 +1,6 @@
 /* Mise en forme titre H1 */
 h1 {
-  @include setfont ('HindKochi-Regular',$black,5em);
+  @include setfont ('HindKochi-Regular',5em,$black);
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
   h1 {
-    @include setfont ('HindKochi-Regular',$black,1.5em);
+    @include setfont ('HindKochi-Regular',1.5em,$black);
   }
 }
 
@@ -27,6 +27,6 @@ h1 {
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   h1 {
-    @include setfont ('HindKochi-Regular',$black,2em);
+    @include setfont ('HindKochi-Regular',2em,$black);
   }
 }

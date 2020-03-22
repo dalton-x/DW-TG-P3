@@ -11,7 +11,7 @@
 .entree_titre_chic,
 .plat_titre_chic,
 .dessert_titre_chic {
-  @include setfont ('TYPO_COMICS','',2.5em);
+  @include setfont ('TYPO_COMICS',2.5em);
 }
 
 .entree_prix_chic,
@@ -20,7 +20,7 @@
 .plat_chic,
 .dessert_chic,
 .entree_chic {
-  @include setfont ('Caricaturista','',1.5em);
+  @include setfont ('Caricaturista',1.5em);
 }
 
 .entree_chic,
@@ -73,5 +73,46 @@ img.chic.left {
 }
 
 .titre_chic {
-  @include soulignement('');
+  @include soulignement(8px,10px 0px);
+}
+
+/* Chic */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .chic_francaise,
+  .nom_fin_chic {
+  font-size: 0.6em;
+  }
+ 
+  img.chic.left {
+    width: 70%;
+  }
+ 
+  img.chic.right {
+    width: 70%;
+  }
+
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    padding-top: 2%;
+    font-size: 0.75em;
+  }
+
+  .titre_chic {    
+    @include soulignement(3px,10px 0px);
+    &:after{
+      margin-bottom: 10px;
+    }
+  }
+
+  .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic {
+    font-size: 0.6em;
+    padding-left: 10%;
+  }
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+  
 }

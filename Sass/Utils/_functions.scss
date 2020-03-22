@@ -1,6 +1,0 @@
-@function color($color){
-    @if($color == ''){
-    }@else{
-        @return $color;
-    }
-}

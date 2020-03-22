@@ -3,20 +3,20 @@
 .entree_titre_papilles,
 .plat_titre_papilles,
 .dessert_titre_papilles {
-  @include setfont ('TYPO_COMICS',$black,4.5em);
+  @include setfont ('TYPO_COMICS',4.5em,$black);
 }
 
 .prix_papilles,
 .plat_prix_papilles,
 .dessert_papilles {
-  @include setfont ('Caricaturista',$black,1.5em);
+  @include setfont ('Caricaturista',1.5em,$black);
   margin-top: 1%;
 }
 
 .plat_papilles,
 .dessert_prix_papilles,
 .entree_papilles {
-  @include setfont ('Caricaturista',$black,1.6em);
+  @include setfont ('Caricaturista',1.6em,$black);
 }
 
 .delice_papilles,
@@ -55,4 +55,67 @@
 .titre_papilles {
   @include soulignementDouble($blue, $sky-blue);
   font-size: 0.6em;
+}
+
+
+/* Chic */
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .delice_papilles,
+  .nom_fin_papilles {
+    @include gradient( 'DancingScript-Regular',1.2em,$blue,$blue-clear);
+  }
+
+  .entree_titre_papilles,
+  .plat_titre_papilles,
+  .dessert_titre_papilles {
+    @include setfont ('TYPO_COMICS',1.5em,$black);
+  }
+
+  .delice.left {
+    width: 70%;
+    margin-top: 8%;
+    margin-left: -20%;
+  }
+  .delice.right {
+    width: 70%;
+    margin-top: 8%;
+    margin-left: 40%;
+  }
+  .titre_papilles {
+    @include soulignementDouble($blue, $sky-blue,4px);
+    &:after{
+      margin-bottom: 10px;
+    }
+  }
+  .plat_papilles,
+  .dessert_prix_papilles,
+  .entree_papilles,
+  .dessert_papilles {
+    @include setfont ('Caricaturista',0.8em,$black);
+    margin-right: 0%;
+    margin-left: 5%;
+  }
+  .prix_papilles,
+  .plat_prix_papilles,
+  .dessert_prix_papilles {
+    @include setfont ('Caricaturista',0.8em,$black);
+    margin-right: 15px;
+  }
+  .prix_papilles{
+    line-height: 26px;
+  }
+  .plat_prix_papilles{
+    line-height: 30px;
+  }
+  .dessert_prix_papilles{
+    line-height: 15.5px;
+  }
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+  
 }
