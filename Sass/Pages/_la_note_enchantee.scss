@@ -10,17 +10,17 @@
 .dessert_prix,
 .entree_note,
 .dessert_note {
-  @include setfont ('Caricaturista',$burgundy,1.5em);
+  @include setfont ('Caricaturista',1.5em,$burgundy);
 }
 
 .entree_titre_note,
 .plat_titre_note,
 .dessert_titre_note {
-  @include setfont ('TYPO_COMICS',$burgundy,2.5em);
+  @include setfont ('TYPO_COMICS',2.5em,$burgundy);
 }
 
 .note_enchantee {
-  @include setfont ('Devonshire-Regular',$burgundy,5em);
+  @include setfont ('Devonshire-Regular',5em,$burgundy);
   margin-top: -5%;
 }
 
@@ -42,7 +42,7 @@
 
 /* creation du souligné auto */
 .titre_note {  
-  @include soulignement($burgundy);
+  @include soulignement(8px,10px 0px,$burgundy);
 }
 
 /* alignement et mise en forme */

@@ -10,13 +10,13 @@
 .entree_titre_gout,
 .plat_titre_gout,
 .dessert_titre_gout {
-  @include setfont ('TYPO_COMICS','',5em);
+  @include setfont ('TYPO_COMICS',5em);
 }
 
 .prix_gout,
 .plat_prix_gout,
 .dessert_prix_gout {
-  @include setfont ('Caricaturista',$black,1.8em);
+  @include setfont ('Caricaturista',1.8em,$black);
   margin-right: 25%;
   line-height: 1.4em;
 }
@@ -24,7 +24,7 @@
 .plat_gout,
 .dessert_gout,
 .entree_gout {
-  @include setfont ('Caricaturista',$black,1.7em);
+  @include setfont ('Caricaturista',1.7em,$black);
   line-height: 1.5em;
 }
 

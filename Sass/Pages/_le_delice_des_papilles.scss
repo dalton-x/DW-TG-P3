@@ -3,20 +3,20 @@
 .entree_titre_papilles,
 .plat_titre_papilles,
 .dessert_titre_papilles {
-  @include setfont ('TYPO_COMICS',$black,4.5em);
+  @include setfont ('TYPO_COMICS',4.5em,$black);
 }
 
 .prix_papilles,
 .plat_prix_papilles,
 .dessert_papilles {
-  @include setfont ('Caricaturista',$black,1.5em);
+  @include setfont ('Caricaturista',1.5em,$black);
   margin-top: 1%;
 }
 
 .plat_papilles,
 .dessert_prix_papilles,
 .entree_papilles {
-  @include setfont ('Caricaturista',$black,1.6em);
+  @include setfont ('Caricaturista',1.6em,$black);
 }
 
 .delice_papilles,

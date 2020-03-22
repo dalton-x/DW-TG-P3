@@ -1,6 +1,6 @@
 /* Mise en couleur du fond du footer */
 footer{
-    @include setfont ('P22Underground-Book',$yellow,3em);
+    @include setfont ('P22Underground-Book',3em,$yellow);
     background-color: $green;
     position: fixed;
     bottom: 0;left: 0;right: 0;
@@ -32,7 +32,7 @@ footer{
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
     footer{
-        @include setfont ('P22Underground-Book',$yellow,1.5em);
+        @include setfont ('P22Underground-Book',1.5em,$yellow);
     }
 }
 
@@ -40,7 +40,7 @@ footer{
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
     footer{
-        @include setfont ('P22Underground-Book',$yellow,2em);
+        @include setfont ('P22Underground-Book',2em,$yellow);
     }
 
 }

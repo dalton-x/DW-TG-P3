@@ -11,7 +11,7 @@
 .entree_titre_chic,
 .plat_titre_chic,
 .dessert_titre_chic {
-  @include setfont ('TYPO_COMICS','',2.5em);
+  @include setfont ('TYPO_COMICS',2.5em);
 }
 
 .entree_prix_chic,
@@ -20,7 +20,7 @@
 .plat_chic,
 .dessert_chic,
 .entree_chic {
-  @include setfont ('Caricaturista','',1.5em);
+  @include setfont ('Caricaturista',1.5em);
 }
 
 .entree_chic,

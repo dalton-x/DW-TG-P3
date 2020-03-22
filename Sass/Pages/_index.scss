@@ -1,5 +1,5 @@
 .menu_soon {
-  @include setfont ('Stem',$yellow,3.7em); 
+  @include setfont ('Stem', 3.7em ,$yellow); 
   background-color: $green;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -61,7 +61,7 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
   .menu_soon {
-    @include setfont ('Stem',$yellow,1em);
+    @include setfont ('Stem',1em,$yellow);
     border-radius: 10px;
   }
 
@@ -75,7 +75,7 @@
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
   .menu_soon {
-    @include setfont ('Stem',$yellow,1.5em); 
+    @include setfont ('Stem',1.5em,$yellow); 
   }
 }
 
