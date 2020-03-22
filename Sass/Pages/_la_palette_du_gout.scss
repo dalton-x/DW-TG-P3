@@ -10,13 +10,13 @@
 .entree_titre_gout,
 .plat_titre_gout,
 .dessert_titre_gout {
-  @include setfont ('TYPO_COMICS','',5em);
+  @include setfont ('TYPO_COMICS',5em);
 }
 
 .prix_gout,
 .plat_prix_gout,
 .dessert_prix_gout {
-  @include setfont ('Caricaturista',$black,1.8em);
+  @include setfont ('Caricaturista',1.8em,$black);
   margin-right: 25%;
   line-height: 1.4em;
 }
@@ -24,7 +24,7 @@
 .plat_gout,
 .dessert_gout,
 .entree_gout {
-  @include setfont ('Caricaturista',$black,1.7em);
+  @include setfont ('Caricaturista',1.7em,$black);
   line-height: 1.5em;
 }
 
@@ -54,4 +54,51 @@
 .titre_gout {
   @include soulignementDouble($green-light, $sky-green);
   font-size: 0.6em;
+}
+
+/*****MOBILE*****/ /* portrait */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  .palette_gout,
+  .nom_fin_gout {
+    @include gradient( 'KaushanScript-Regular',1.3em,$dark-green,$yellow-sky);
+  }
+  .palette_left{
+    width: 60%;
+  }
+  .palette_right{
+    width: 90%;
+  }
+  .entree_titre_gout,
+  .plat_titre_gout,
+  .dessert_titre_gout {
+    @include setfont ('TYPO_COMICS',2em);
+  }
+  .titre_gout {
+    @include soulignementDouble($green-light, $sky-green,4px);
+    &:after{
+      margin-bottom: 8%;
+    }
+  }
+
+  .plat_gout,
+  .dessert_gout,
+  .entree_gout {
+    @include setfont ('Caricaturista',0.6em,$black);
+    padding-right: 20px;
+  }
+  .prix_gout,
+  .plat_prix_gout,
+  .dessert_prix_gout {
+    @include setfont ('Caricaturista',0.6em,$black);
+    margin-right: 30px;
+    line-height: 3em;
+  }
+
+}
+
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+
+
 }

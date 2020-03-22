@@ -1,5 +1,5 @@
 header{
-    @include setfont ('P22Underground-Book',$yellow,6.5em);
+    @include setfont ('P22Underground-Book',6.5em,$yellow);
     background-color: $green;
     cursor: default;
     padding-top: 2%;
@@ -14,7 +14,7 @@ header{
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
     header{
-        @include setfont ('P22Underground-Book',$yellow,4.5em);
+        @include setfont ('P22Underground-Book',4.5em,$yellow);
         letter-spacing: -8px;
     }
 }
@@ -23,7 +23,7 @@ header{
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
     header{
-        @include setfont ('P22Underground-Book',$yellow,6em);
+        @include setfont ('P22Underground-Book',6em,$yellow);
         letter-spacing: -11px;
     }
 }
