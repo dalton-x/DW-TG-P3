@@ -30,3 +30,18 @@ h1 {
     @include setfont ('HindKochi-Regular',2em,$black);
   }
 }
+
+/*****TABLETTE*****/ /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  h1 {
+    @include setfont ('HindKochi-Regular',3em,$black);
+  }
+}
+/*****TABLETTE*****/ /* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+  h1 {
+    @include setfont ('HindKochi-Regular',3em,$black);
+  }
+}

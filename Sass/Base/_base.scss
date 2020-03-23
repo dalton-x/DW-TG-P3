@@ -176,3 +176,21 @@ header,footer,main,img{
         grid-row: 7;
     }
 }
+
+
+/*****TABLETTE*****/ /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+    .menu_soon{
+        grid-column: 3/14;
+        grid-row: 7;
+    }
+  }
+  /*****TABLETTE*****/ /* paysage */
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+    .menu_soon{
+        grid-column: 3/14;
+        grid-row: 7;
+    }
+  }
