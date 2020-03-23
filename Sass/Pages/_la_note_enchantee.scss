@@ -59,7 +59,7 @@
 
 /* Note */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
 
   .note_titre_h2{
     font-size: 0.5em;
@@ -132,11 +132,26 @@
 }
 
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 666px) and (max-width: 767px) {
 
+  .note_titre_h2{
+    padding-top: 5%;
+    font-size: 2em;
+  }
   h2.note_note_enchantee{
     font-size: 0.3em;
     margin-top: 0%;
     margin-bottom: -15%;
+  }
+  .fa.bas {
+    font-size: 8em;
+  }
+  .plat_note,
+  .entree_note{
+    margin-right: -30px;
+  }
+  .prix_note_entree,
+  .prix_note_plat{
+    line-height: 11px;
   }
 }

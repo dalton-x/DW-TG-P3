@@ -57,7 +57,7 @@
 }
 
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 666px) {
 
   .palette_gout,
   .nom_fin_gout {
@@ -100,5 +100,50 @@
 /*****MOBILE*****/ /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
+  .palette_gout h2{
+    font-size: 2.5em;
+  }
+  img.palette_left{
+    width: 60%;
+    margin-top: 53px;
+    margin-left: 20%;
+  }
+  img.palette_right{
+    width: 90%;
+    margin-top: 53px;
+  }
+  .titre_gout{
+    font-size: 0.2em;
+  }
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    padding-right: 30px;
+  }
+  .prix_gout,
+  .plat_prix_gout{
+    line-height: 1.5em;
+  }
+  
+  .dessert_prix_gout {
+    line-height: 2.1em;
+  }
 
+  .entree_gout,
+  .plat_gout,
+  .dessert_gout{
+    font-size: 1.2em;
+  }
+  .prix_gout,
+  .plat_prix_gout,
+  .dessert_prix_gout{
+    font-size: 1.2em;
+    line-height: 52px;
+  }
+
+  
+  .titre_gout {
+    @include soulignementDouble($green-light, $sky-green,4px);
+    &:after{
+      margin-bottom: 8%;
+    }
+  }
 }

@@ -56,6 +56,7 @@ header, footer, main, img {
   grid-gap: 3px;
   grid-auto-rows: minmax(50px, auto);
   padding-bottom: 10%;
+  overflow: hidden;
 }
 
 .menu_note, .menu_delice {
@@ -536,7 +537,7 @@ h1 {
 /* Note */
 /*****MOBILE*****/
 /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .note_titre_h2 {
     font-size: 0.5em;
   }
@@ -626,11 +627,30 @@ h1 {
 }
 /*****MOBILE*****/
 /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 666px) and (max-width: 767px) {
+  .note_titre_h2 {
+    padding-top: 5%;
+    font-size: 2em;
+  }
+
   h2.note_note_enchantee {
     font-size: 0.3em;
     margin-top: 0%;
     margin-bottom: -15%;
+  }
+
+  .fa.bas {
+    font-size: 8em;
+  }
+
+  .plat_note,
+.entree_note {
+    margin-right: -30px;
+  }
+
+  .prix_note_entree,
+.prix_note_plat {
+    line-height: 11px;
   }
 }
 /*******    LA PALETTE DU GOUT    ******/
@@ -723,7 +743,7 @@ h1 {
 
 /*****MOBILE*****/
 /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 666px) {
   .palette_gout,
 .nom_fin_gout {
     font-family: "KaushanScript-Regular";
@@ -797,6 +817,75 @@ h1 {
 }
 /*****MOBILE*****/
 /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .palette_gout h2 {
+    font-size: 2.5em;
+  }
+
+  img.palette_left {
+    width: 60%;
+    margin-top: 53px;
+    margin-left: 20%;
+  }
+
+  img.palette_right {
+    width: 90%;
+    margin-top: 53px;
+  }
+
+  .titre_gout {
+    font-size: 0.2em;
+  }
+
+  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
+    padding-right: 30px;
+  }
+
+  .prix_gout,
+.plat_prix_gout {
+    line-height: 1.5em;
+  }
+
+  .dessert_prix_gout {
+    line-height: 2.1em;
+  }
+
+  .entree_gout,
+.plat_gout,
+.dessert_gout {
+    font-size: 1.2em;
+  }
+
+  .prix_gout,
+.plat_prix_gout,
+.dessert_prix_gout {
+    font-size: 1.2em;
+    line-height: 52px;
+  }
+
+  .titre_gout {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_gout:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+    transition: width 2s ease-in-out;
+  }
+  .titre_gout:hover:after {
+    width: 100%;
+  }
+  .titre_gout:after {
+    margin-bottom: 8%;
+  }
+}
 /*******    LE DELICE DES PAPILLES    ******/
 /* alignement */
 .entree_titre_papilles,
@@ -891,7 +980,7 @@ h1 {
 /* Chic */
 /*****MOBILE*****/
 /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 666px) {
   .delice_papilles,
 .nom_fin_papilles {
     font-family: "DancingScript-Regular";
@@ -982,6 +1071,34 @@ h1 {
 }
 /*****MOBILE*****/
 /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  img.delice.right,
+img.delice.left {
+    margin-top: 0%;
+    width: 70%;
+    margin-bottom: -40px;
+  }
+
+  .titre_papilles {
+    font-size: 0.2em;
+  }
+
+  .entree_papilles, .plat_papilles, .dessert_papilles {
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 0.65em;
+  }
+
+  .prix_papilles,
+.plat_prix_papilles,
+.dessert_prix_papilles {
+    font-size: 0.6em;
+  }
+
+  .nom_restaurant.delice_papilles {
+    font-size: 2.5em;
+  }
+}
 /*******    LE CHIC A LA FRANCAISE    ******/
 /* alignement */
 .chic_francaise {
@@ -1100,7 +1217,7 @@ img.chic.left {
 /* Chic */
 /*****MOBILE*****/
 /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 667px) {
   .chic_francaise,
 .nom_fin_chic {
     font-size: 0.6em;
@@ -1150,6 +1267,30 @@ img.chic.left {
 }
 /*****MOBILE*****/
 /* paysage */
+@media screen and (min-width: 667px) and (max-width: 767px) {
+  .nom_restaurant {
+    font-size: 1.5em;
+  }
+
+  .titre_chic {
+    font-size: 1.8em;
+  }
+
+  .entree_chic,
+.plat_chic,
+.dessert_chic {
+    margin-right: -80px;
+  }
+
+  .dessert_no_prix {
+    padding-left: 30px;
+  }
+
+  img.chic.left,
+img.chic.right {
+    margin-top: 20px;
+  }
+}
 /* Mise en page pour les mentions legales*/
 h1.legal {
   text-align: center;

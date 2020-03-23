@@ -14,6 +14,7 @@ header,footer,main,img{
     grid-gap: 3px;
     grid-auto-rows: minmax(50px, auto);
     padding-bottom: 10%;
+    overflow: hidden;
 }
 .menu_note, .menu_delice{
     grid-column: 3/8;

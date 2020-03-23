@@ -60,7 +60,7 @@
 
 /* Chic */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 666px) {
 
   .delice_papilles,
   .nom_fin_papilles {
@@ -117,5 +117,26 @@
 /*****MOBILE*****/ /* paysage */
 @media screen and (min-width: 667px) and (max-width: 767px) {
 
-  
+  img.delice.right,
+  img.delice.left{
+    margin-top: 0%;
+    width: 70%;
+    margin-bottom: -40px;
+  }
+  .titre_papilles{
+    font-size: 0.2em;
+  }
+  .entree_papilles, .plat_papilles, .dessert_papilles {
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 0.65em;
+  }
+  .prix_papilles,
+  .plat_prix_papilles,
+  .dessert_prix_papilles{
+    font-size: 0.6em;
+  }
+  .nom_restaurant.delice_papilles{
+    font-size: 2.5em;
+  }
 }
