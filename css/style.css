@@ -1226,8 +1226,76 @@ img.delice.left {
 }
 /*****TABLETTE*****/
 /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .titre_delice_h2 {
+    font-size: 0.7em;
+  }
+
+  img.delice.left,
+img.delice.right {
+    width: 80%;
+    margin-top: 45px;
+  }
+
+  .titre_papilles {
+    font-size: 0.3em;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_papilles:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+    transition: width 2s ease-in-out;
+  }
+  .titre_papilles:hover:after {
+    width: 100%;
+  }
+  .titre_papilles:after {
+    margin-bottom: 12px;
+  }
+
+  .entree_papilles,
+.plat_papilles,
+.dessert_papilles {
+    font-size: 0.75em;
+    margin-left: 18%;
+  }
+
+  .prix_papilles,
+.plat_prix_papilles,
+.dessert_prix_papilles {
+    margin-right: 35%;
+    font-size: 0.75em;
+  }
+}
 /*****TABLETTE*****/
 /* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  img.delice.left,
+img.delice.right {
+    margin-top: 37px;
+  }
+
+  .entree_papilles,
+.plat_papilles,
+.dessert_papilles {
+    font-size: 1em;
+  }
+
+  .prix_papilles,
+.plat_prix_papilles,
+.dessert_prix_papilles {
+    margin-right: 40%;
+    font-size: 1em;
+  }
+}
 /*******    LE CHIC A LA FRANCAISE    ******/
 /* alignement */
 .chic_francaise {

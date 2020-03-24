@@ -142,10 +142,60 @@
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
 
+  .titre_delice_h2{
+    font-size: 0.7em;
+  }
+
+  img.delice.left,
+  img.delice.right{
+    width: 80%;
+    margin-top: 45px;
+  }
+
+  .titre_papilles{
+    font-size: 0.3em;
+    @include soulignementDouble($blue, $sky-blue,3px);
+    &:after{
+      margin-bottom: 12px;
+    }
+  }
+
+  .entree_papilles,
+  .plat_papilles,
+  .dessert_papilles{
+    font-size: 0.75em;
+    margin-left: 18%;
+  }
+
+  .prix_papilles,
+  .plat_prix_papilles,
+  .dessert_prix_papilles{
+    margin-right: 35%;
+    font-size: 0.75em;
+  }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
 
+  
+
+  img.delice.left,
+  img.delice.right{
+    margin-top: 37px;
+  }
+
+  .entree_papilles,
+  .plat_papilles,
+  .dessert_papilles{
+    font-size: 1em;
+  }
+
+  .prix_papilles,
+  .plat_prix_papilles,
+  .dessert_prix_papilles{
+    margin-right: 40%;
+    font-size: 1em;
+  }
 }
