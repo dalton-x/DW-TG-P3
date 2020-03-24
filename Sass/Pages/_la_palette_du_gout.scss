@@ -150,10 +150,58 @@
 
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
 
+  .titre_palette_h2{
+    font-size: 0.8em;
+  }
+
+  img.palette_left{
+    margin-top: 47px;
+    width: 80%;
+  }
+  
+  img.palette_right{
+    margin-top: 47px;
+    width: 120%;
+    margin-right: -20%;
+  }
+
+  .titre_gout{
+    font-size: 0.3em;
+  }
+  
+  .titre_gout {
+    @include soulignementDouble($green-light, $sky-green,4px);
+    &:after{
+      margin-bottom: 8%;
+    }
+  }
+
+  .entree_gout,
+  .plat_gout,
+  .dessert_gout{
+    margin-right: -100px;
+    font-size: 0.9em;
+    margin-left: 8%;
+  }
+
+  .entree_prix,
+  .plat_prix_gout,
+  .dessert_prix_gout{
+    margin-right: 15%;
+    font-size: 0.9em;
+  }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
 
+  .entree_gout,
+  .plat_gout,
+  .dessert_gout,
+  .entree_prix,
+  .plat_prix_gout,
+  .dessert_prix_gout{
+    font-size: 1.2em;
+  }
 }
