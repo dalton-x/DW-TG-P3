@@ -719,8 +719,61 @@ h1 {
 }
 /*****TABLETTE*****/
 /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .note_titre_h2,
+.note_note_enchantee {
+    font-size: 1em;
+  }
+
+  .titre_note {
+    font-size: 0.6em;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 0px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: #3d1319;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+
+  .entree_note,
+.plat_note,
+.dessert_note {
+    font-size: 0.9em;
+    margin-right: -200px;
+  }
+
+  .prix_note,
+.plat_prix_note {
+    font-size: 0.9em;
+  }
+}
 /*****TABLETTE*****/
 /* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .entree_note,
+.plat_note,
+.dessert_note {
+    font-size: 1.2em;
+    margin-right: -200px;
+  }
+
+  .prix_note,
+.plat_prix_note {
+    font-size: 1.2em;
+  }
+}
 /*******    LA PALETTE DU GOUT    ******/
 /* Modification de GridCSS */
 .entree_gout,

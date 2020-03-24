@@ -156,12 +156,42 @@
   }
 }
 
-
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  
+  .note_titre_h2,
+  .note_note_enchantee{
+    font-size: 1em;
+  }
+  .titre_note{
+    font-size: 0.6em;
+    @include soulignement(4px,0px 0px,$burgundy);
+  }
 
+  .entree_note,
+  .plat_note,
+  .dessert_note{
+    font-size: 0.9em;
+    margin-right: -200px;
+  }
+
+  .prix_note,
+  .plat_prix_note{
+    font-size: 0.9em;
+  }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
 
+  .entree_note,
+  .plat_note,
+  .dessert_note{
+    font-size: 1.2em;
+    margin-right: -200px;
+  }
+
+  .prix_note,
+  .plat_prix_note{
+    font-size: 1.2em;
+  }
 }
