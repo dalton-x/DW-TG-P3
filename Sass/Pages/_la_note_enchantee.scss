@@ -38,6 +38,8 @@
 }
 .barre_note.left {
   border-radius: 300% 2000% 500% 780%;  //clip-path ?? ou SVG ??
+  //clip-path: polygon(48% 23%, 76% 41%, 100% 54%, 100% 68%, 80% 87%, 52% 93%, 20% 96%, 0 86%, 0 44%, 20% 33%);
+  //clip-path: polygon(20px 46px,19px 62px,148px 62px,235px 56px,304px 60px,432px 59px,509px 59px,569px 61px,667px 63px,744px 64px,844px 56px,845px 45px,649px 38px,589px 37px,500px 44px,365px 40px,211px 40px,32px 36px);
 }
 
 /* creation du souligné auto */
