@@ -1,14 +1,12 @@
 @charset "UTF-8";
 /* import des polices d'ecriture*/
-@import url(//db.onlinewebfonts.com/c/7f657883f3f087c0e9864ae86af80411?family=Stem);
 @font-face {
   font-family: "Stem";
-  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot");
-  src: url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.woff") format("woff"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7f657883f3f087c0e9864ae86af80411.svg#Stem") format("svg");
+  src: url("../fonts/Stem.ttf");
 }
 @font-face {
   font-family: "P22Underground-Book";
-  src: url("../fonts/P22Underground-Book.ttf");
+  src: url("../fonts/P22Underground-Book.otf");
 }
 @font-face {
   font-family: "Devonshire-Regular";
