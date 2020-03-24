@@ -141,10 +141,45 @@ img.chic.left {
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
 
+  .titre_chic_h2{
+    font-size: 0.7em;
+  }
+  .titre_chic{
+    font-size: 0.6em;
+    @include soulignement(4px,0px 0px);
+  }
+  img.chic.left,
+  img.chic.right{
+    width: 80%;
+    margin-top: 30px;
+  }
+  img.chic.right{
+    margin-left: 37%;
+  }
+  .entree_chic,
+  .plat_chic,
+  .dessert_chic{
+    font-size: 0.8em;
+    margin-right: -100px;
+  }
+  .entree_prix_chic,
+  .plat_prix_chic{
+    font-size: 0.8em;
+  }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
 
+  .entree_chic,
+  .plat_chic,
+  .dessert_chic{
+    font-size: 1.1em;
+    margin-right: -150px;
+  }
+  .entree_prix_chic,
+  .plat_prix_chic{
+    font-size: 1.1em;
+  }
 }
