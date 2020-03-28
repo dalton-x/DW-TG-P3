@@ -38,18 +38,6 @@
   @include soulignementDouble($blue, $sky-blue);
 }
 
-/* alignement et mise en forme */
-.delice .fa {
-  font-size: 7em;
-}
-
-.fa {
-  @include gradient ("Font Awesome 5 Free",1em,$pink,$orange);
-  padding-top: 5%;
-  padding-right: 5%;
-  color: $purple;
-}
-
 /* Aligenemnt des images "barre" */
 
 img.delice_right{

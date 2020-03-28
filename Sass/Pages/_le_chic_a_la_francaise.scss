@@ -97,10 +97,6 @@ img.chic_right{
     @include soulignement(3px,10px 0px);
   }
 
-  .nom_fin.chic_francaise .fa {
-    font-size:  0.4em;
-  }
-
   h2.chic_chic_francaise{
     font-size: 0.3em;
     margin-top: -10%;
@@ -193,18 +189,6 @@ img.chic_right{
     @include soulignement(3px,10px 0px);
   }
 
-  .nom_fin.chic_francaise .fa{
-    font-size: 1.2em;
-  }
-
-  .chic .fa {
-    font-size: 4em;
-  }
-
-  .nom_fin.chic_francaise .fa {
-    font-size:  0.7em;
-  }
-
   h2.chic_chic_francaise{
     font-size: 0.8em;
     margin-bottom: -15%;
@@ -236,18 +220,6 @@ img.chic_right{
     font-size: 2em;
     padding-top: 15%;
     @include soulignement(3px,10px 0px);
-  }
-
-  .nom_fin.chic_francaise .fa{
-    font-size: 1.2em;
-  }
-
-  .chic .fa {
-    font-size: 4em;
-  }
-
-  .nom_fin.chic_francaise .fa {
-    font-size:  0.7em;
   }
 
   h2.chic_chic_francaise{

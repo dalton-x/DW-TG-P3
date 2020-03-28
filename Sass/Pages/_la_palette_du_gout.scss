@@ -68,18 +68,6 @@ img.gout_right{
     @include soulignementDouble($green-light, $sky-green,3px);
   }
 
-  .nom_fin.gout_enchantee .fa{
-    font-size: 1.2em;
-  }
-
-  .gout .fa {
-    font-size: 4em;
-  }
-
-  .nom_fin.gout_enchantee .fa {
-    font-size:  0.4em;
-  }
-
   h2.gout_gout_enchantee{
     font-size: 0.3em;
     margin-top: -10%;
@@ -114,9 +102,6 @@ img.gout_right{
     font-size: 0.3em;
     margin-top: 0%;
     margin-bottom: -15%;
-  }
-  .fa.bas {
-    font-size: 1em;
   }
   .plat_gout,
   .entree_gout,
@@ -180,18 +165,6 @@ img.gout_right{
     @include soulignementDouble($green-light, $sky-green,4px);
   }
 
-  .nom_fin.gout_enchantee .fa{
-    font-size: 1.2em;
-  }
-
-  .gout .fa {
-    font-size: 4em;
-  }
-
-  .nom_fin.gout_enchantee .fa {
-    font-size:  0.7em;
-  }
-
   h2.gout_gout_enchantee{
     font-size: 0.8em;
     margin-bottom: -15%;
@@ -223,18 +196,6 @@ img.gout_right{
     font-size: 2em;
     padding-top: 15%;
     @include soulignementDouble($green-light, $sky-green,4px);
-  }
-
-  .nom_fin.gout_enchantee .fa{
-    font-size: 1.2em;
-  }
-
-  .gout .fa {
-    font-size: 4em;
-  }
-
-  .nom_fin.gout_enchantee .fa {
-    font-size:  0.7em;
   }
 
   h2.gout_gout_enchantee{
