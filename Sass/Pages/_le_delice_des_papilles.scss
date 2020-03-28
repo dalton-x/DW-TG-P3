@@ -1,201 +1,227 @@
-/*******    LE DELICE DES PAPILLES    ******/
-/* alignement */
-.entree_titre_papilles,
-.plat_titre_papilles,
-.dessert_titre_papilles {
-  @include setfont ('TYPO_COMICS',4.5em,$black);
-}
-
-.prix_papilles,
-.plat_prix_papilles,
-.dessert_papilles {
+/*******    LA delice ENCHANTEE    ******/
+.plat_delice,
+.entree_delice,
+.dessert_delice {
   @include setfont ('Caricaturista',1.5em,$black);
-  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 140% auto;
 }
 
-.plat_papilles,
-.dessert_prix_papilles,
-.entree_papilles {
-  @include setfont ('Caricaturista',1.6em,$black);
+.entree_titre_delice,
+.plat_titre_delice,
+.dessert_titre_delice {
+  @include setfont ('TYPO_COMICS',2.5em,$black);
 }
 
-.delice_papilles,
-.nom_fin_papilles {
-  @include gradient( 'DancingScript-Regular',6em,$blue,$blue-clear);
-}
-
-/* Alignements des <img> */
-.barre_papilles_left {
-  margin-top: 8%;
-  margin-left: 27%;
-}
-.barre_papilles_right {
-  margin-top: 8%;
+.delice_1,
+.delice_2,
+.delice_3,
+.delice_4{
   margin-left: 15%;
+  grid-column: 1;
+}
+.delice_prix_1,
+.delice_prix_2,
+.delice_prix_3,
+.delice_prix_4{
+  grid-column: 2;
 }
 
-/* Modification de GridCSS */
-.entree_papilles,
-.plat_papilles,
-.dessert_papilles {
-  grid-column: 1/5;
-  margin-left: 25%;
-}
 
-.prix_papilles,
-.plat_prix_papilles,
-.dessert_prix_papilles {
-  margin-right: 50%;
+.delice_papilles {
+  @include gradient( 'DancingScript-Regular',6em,$blue,$blue-clear);
+  margin-top: -5%;
 }
 
 /* creation du souligné auto */
-.titre_papilles {
-  color: $black;
-}
-.titre_papilles {
+.titre_delice {  
   @include soulignementDouble($blue, $sky-blue);
-  font-size: 0.6em;
 }
 
+/* alignement et mise en forme */
+.delice .fa {
+  font-size: 7em;
+}
 
-/* Chic */
+.fa {
+  @include gradient ("Font Awesome 5 Free",1em,$pink,$orange);
+  padding-top: 5%;
+  padding-right: 5%;
+  color: $purple;
+}
+
+/* Aligenemnt des images "barre" */
+
+img.delice_right{
+  margin-left: 40%;
+}
+img.delice_left,
+img.delice_right{
+  margin-top: 5%;
+}
+
+/* delice */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 666px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
-  .delice_papilles,
-  .nom_fin_papilles {
-    @include gradient( 'DancingScript-Regular',1.2em,$blue,$blue-clear);
-  }
-
-  .entree_titre_papilles,
-  .plat_titre_papilles,
-  .dessert_titre_papilles {
-    @include setfont ('TYPO_COMICS',1.5em,$black);
+  .delice_titre_h2{
+    font-size: 0.3em;
   }
 
-  .delice.left {
-    width: 70%;
-    margin-top: 8%;
-    margin-left: -20%;
-  }
-  .delice.right {
-    width: 70%;
-    margin-top: 8%;
-    margin-left: 40%;
-  }
-  .titre_papilles {
-    @include soulignementDouble($blue, $sky-blue,4px);
-    &:after{
-      margin-bottom: 10px;
-    }
-  }
-  .plat_papilles,
-  .dessert_prix_papilles,
-  .entree_papilles,
-  .dessert_papilles {
-    @include setfont ('Caricaturista',0.8em,$black);
-    margin-right: 0%;
-    margin-left: 5%;
-  }
-  .prix_papilles,
-  .plat_prix_papilles,
-  .dessert_prix_papilles {
-    @include setfont ('Caricaturista',0.8em,$black);
-    margin-right: 15px;
-  }
-  .prix_papilles{
-    line-height: 26px;
-  }
-  .plat_prix_papilles{
-    line-height: 30px;
-  }
-  .dessert_prix_papilles{
-    line-height: 15.5px;
-  }
-}
-
-/*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-
-  img.delice.right,
-  img.delice.left{
-    margin-top: 0%;
-    width: 70%;
-    margin-bottom: -40px;
-  }
-  .titre_papilles{
-    font-size: 0.2em;
-  }
-  .entree_papilles, .plat_papilles, .dessert_papilles {
-    margin-left: 60px;
-    margin-top: 0px;
-    font-size: 0.65em;
-  }
-  .prix_papilles,
-  .plat_prix_papilles,
-  .dessert_prix_papilles{
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
     font-size: 0.6em;
   }
-  .nom_restaurant.delice_papilles{
-    font-size: 2.5em;
+
+  .titre_delice {  
+    padding-top: 15%;
+    font-size: 0.8em;
+    @include soulignementDouble($blue, $sky-blue);
+  }
+
+  h2.delice_delice_enchantee{
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 0.8em;
+  }
+
+  .delice_1,
+  .delice_2,
+  .delice_3,
+  .delice_4{
+    padding-right: 5%;
+  }
+}
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+
+  .delice_titre_h2{
+    padding-top: 5%;
+    font-size: 0.5em;
+  }
+  h2.delice_delice_enchantee{
+    font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
+  }
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice{
+    margin-right: -12%;
+    margin-left: 15%;
+  }
+
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 1em;
+  }
+
+  .titre_delice {  
+    padding-top: 15%;
+    @include soulignementDouble($blue, $sky-blue);
+  }
+
+  .delice_1,
+  .delice_2,
+  .delice_3,
+  .delice_4{
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .delice_prix_1,
+  .delice_prix_2,
+  .delice_prix_3,
+  .delice_prix_4{
+    margin-left: -20px;
+  }
+
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
+    font-size: 0.8em;
   }
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .delice_titre_h2{
+    font-size: 0.5em;
+  }
 
-  .titre_delice_h2{
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
     font-size: 0.7em;
   }
 
-  img.delice.left,
-  img.delice.right{
-    width: 80%;
-    margin-top: 45px;
+  .titre_delice {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignementDouble($blue, $sky-blue);
   }
 
-  .titre_papilles{
-    font-size: 0.3em;
-    @include soulignementDouble($blue, $sky-blue,3px);
-    &:after{
-      margin-bottom: 12px;
-    }
+  h2.delice_delice_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
   }
 
-  .entree_papilles,
-  .plat_papilles,
-  .dessert_papilles{
-    font-size: 0.75em;
-    margin-left: 18%;
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 9%;
   }
 
-  .prix_papilles,
-  .plat_prix_papilles,
-  .dessert_prix_papilles{
-    margin-right: 35%;
-    font-size: 0.75em;
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 0.8em;
   }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-
   
-
-  img.delice.left,
-  img.delice.right{
-    margin-top: 37px;
+  .delice_titre_h2{
+    font-size: 0.5em;
   }
 
-  .entree_papilles,
-  .plat_papilles,
-  .dessert_papilles{
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
     font-size: 1em;
   }
 
-  .prix_papilles,
-  .plat_prix_papilles,
-  .dessert_prix_papilles{
-    margin-right: 40%;
-    font-size: 1em;
+  .titre_delice {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignementDouble($blue, $sky-blue);
+  }
+
+  h2.delice_delice_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 0.8em;
   }
 }
