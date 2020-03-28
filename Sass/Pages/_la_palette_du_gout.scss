@@ -1,207 +1,254 @@
-/*******    LA PALETTE DU GOUT    ******/
-/* Modification de GridCSS */
-.entree_gout,
+/*******    La palette du goût    ******/
+
 .plat_gout,
+.entree_gout,
 .dessert_gout {
-  grid-column: 1/5;
-  margin-left: 15%;
+  @include setfont ('Caricaturista',1.7em,$black);
+  display: grid;
+  grid-template-columns: 140% auto;
 }
 
 .entree_titre_gout,
 .plat_titre_gout,
 .dessert_titre_gout {
-  @include setfont ('TYPO_COMICS',5em);
+  @include setfont ('TYPO_COMICS',3em,$black);
 }
 
-.prix_gout,
-.plat_prix_gout,
-.dessert_prix_gout {
-  @include setfont ('Caricaturista',1.8em,$black);
-  margin-right: 25%;
-  line-height: 1.4em;
+.gout_1,
+.gout_2,
+.gout_3,
+.gout_4{
+  margin-left: 15%;
+  grid-column: 1;
+}
+.gout_prix_1,
+.gout_prix_2,
+.gout_prix_3,
+.gout_prix_4{
+  grid-column: 2;
 }
 
-.plat_gout,
-.dessert_gout,
-.entree_gout {
-  @include setfont ('Caricaturista',1.7em,$black);
-  line-height: 1.5em;
-}
-
-.palette_gout,
-.nom_fin_gout {
+.palette_gout {
   @include gradient( 'KaushanScript-Regular',5em,$dark-green,$yellow-sky);
-}
-
-/* Mise en forme des barre de decoration des titres du menu */
-.barre_gout.right {
-  margin-left: 25%;
-}
-
-.barre_gout.left {
-  margin-left: 10%;
-}
-
-.barre_gout {
-  margin-top: 10%;
+  margin-top: -5%;
 }
 
 /* creation du souligné auto */
-.titre_gout {
-  color: $black;
-}
-
-.titre_gout {
+.titre_gout {  
+  @include setfont ('TYPO_COMICS',1em,black);
   @include soulignementDouble($green-light, $sky-green);
-  font-size: 0.6em;
 }
 
+/* Aligenemnt des images "barre" */
+
+img.gout_right{
+  margin-left: 20%;
+}
+img.gout_left,
+img.gout_right{
+  margin-top: 5%;
+}
+
+/* GOUT */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 666px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
-  .palette_gout,
-  .nom_fin_gout {
-    @include gradient( 'KaushanScript-Regular',1.3em,$dark-green,$yellow-sky);
-  }
-  .palette_left{
-    width: 60%;
-  }
-  .palette_right{
-    width: 90%;
-  }
-  .entree_titre_gout,
-  .plat_titre_gout,
-  .dessert_titre_gout {
-    @include setfont ('TYPO_COMICS',2em);
-  }
-  .titre_gout {
-    @include soulignementDouble($green-light, $sky-green,4px);
-    &:after{
-      margin-bottom: 8%;
-    }
+  .gout_titre_h2{
+    font-size: 0.4em;
   }
 
   .plat_gout,
-  .dessert_gout,
-  .entree_gout {
-    @include setfont ('Caricaturista',0.6em,$black);
-    padding-right: 20px;
-  }
-  .prix_gout,
-  .plat_prix_gout,
-  .dessert_prix_gout {
-    @include setfont ('Caricaturista',0.6em,$black);
-    margin-right: 30px;
-    line-height: 3em;
-  }
-
-}
-
-/*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
-
-  .palette_gout h2{
-    font-size: 2.5em;
-  }
-  img.palette_left{
-    width: 60%;
-    margin-top: 53px;
-    margin-left: 20%;
-  }
-  img.palette_right{
-    width: 90%;
-    margin-top: 53px;
-  }
-  .titre_gout{
-    font-size: 0.2em;
-  }
-  .prix_gout, .plat_prix_gout, .dessert_prix_gout {
-    padding-right: 30px;
-  }
-  .prix_gout,
-  .plat_prix_gout{
-    line-height: 1.5em;
-  }
-  
-  .dessert_prix_gout {
-    line-height: 2.1em;
-  }
-
   .entree_gout,
-  .plat_gout,
-  .dessert_gout{
+  .dessert_gout {
+    font-size: 0.6em;
+  }
+
+  .titre_gout {  
+    padding-top: 15%;
+    @include soulignementDouble($green-light, $sky-green,3px);
+  }
+
+  .nom_fin.gout_enchantee .fa{
     font-size: 1.2em;
   }
-  .prix_gout,
-  .plat_prix_gout,
-  .dessert_prix_gout{
-    font-size: 1.2em;
-    line-height: 52px;
+
+  .gout .fa {
+    font-size: 4em;
   }
 
-  
-  .titre_gout {
-    @include soulignementDouble($green-light, $sky-green,4px);
-    &:after{
-      margin-bottom: 8%;
-    }
+  .nom_fin.gout_enchantee .fa {
+    font-size:  0.4em;
   }
-}
 
+  h2.gout_gout_enchantee{
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
 
-/*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
 
-  .titre_palette_h2{
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
     font-size: 0.8em;
   }
 
-  img.palette_left{
-    margin-top: 47px;
-    width: 80%;
+  .gout_1,
+  .gout_2,
+  .gout_3,
+  .gout_4{
+    padding-right: 5%;
   }
-  
-  img.palette_right{
-    margin-top: 47px;
-    width: 120%;
-    margin-right: -20%;
-  }
+}
+/*****MOBILE*****/ /* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
-  .titre_gout{
+  .gout_titre_h2{
+    padding-top: 5%;
+    font-size: 2em;
+  }
+  h2.gout_gout_enchantee{
     font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
   }
-  
-  .titre_gout {
-    @include soulignementDouble($green-light, $sky-green,4px);
-    &:after{
-      margin-bottom: 8%;
-    }
+  .fa.bas {
+    font-size: 1em;
   }
-
-  .entree_gout,
   .plat_gout,
+  .entree_gout,
   .dessert_gout{
-    margin-right: -100px;
-    font-size: 0.9em;
-    margin-left: 8%;
+    margin-right: -12%;
+    margin-left: 15%;
   }
 
-  .entree_prix,
-  .plat_prix_gout,
-  .dessert_prix_gout{
-    margin-right: 15%;
-    font-size: 0.9em;
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 1em;
+  }
+
+  .titre_gout {  
+    padding-top: 15%;
+    @include soulignementDouble($green-light, $sky-green,3px);
+  }
+
+  .gout_1,
+  .gout_2,
+  .gout_3,
+  .gout_4{
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .gout_prix_1,
+  .gout_prix_2,
+  .gout_prix_3,
+  .gout_prix_4{
+    margin-left: -20px;
+  }
+
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 0.8em;
+  }
+}
+
+/*****TABLETTE*****/ /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .gout_titre_h2{
+    font-size: 0.5em;
+  }
+
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 0.7em;
+  }
+
+  .titre_gout {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignementDouble($green-light, $sky-green,4px);
+  }
+
+  .nom_fin.gout_enchantee .fa{
+    font-size: 1.2em;
+  }
+
+  .gout .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.gout_enchantee .fa {
+    font-size:  0.7em;
+  }
+
+  h2.gout_gout_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 9%;
+  }
+
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 0.8em;
   }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
+  
+  .gout_titre_h2{
+    font-size: 0.5em;
+  }
 
-  .entree_gout,
   .plat_gout,
-  .dessert_gout,
-  .entree_prix,
-  .plat_prix_gout,
-  .dessert_prix_gout{
+  .entree_gout,
+  .dessert_gout {
+    font-size: 1em;
+  }
+
+  .titre_gout {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignementDouble($green-light, $sky-green,4px);
+  }
+
+  .nom_fin.gout_enchantee .fa{
     font-size: 1.2em;
+  }
+
+  .gout .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.gout_enchantee .fa {
+    font-size:  0.7em;
+  }
+
+  h2.gout_gout_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 0.8em;
   }
 }

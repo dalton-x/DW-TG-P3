@@ -1,0 +1,1708 @@
+@charset "UTF-8";
+/* import des polices d'ecriture*/
+@font-face {
+  font-family: 'Stem';
+  src: url("../fonts/Stem.ttf");
+}
+
+@font-face {
+  font-family: 'P22Underground-Book';
+  src: url("../fonts/P22Underground-Book.otf");
+}
+
+@font-face {
+  font-family: 'Devonshire-Regular';
+  src: url("../fonts/Devonshire-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'TYPO_COMICS';
+  src: url("../fonts/TYPO_COMICS.otf");
+}
+
+@font-face {
+  font-family: 'Caricaturista';
+  src: url("../fonts/Caricaturista.ttf");
+}
+
+@font-face {
+  font-family: 'HindKochi-Regular';
+  src: url("../fonts/HindKochi-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'DancingScript-Bold';
+  src: url("../fonts/DancingScript-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url("../fonts/DancingScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'CroissantOne-Regular';
+  src: url("../fonts/CroissantOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+
+/* BASE */
+/* fix du curseur */
+header, footer, main, img {
+  cursor: default;
+}
+
+/* creation de la grille avec gridCSS*/
+/* INDEX */
+.menu_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(50px, auto);
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+
+.menu_note, .menu_delice {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3/8;
+}
+
+.menu_note, .menu_chic {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.menu_chic, .menu_palette {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 5;
+  grid-column: 9/14;
+}
+
+.menu_delice, .menu_palette {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+}
+
+.menu_note, .menu_delice, .menu_chic, .menu_palette {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 20px #aaa;
+          box-shadow: 1px 1px 20px #aaa;
+}
+
+/* Creation de la grille avec gridCSS*/
+/* MENU */
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(50px, auto);
+  padding-bottom: 10%;
+  margin: 3% 10% 10% 10%;
+  -webkit-box-shadow: 1px 1px 20px #aaa;
+          box-shadow: 1px 1px 20px #aaa;
+}
+
+.note, .note_enchantee, .nom_fin, .nom_restaurant {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.entree_titre, .plat_titre, .dessert_titre {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+.entree_left, .plat_left, .dessert_left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin-left: 20%;
+}
+
+.entree_right, .plat_right, .dessert_right {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  margin-right: 20%;
+}
+
+/* Placement de la font-awesome du haut */
+.note {
+  margin-top: 5%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+/* Mise en forme du nom du restaurant dans le menu */
+.note_enchante, .nom_restaurant {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+/* Placement sur la ligne 4 */
+.entree_left, .entree_titre, .entree_right {
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+/* Placement sur la ligne 5 */
+.entree {
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+.entree, .plat, .dessert {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+/* Placement sur la ligne 7 */
+.plat_left, .plat_titre, .plat_right {
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+/* Placement sur la ligne 8 */
+.plat, .menu_soon {
+  -ms-grid-row: 8;
+  grid-row: 8;
+}
+
+/* Placement sur la ligne 10 */
+.dessert_left, .dessert_titre, .dessert_right {
+  -ms-grid-row: 10;
+  grid-row: 10;
+}
+
+/* Placement sur la ligne 11 */
+.dessert {
+  -ms-grid-row: 11;
+  grid-row: 11;
+}
+
+/* Placement sur la ligne 13 */
+.nom_fin {
+  -ms-grid-row: 13;
+  grid-row: 13;
+}
+
+.menu_soon {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 7;
+  grid-column: 5/12;
+}
+
+/* Fin organisation de GridCSS */
+/* BASE */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .menu_note, .menu_delice, .menu_chic, .menu_palette {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 13;
+    grid-column: 2/15;
+  }
+  .menu_note {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  .menu_chic {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5/9;
+  }
+  .menu_delice {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 2;
+    grid-row: 10/12;
+  }
+  .menu_palette {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    grid-row: 13/15;
+  }
+  .menu_soon {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
+    -ms-grid-row: 16;
+    grid-row: 16;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .menu_note, .menu_delice {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-column: 3/8;
+  }
+  .menu_note, .menu_chic {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  .menu_chic, .menu_palette {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 5;
+    grid-column: 9/14;
+  }
+  .menu_delice, .menu_palette {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+  .menu_soon {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu_soon {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 11;
+    grid-column: 3/14;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .menu_soon {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 11;
+    grid-column: 3/14;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+}
+
+header {
+  font-family: "P22Underground-Book";
+  color: #fdcb46;
+  font-size: 6.5em;
+  background-color: #579c87;
+  cursor: default;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  letter-spacing: -13px;
+  text-align: center;
+  margin: -8px -8px -8px;
+}
+
+/* HEADER */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  header {
+    font-family: "P22Underground-Book";
+    color: #fdcb46;
+    font-size: 4.5em;
+    letter-spacing: -8px;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  header {
+    font-family: "P22Underground-Book";
+    color: #fdcb46;
+    font-size: 6em;
+    letter-spacing: -11px;
+  }
+}
+
+/* Mise en couleur du fond du footer */
+footer {
+  font-family: "P22Underground-Book";
+  color: #fdcb46;
+  font-size: 3em;
+  background-color: #579c87;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.yellow {
+  text-decoration: none;
+  color: #fdcb46;
+  cursor: default;
+}
+
+.legal {
+  margin-left: 2.5%;
+  text-align: left;
+}
+
+.contact {
+  margin-right: 2.5%;
+  float: right;
+}
+
+.legal, .contact {
+  cursor: default;
+}
+
+.legal:hover, .contact:hover {
+  display: inline-block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: wiggle-anim 0.52s cubic-bezier(1, 0.28, 0, 0.97) infinite;
+          animation: wiggle-anim 0.52s cubic-bezier(1, 0.28, 0, 0.97) infinite;
+}
+
+@-webkit-keyframes wiggle-anim {
+  10%, 90%, 40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+  20%, 80%, 30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+}
+
+@keyframes wiggle-anim {
+  10%, 90%, 40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+  20%, 80%, 30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+}
+
+/* FOOTER */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  footer {
+    font-size: 1em;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  footer {
+    font-size: 2em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    font-size: 2em;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  footer {
+    font-size: 1.5em;
+  }
+}
+
+/* Mise en forme titre H1 */
+h1 {
+  font-family: "HindKochi-Regular";
+  color: #000000;
+  font-size: 5em;
+  text-align: center;
+}
+
+/* Alignement des titres */
+.note,
+.nom_restaurant,
+.nom_fin,
+.entree_titre,
+.plat_titre,
+.dessert_titre {
+  text-align: center;
+}
+
+/* COMMON */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  h1 {
+    font-family: "HindKochi-Regular";
+    color: #000000;
+    font-size: 1.5em;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  h1 {
+    font-family: "HindKochi-Regular";
+    color: #000000;
+    font-size: 2em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-family: "HindKochi-Regular";
+    color: #000000;
+    font-size: 3em;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  h1 {
+    font-family: "HindKochi-Regular";
+    color: #000000;
+    font-size: 3em;
+  }
+}
+
+.menu_soon {
+  font-family: "Stem";
+  color: #fdcb46;
+  font-size: 3.7em;
+  background-color: #579c87;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* redimentionnement et placement des images de lien de menus*/
+.img {
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 50%;
+}
+
+/* Animations des 3 points de la section prochainement*/
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #fdcb46;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dot-anim 3s infinite;
+          animation: dot-anim 3s infinite;
+}
+
+.dot:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes dot-anim {
+  0%,
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #fdcc4634;
+  }
+}
+
+@keyframes dot-anim {
+  0%,
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #fdcc4634;
+  }
+}
+
+/* INDEX */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .menu_soon {
+    font-family: "Stem";
+    color: #fdcb46;
+    font-size: 1em;
+    border-radius: 10px;
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .menu_soon {
+    font-family: "Stem";
+    color: #fdcb46;
+    font-size: 1.5em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu_soon {
+    font-family: "Stem";
+    color: #fdcb46;
+    font-size: 2em;
+    border-radius: 10px;
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .menu_soon {
+    font-family: "Stem";
+    color: #fdcb46;
+    font-size: 2em;
+    border-radius: 10px;
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/*******    LA NOTE ENCHANTEE    ******/
+.background_note {
+  background-color: #fcdfdb;
+}
+
+.plat_note,
+.entree_note,
+.dessert_note {
+  font-family: "Caricaturista";
+  color: #3d1319;
+  font-size: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140% auto;
+      grid-template-columns: 140% auto;
+}
+
+.entree_titre_note,
+.plat_titre_note,
+.dessert_titre_note {
+  font-family: "TYPO_COMICS";
+  color: #3d1319;
+  font-size: 2.5em;
+}
+
+.note_1,
+.note_2,
+.note_3,
+.note_4 {
+  margin-left: 15%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.note_prix_1,
+.note_prix_2,
+.note_prix_3,
+.note_prix_4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.note_enchantee {
+  font-family: "Devonshire-Regular";
+  color: #3d1319;
+  font-size: 5em;
+  margin-top: -5%;
+}
+
+/* creation du souligné auto */
+.titre_note {
+  position: relative;
+  text-decoration: none;
+  color: #3d1319;
+  padding: 10px 0px;
+}
+
+.titre_note:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #3d1319;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.titre_note:hover:after {
+  width: 100%;
+}
+
+/* alignement et mise en forme */
+.note .fa {
+  font-size: 7em;
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1em;
+  background: -webkit-linear-gradient(0deg, #f66a6a, #e76c25);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  padding-top: 5%;
+  padding-right: 5%;
+  color: #9c47fc;
+}
+
+/* Aligenemnt des images "barre" */
+img.note_right {
+  margin-left: 40%;
+}
+
+img.note_left,
+img.note_right {
+  margin-top: 5%;
+}
+
+/* Note */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .note_titre_h2 {
+    font-size: 0.4em;
+  }
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 0.6em;
+  }
+  .titre_note {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 20px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 1.2em;
+  }
+  .note .fa {
+    font-size: 4em;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 0.4em;
+  }
+  h2.note_note_enchantee {
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+  .titre_note {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 2px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+  .note_1,
+  .note_2,
+  .note_3,
+  .note_4 {
+    padding-right: 5%;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .note_titre_h2 {
+    padding-top: 5%;
+    font-size: 2em;
+  }
+  h2.note_note_enchantee {
+    font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
+  }
+  .fa.bas {
+    font-size: 1em;
+  }
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    margin-right: -12%;
+    margin-left: 15%;
+  }
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 1em;
+  }
+  .titre_note {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 2px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+  .note_1,
+  .note_2,
+  .note_3,
+  .note_4 {
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .note_prix_1,
+  .note_prix_2,
+  .note_prix_3,
+  .note_prix_4 {
+    margin-left: -20px;
+  }
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 0.8em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .note_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 0.7em;
+  }
+  .titre_note {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 20px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 1.2em;
+  }
+  .note .fa {
+    font-size: 4em;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 0.7em;
+  }
+  h2.note_note_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 9%;
+  }
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+  .titre_note {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 2px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .note_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 1em;
+  }
+  .titre_note {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 20px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 1.2em;
+  }
+  .note .fa {
+    font-size: 4em;
+  }
+  .nom_fin.note_enchantee .fa {
+    font-size: 0.7em;
+  }
+  h2.note_note_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+  .titre_note {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #3d1319;
+    padding: 2px 0px;
+  }
+  .titre_note:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #3d1319;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_note:hover:after {
+    width: 100%;
+  }
+}
+
+/*******    LA PALETTE DU GOUT    ******/
+/* Modification de GridCSS */
+.entree_gout,
+.plat_gout,
+.dessert_gout {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.entree_titre_gout,
+.plat_titre_gout,
+.dessert_titre_gout {
+  font-family: "TYPO_COMICS";
+  color: #ffffff00;
+  font-size: 5em;
+}
+
+.plat_gout,
+.dessert_gout,
+.entree_gout {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.7em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 103% auto;
+      grid-template-columns: 103% auto;
+}
+
+.gout_1,
+.gout_2,
+.gout_3,
+.gout_4 {
+  margin-left: 15%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.gout_prix_1,
+.gout_prix_2,
+.gout_prix_3,
+.gout_prix_4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.palette_gout,
+.nom_fin_gout {
+  font-family: "KaushanScript-Regular";
+  font-size: 5em;
+  background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Mise en forme des barre de decoration des titres du menu */
+.barre_gout.right {
+  margin-left: 25%;
+}
+
+.barre_gout.left {
+  margin-left: 10%;
+}
+
+.barre_gout {
+  margin-top: 10%;
+}
+
+/* creation du souligné auto */
+.titre_gout {
+  color: #000000;
+}
+
+.titre_gout {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 0.6em;
+}
+
+.titre_gout:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.titre_gout:hover:after {
+  width: 100%;
+}
+
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .palette_gout {
+    font-size: 1.2em;
+  }
+  .palette_right {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .palette_left {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .barre_gout {
+    margin-top: 10%;
+  }
+  .titre_gout {
+    font-size: 0.4em;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+/*****TABLETTE*****/
+/* portrait */
+/*****TABLETTE*****/
+/* paysage */
+/*******    LE DELICE DES PAPILLES    ******/
+/* alignement */
+.entree_titre_papilles,
+.plat_titre_papilles,
+.dessert_titre_papilles {
+  font-family: "TYPO_COMICS";
+  color: #000000;
+  font-size: 4.5em;
+}
+
+.entree_papilles,
+.plat_papilles,
+.dessert_papilles {
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.6em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100% auto;
+      grid-template-columns: 100% auto;
+}
+
+.papilles_1,
+.papilles_2,
+.papilles_3,
+.papilles_4 {
+  margin-left: 15%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.papilles_prix_1,
+.papilles_prix_2,
+.papilles_prix_3,
+.papilles_prix_4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.delice_papilles {
+  font-family: "DancingScript-Regular";
+  font-size: 6em;
+  background: -webkit-linear-gradient(0deg, #0228dd, #229cf98c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Alignements des <img> */
+.barre_papilles_left {
+  margin-top: 8%;
+  margin-left: 27%;
+}
+
+.barre_papilles_right {
+  margin-top: 8%;
+  margin-left: 15%;
+}
+
+/* Modification de GridCSS */
+.entree_papilles,
+.plat_papilles,
+.dessert_papilles {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+/* creation du souligné auto */
+.titre_papilles {
+  color: #000000;
+}
+
+.titre_papilles {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 0.6em;
+}
+
+.titre_papilles:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.titre_papilles:hover:after {
+  width: 100%;
+}
+
+/* Chic */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .delice_papilles,
+  .nom_fin_papilles {
+    font-family: "DancingScript-Regular";
+    font-size: 1.2em;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229cf98c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+  }
+  .entree_titre_papilles,
+  .plat_titre_papilles,
+  .dessert_titre_papilles {
+    font-family: "TYPO_COMICS";
+    color: #000000;
+    font-size: 1.5em;
+  }
+  .delice.left {
+    width: 70%;
+    margin-top: 8%;
+    margin-left: -20%;
+  }
+  .delice.right {
+    width: 70%;
+    margin-top: 8%;
+    margin-left: 40%;
+  }
+  .titre_papilles {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_papilles:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_papilles:hover:after {
+    width: 100%;
+  }
+  .titre_papilles:after {
+    margin-bottom: 10px;
+  }
+  .plat_papilles,
+  .entree_papilles,
+  .dessert_papilles {
+    font-family: "Caricaturista";
+    color: #000000;
+    font-size: 0.8em;
+    margin-right: 0%;
+    margin-left: 5%;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  img.delice.right,
+  img.delice.left {
+    margin-top: 0%;
+    width: 70%;
+    margin-bottom: -40px;
+  }
+  .titre_papilles {
+    font-size: 0.2em;
+  }
+  .entree_papilles, .plat_papilles, .dessert_papilles {
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 0.65em;
+  }
+  .nom_restaurant.delice_papilles {
+    font-size: 2.5em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .titre_delice_h2 {
+    font-size: 0.7em;
+  }
+  img.delice.left,
+  img.delice.right {
+    width: 80%;
+    margin-top: 45px;
+  }
+  .titre_papilles {
+    font-size: 0.3em;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_papilles:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_papilles:hover:after {
+    width: 100%;
+  }
+  .titre_papilles:after {
+    margin-bottom: 12px;
+  }
+  .entree_papilles,
+  .plat_papilles,
+  .dessert_papilles {
+    font-size: 0.75em;
+    margin-left: 18%;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  img.delice.left,
+  img.delice.right {
+    margin-top: 37px;
+  }
+  .entree_papilles,
+  .plat_papilles,
+  .dessert_papilles {
+    font-size: 1em;
+  }
+}
+
+/*******    LE CHIC A LA FRANCAISE    ******/
+/* alignement */
+.chic_francaise {
+  margin-bottom: 5%;
+}
+
+.background_chic {
+  background-color: #fff5fe;
+}
+
+.entree_titre_chic,
+.plat_titre_chic,
+.dessert_titre_chic {
+  font-family: "TYPO_COMICS";
+  color: #ffffff00;
+  font-size: 2.5em;
+}
+
+.plat_chic,
+.dessert_chic,
+.entree_chic {
+  font-family: "Caricaturista";
+  color: #ffffff00;
+  font-size: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 103% auto;
+      grid-template-columns: 103% auto;
+}
+
+.chic_1,
+.chic_2,
+.chic_3,
+.chic_4 {
+  margin-left: 15%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.chic_prix_1,
+.chic_prix_2,
+.chic_prix_3,
+.chic_prix_4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.entree_chic {
+  color: #925cf9;
+}
+
+.plat_chic {
+  color: #a56799;
+}
+
+.dessert_chic {
+  color: #6e4ccc;
+}
+
+.chic_francaise,
+.nom_fin_chic {
+  font-family: "CroissantOne-Regular";
+  font-size: 4em;
+  background: -webkit-linear-gradient(0deg, #e38913, #8f5bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+}
+
+/* Placement des images du menu */
+img.chic.right {
+  margin-top: 5%;
+  margin-left: 45%;
+}
+
+img.chic.left {
+  margin-top: 5%;
+  margin-left: -15%;
+}
+
+/* creation du souligné auto */
+.entree_titre .titre_chic {
+  color: #c67412;
+}
+
+.plat_titre .titre_chic {
+  color: #a56799;
+}
+
+.dessert_titre .titre_chic {
+  color: #6e4ccc;
+}
+
+.entree_titre .titre_chic:after {
+  background: #c67412;
+}
+
+.plat_titre .titre_chic:after {
+  background: #a56799;
+}
+
+.dessert_titre .titre_chic:after {
+  background: #6e4ccc;
+}
+
+.titre_chic {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff00;
+  padding: 10px 0px;
+}
+
+.titre_chic:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #ffffff00;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.titre_chic:hover:after {
+  width: 100%;
+}
+
+/* Chic */
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  .chic_francaise,
+  .nom_fin_chic {
+    font-size: 0.6em;
+  }
+  img.chic.left,
+  img.chic.right {
+    width: 70%;
+  }
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    padding-top: 2%;
+    font-size: 0.75em;
+  }
+  .titre_chic {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff00;
+    padding: 10px 0px;
+  }
+  .titre_chic:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #ffffff00;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_chic:hover:after {
+    width: 100%;
+  }
+  .titre_chic:after {
+    margin-bottom: 10px;
+  }
+  .plat_chic, .dessert_chic, .entree_chic {
+    font-size: 0.6em;
+    padding-left: 10%;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .nom_restaurant {
+    font-size: 1.5em;
+  }
+  .titre_chic {
+    font-size: 1.8em;
+  }
+  .entree_chic,
+  .plat_chic,
+  .dessert_chic {
+    margin-right: -80px;
+  }
+  img.chic.left,
+  img.chic.right {
+    margin-top: 20px;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .titre_chic_h2 {
+    font-size: 0.7em;
+  }
+  .titre_chic {
+    font-size: 0.6em;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff00;
+    padding: 0px 0px;
+  }
+  .titre_chic:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: #ffffff00;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_chic:hover:after {
+    width: 100%;
+  }
+  img.chic.left,
+  img.chic.right {
+    width: 80%;
+    margin-top: 30px;
+  }
+  img.chic.right {
+    margin-left: 37%;
+  }
+  .entree_chic,
+  .plat_chic,
+  .dessert_chic {
+    font-size: 0.8em;
+    margin-right: -100px;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .entree_chic,
+  .plat_chic,
+  .dessert_chic {
+    font-size: 1.1em;
+    margin-right: -150px;
+  }
+}
+
+/* Mise en page pour les mentions legales*/
+h1.legal {
+  text-align: center;
+}
+
+p.legal_text {
+  text-align: justify;
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/*****TABLETTE*****/
+/* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
