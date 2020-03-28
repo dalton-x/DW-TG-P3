@@ -1,55 +1,51 @@
-/*******    LE CHIC A LA FRANCAISE    ******/
-/* alignement */
-.chic_francaise {
-  margin-bottom: 5%;
-}
+/*******    Le chic à la française    ******/
 
-.background_chic {
-  background-color: $white;
+.plat_chic,
+.entree_chic,
+.dessert_chic {
+  @include setfont ('Caricaturista',1.5em,$burgundy);
+  display: grid;
+  grid-template-columns: 140% auto;
 }
 
 .entree_titre_chic,
 .plat_titre_chic,
 .dessert_titre_chic {
-  @include setfont ('TYPO_COMICS',2.5em);
+  @include setfont ('TYPO_COMICS',2.5em,$black);
 }
 
-.entree_prix_chic,
-.plat_prix_chic,
-.dessert_prix_chic,
-.plat_chic,
-.dessert_chic,
 .entree_chic {
-  @include setfont ('Caricaturista',1.5em);
-}
-
-.entree_chic,
-.entree_prix_chic {
   color: $purple-clear;
 }
-.plat_chic,
-.plat_prix_chic {
+.plat_chic{
   color: $dark-pink;
 }
-.dessert_chic,
-.dessert_prix_chic,
 .dessert_chic {
   color: $dark-purple;
 }
 
-.chic_francaise,
-.nom_fin_chic {
-  @include gradient( 'CroissantOne-Regular',4em,$orange-gradient,$violet-gradient);
+.chic_1,
+.chic_2,
+.chic_3,
+.chic_4{
+  margin-left: 15%;
+  grid-column: 1;
+}
+.chic_prix_1,
+.chic_prix_2,
+.chic_prix_3,
+.chic_prix_4{
+  grid-column: 2;
 }
 
-/* Placement des images du menu */
-img.chic.right {
-  margin-top: 5%;
-  margin-left: 45%;
+.chic_francaise {
+  @include gradient( 'CroissantOne-Regular',4em,$orange-gradient,$violet-gradient);
+  margin-top: -5%;
 }
-img.chic.left {
-  margin-top: 5%;
-  margin-left: -15%;
+
+/* creation du souligné auto */
+.titre_chic {  
+  @include soulignement(8px,10px 0px);
 }
 
 /* creation du souligné auto */
@@ -72,114 +68,200 @@ img.chic.left {
   background: $dark-violet;
 }
 
-.titre_chic {
-  @include soulignement(8px,10px 0px);
+/* Aligenemnt des images "barre" */
+
+img.chic_right{
+  margin-left: 40%;
+}
+img.chic_left,
+img.chic_right{
+  margin-top: 5%;
 }
 
-/* Chic */
+/* chic */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
-  .chic_francaise,
-  .nom_fin_chic {
-  font-size: 0.6em;
+  .chic_titre_h2{
+    font-size: 0.4em;
   }
- 
-  img.chic.left {
-    width: 70%;
+
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
+    font-size: 0.6em;
   }
- 
-  img.chic.right {
-    width: 70%;
+
+  .titre_chic {  
+    padding-top: 15%;
+    @include soulignement(3px,10px 0px);
+  }
+
+  .nom_fin.chic_francaise .fa {
+    font-size:  0.4em;
+  }
+
+  h2.chic_chic_francaise{
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+
+  img.chic_left, img.chic_right {
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 6%;
   }
 
   .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
-    padding-top: 2%;
-    font-size: 0.75em;
+    font-size: 0.8em;
   }
 
-  .titre_chic {    
-    @include soulignement(3px,10px 0px);
-    &:after{
-      margin-bottom: 10px;
-    }
-  }
-
-  .entree_prix_chic, .plat_prix_chic, .dessert_prix_chic, .plat_chic, .dessert_chic, .entree_chic {
-    font-size: 0.6em;
-    padding-left: 10%;
+  .chic_1,
+  .chic_2,
+  .chic_3,
+  .chic_4{
+    padding-right: 5%;
   }
 }
-
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
-  .nom_restaurant{
-    font-size: 1.5em;
+  .chic_francaise{
+    padding-top: 5%;
+    font-size: 2em;
   }
-
-  .titre_chic{
-    font-size: 1.8em;
-  }
-
-  .entree_chic,
   .plat_chic,
+  .entree_chic,
   .dessert_chic{
-    margin-right: -80px;
+    margin-right: -12%;
+    margin-left: 15%;
   }
 
-  .dessert_no_prix{
-    padding-left: 30px;
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
   }
 
-  img.chic.left,
-  img.chic.right{
-    margin-top: 20px;
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 1em;
   }
 
-  
+  .titre_chic {  
+    padding-top: 15%;
+    @include soulignement(3px,10px 0px);
+  }
+
+  .chic_1,
+  .chic_2,
+  .chic_3,
+  .chic_4{
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .chic_prix_1,
+  .chic_prix_2,
+  .chic_prix_3,
+  .chic_prix_4{
+    margin-left: -20px;
+  }
+
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
+    font-size: 0.8em;
+  }
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .chic_titre_h2{
+    font-size: 0.5em;
+  }
 
-  .titre_chic_h2{
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
     font-size: 0.7em;
   }
-  .titre_chic{
-    font-size: 0.6em;
-    @include soulignement(4px,0px 0px);
+
+  .titre_chic {  
+    font-size: 1.7em;
+    padding-top: 15%;
+    @include soulignement(3px,10px 0px);
   }
-  img.chic.left,
-  img.chic.right{
-    width: 80%;
-    margin-top: 30px;
+
+  .nom_fin.chic_francaise .fa{
+    font-size: 1.2em;
   }
-  img.chic.right{
-    margin-left: 37%;
+
+  .chic .fa {
+    font-size: 4em;
   }
-  .entree_chic,
-  .plat_chic,
-  .dessert_chic{
+
+  .nom_fin.chic_francaise .fa {
+    font-size:  0.7em;
+  }
+
+  h2.chic_chic_francaise{
     font-size: 0.8em;
-    margin-right: -100px;
+    margin-bottom: -15%;
   }
-  .entree_prix_chic,
-  .plat_prix_chic{
+
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 6%;
+  }
+
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
     font-size: 0.8em;
   }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-
-  .entree_chic,
-  .plat_chic,
-  .dessert_chic{
-    font-size: 1.1em;
-    margin-right: -150px;
+  
+  .chic_titre_h2{
+    font-size: 0.5em;
   }
-  .entree_prix_chic,
-  .plat_prix_chic{
-    font-size: 1.1em;
+
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
+    font-size: 1em;
+  }
+
+  .titre_chic {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignement(3px,10px 0px);
+  }
+
+  .nom_fin.chic_francaise .fa{
+    font-size: 1.2em;
+  }
+
+  .chic .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.chic_francaise .fa {
+    font-size:  0.7em;
+  }
+
+  h2.chic_chic_francaise{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 0.8em;
   }
 }
