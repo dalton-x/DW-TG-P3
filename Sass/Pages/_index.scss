@@ -58,7 +58,7 @@
 
 /* INDEX */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
   .menu_soon {
     @include setfont ('Stem',1em,$yellow);
@@ -72,7 +72,7 @@
 }
 
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
   .menu_soon {
     @include setfont ('Stem',1.5em,$yellow); 

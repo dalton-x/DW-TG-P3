@@ -16,7 +16,7 @@ h1 {
 
 /* COMMON */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
   h1 {
     @include setfont ('HindKochi-Regular',1.5em,$black);
@@ -24,7 +24,7 @@ h1 {
 }
 
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
   h1 {
     @include setfont ('HindKochi-Regular',2em,$black);
