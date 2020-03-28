@@ -827,7 +827,7 @@ img.note_right {
 @media screen and (min-width: 568px) and (max-width: 767px) {
   .note_titre_h2 {
     padding-top: 5%;
-    font-size: 2em;
+    font-size: 0.8em;
   }
   h2.note_note_enchantee {
     font-size: 0.3em;
@@ -1050,34 +1050,25 @@ img.note_right {
   }
 }
 
-/*******    LA PALETTE DU GOUT    ******/
-/* Modification de GridCSS */
-.entree_gout,
+/*******    La palette du goût    ******/
 .plat_gout,
+.entree_gout,
 .dessert_gout {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
+  font-family: "Caricaturista";
+  color: #000000;
+  font-size: 1.7em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140% auto;
+      grid-template-columns: 140% auto;
 }
 
 .entree_titre_gout,
 .plat_titre_gout,
 .dessert_titre_gout {
   font-family: "TYPO_COMICS";
-  color: #ffffff00;
-  font-size: 5em;
-}
-
-.plat_gout,
-.dessert_gout,
-.entree_gout {
-  font-family: "Caricaturista";
   color: #000000;
-  font-size: 1.7em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 103% auto;
-      grid-template-columns: 103% auto;
+  font-size: 3em;
 }
 
 .gout_1,
@@ -1097,8 +1088,7 @@ img.note_right {
   grid-column: 2;
 }
 
-.palette_gout,
-.nom_fin_gout {
+.palette_gout {
   font-family: "KaushanScript-Regular";
   font-size: 5em;
   background: -webkit-linear-gradient(0deg, #22611f, #e3fc73);
@@ -1108,31 +1098,17 @@ img.note_right {
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
-}
-
-/* Mise en forme des barre de decoration des titres du menu */
-.barre_gout.right {
-  margin-left: 25%;
-}
-
-.barre_gout.left {
-  margin-left: 10%;
-}
-
-.barre_gout {
-  margin-top: 10%;
+  margin-top: -5%;
 }
 
 /* creation du souligné auto */
 .titre_gout {
-  color: #000000;
-}
-
-.titre_gout {
+  font-family: "TYPO_COMICS";
+  color: black;
+  font-size: 1em;
   position: relative;
   text-decoration: none;
   padding: 10px 0;
-  font-size: 0.6em;
 }
 
 .titre_gout:after {
@@ -1152,69 +1128,264 @@ img.note_right {
   width: 100%;
 }
 
+/* Aligenemnt des images "barre" */
+img.gout_right {
+  margin-left: 20%;
+}
+
+img.gout_left,
+img.gout_right {
+  margin-top: 5%;
+}
+
+/* GOUT */
 /*****MOBILE*****/
 /* portrait */
 @media screen and (min-width: 320px) and (max-width: 567px) {
-  .palette_gout {
-    font-size: 1.2em;
+  .gout_titre_h2 {
+    font-size: 0.4em;
   }
-  .palette_right {
-    width: 50%;
-    margin-left: 25%;
-  }
-  .palette_left {
-    width: 50%;
-    margin-left: 10%;
-  }
-  .barre_gout {
-    margin-top: 10%;
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 0.6em;
   }
   .titre_gout {
-    font-size: 0.4em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_gout:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_gout:hover:after {
+    width: 100%;
+  }
+  h2.gout_gout_enchantee {
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 0.8em;
+  }
+  .gout_1,
+  .gout_2,
+  .gout_3,
+  .gout_4 {
+    padding-right: 5%;
   }
 }
 
 /*****MOBILE*****/
 /* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .gout_titre_h2 {
+    padding-top: 5%;
+    font-size: 0.7em;
+  }
+  h2.gout_gout_enchantee {
+    font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
+  }
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    margin-right: -12%;
+    margin-left: 15%;
+  }
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 1em;
+  }
+  .titre_gout {
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_gout:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_gout:hover:after {
+    width: 100%;
+  }
+  .gout_1,
+  .gout_2,
+  .gout_3,
+  .gout_4 {
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .gout_prix_1,
+  .gout_prix_2,
+  .gout_prix_3,
+  .gout_prix_4 {
+    margin-left: -20px;
+  }
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 0.8em;
+  }
+}
+
 /*****TABLETTE*****/
 /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gout_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 0.7em;
+  }
+  .titre_gout {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_gout:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_gout:hover:after {
+    width: 100%;
+  }
+  h2.gout_gout_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 9%;
+  }
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 0.8em;
+  }
+}
+
 /*****TABLETTE*****/
 /* paysage */
-/*******    LE DELICE DES PAPILLES    ******/
-/* alignement */
-.entree_titre_papilles,
-.plat_titre_papilles,
-.dessert_titre_papilles {
-  font-family: "TYPO_COMICS";
-  color: #000000;
-  font-size: 4.5em;
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .gout_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_gout,
+  .entree_gout,
+  .dessert_gout {
+    font-size: 1em;
+  }
+  .titre_gout {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_gout:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #b6f87a, #41963c, #b6f87a);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_gout:hover:after {
+    width: 100%;
+  }
+  h2.gout_gout_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.gout_left, img.gout_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_gout, .plat_titre_gout, .dessert_titre_gout {
+    font-size: 0.8em;
+  }
 }
 
-.entree_papilles,
-.plat_papilles,
-.dessert_papilles {
+/*******    LA delice ENCHANTEE    ******/
+.plat_delice,
+.entree_delice,
+.dessert_delice {
   font-family: "Caricaturista";
   color: #000000;
-  font-size: 1.6em;
+  font-size: 1.5em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100% auto;
-      grid-template-columns: 100% auto;
+  -ms-grid-columns: 140% auto;
+      grid-template-columns: 140% auto;
 }
 
-.papilles_1,
-.papilles_2,
-.papilles_3,
-.papilles_4 {
+.entree_titre_delice,
+.plat_titre_delice,
+.dessert_titre_delice {
+  font-family: "TYPO_COMICS";
+  color: #000000;
+  font-size: 2.5em;
+}
+
+.delice_1,
+.delice_2,
+.delice_3,
+.delice_4 {
   margin-left: 15%;
   -ms-grid-column: 1;
   grid-column: 1;
 }
 
-.papilles_prix_1,
-.papilles_prix_2,
-.papilles_prix_3,
-.papilles_prix_4 {
+.delice_prix_1,
+.delice_prix_2,
+.delice_prix_3,
+.delice_prix_4 {
   -ms-grid-column: 2;
   grid-column: 2;
 }
@@ -1229,41 +1400,17 @@ img.note_right {
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
-}
-
-/* Alignements des <img> */
-.barre_papilles_left {
-  margin-top: 8%;
-  margin-left: 27%;
-}
-
-.barre_papilles_right {
-  margin-top: 8%;
-  margin-left: 15%;
-}
-
-/* Modification de GridCSS */
-.entree_papilles,
-.plat_papilles,
-.dessert_papilles {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
+  margin-top: -5%;
 }
 
 /* creation du souligné auto */
-.titre_papilles {
-  color: #000000;
-}
-
-.titre_papilles {
+.titre_delice {
   position: relative;
   text-decoration: none;
   padding: 10px 0;
-  font-size: 0.6em;
 }
 
-.titre_papilles:after {
+.titre_delice:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1276,184 +1423,266 @@ img.note_right {
   transition: width 2s ease-in-out;
 }
 
-.titre_papilles:hover:after {
+.titre_delice:hover:after {
   width: 100%;
 }
 
-/* Chic */
+/* Aligenemnt des images "barre" */
+img.delice_right {
+  margin-left: 40%;
+}
+
+img.delice_left,
+img.delice_right {
+  margin-top: 5%;
+}
+
+/* delice */
 /*****MOBILE*****/
 /* portrait */
 @media screen and (min-width: 320px) and (max-width: 567px) {
-  .delice_papilles,
-  .nom_fin_papilles {
-    font-family: "DancingScript-Regular";
-    font-size: 1.2em;
-    background: -webkit-linear-gradient(0deg, #0228dd, #229cf98c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -ms-background-clip: text;
-    -ms-text-fill-color: transparent;
+  .delice_titre_h2 {
+    font-size: 0.3em;
   }
-  .entree_titre_papilles,
-  .plat_titre_papilles,
-  .dessert_titre_papilles {
-    font-family: "TYPO_COMICS";
-    color: #000000;
-    font-size: 1.5em;
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
+    font-size: 0.6em;
   }
-  .delice.left {
-    width: 70%;
-    margin-top: 8%;
-    margin-left: -20%;
-  }
-  .delice.right {
-    width: 70%;
-    margin-top: 8%;
-    margin-left: 40%;
-  }
-  .titre_papilles {
+  .titre_delice {
+    padding-top: 15%;
+    font-size: 0.8em;
     position: relative;
     text-decoration: none;
     padding: 10px 0;
   }
-  .titre_papilles:after {
+  .titre_delice:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 4px;
+    height: 8px;
     border-radius: 35%;
     background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
     -webkit-transition: width 2s ease-in-out;
     transition: width 2s ease-in-out;
   }
-  .titre_papilles:hover:after {
+  .titre_delice:hover:after {
     width: 100%;
   }
-  .titre_papilles:after {
-    margin-bottom: 10px;
+  h2.delice_delice_enchantee {
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
   }
-  .plat_papilles,
-  .entree_papilles,
-  .dessert_papilles {
-    font-family: "Caricaturista";
-    color: #000000;
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
     font-size: 0.8em;
-    margin-right: 0%;
-    margin-left: 5%;
+  }
+  .delice_1,
+  .delice_2,
+  .delice_3,
+  .delice_4 {
+    padding-right: 5%;
   }
 }
 
 /*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 568px) and (max-width: 767px) {
-  img.delice.right,
-  img.delice.left {
-    margin-top: 0%;
-    width: 70%;
-    margin-bottom: -40px;
+  .delice_titre_h2 {
+    padding-top: 5%;
+    font-size: 0.5em;
   }
-  .titre_papilles {
-    font-size: 0.2em;
-  }
-  .entree_papilles, .plat_papilles, .dessert_papilles {
-    margin-left: 60px;
-    margin-top: 0px;
-    font-size: 0.65em;
-  }
-  .nom_restaurant.delice_papilles {
-    font-size: 2.5em;
-  }
-}
-
-/*****TABLETTE*****/
-/* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .titre_delice_h2 {
-    font-size: 0.7em;
-  }
-  img.delice.left,
-  img.delice.right {
-    width: 80%;
-    margin-top: 45px;
-  }
-  .titre_papilles {
+  h2.delice_delice_enchantee {
     font-size: 0.3em;
+    margin-top: 0%;
+    margin-bottom: -15%;
+  }
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
+    margin-right: -12%;
+    margin-left: 15%;
+  }
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 1em;
+  }
+  .titre_delice {
+    padding-top: 15%;
     position: relative;
     text-decoration: none;
     padding: 10px 0;
   }
-  .titre_papilles:after {
+  .titre_delice:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 3px;
+    height: 8px;
     border-radius: 35%;
     background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
     -webkit-transition: width 2s ease-in-out;
     transition: width 2s ease-in-out;
   }
-  .titre_papilles:hover:after {
+  .titre_delice:hover:after {
     width: 100%;
   }
-  .titre_papilles:after {
-    margin-bottom: 12px;
+  .delice_1,
+  .delice_2,
+  .delice_3,
+  .delice_4 {
+    padding-right: 10%;
+    margin-left: 5%;
   }
-  .entree_papilles,
-  .plat_papilles,
-  .dessert_papilles {
-    font-size: 0.75em;
-    margin-left: 18%;
+  .delice_prix_1,
+  .delice_prix_2,
+  .delice_prix_3,
+  .delice_prix_4 {
+    margin-left: -20px;
+  }
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
+    font-size: 0.8em;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .delice_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
+    font-size: 0.7em;
+  }
+  .titre_delice {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_delice:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_delice:hover:after {
+    width: 100%;
+  }
+  h2.delice_delice_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 9%;
+  }
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 0.8em;
   }
 }
 
 /*****TABLETTE*****/
 /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-  img.delice.left,
-  img.delice.right {
-    margin-top: 37px;
+  .delice_titre_h2 {
+    font-size: 0.5em;
   }
-  .entree_papilles,
-  .plat_papilles,
-  .dessert_papilles {
+  .plat_delice,
+  .entree_delice,
+  .dessert_delice {
     font-size: 1em;
   }
+  .titre_delice {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .titre_delice:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    border-radius: 35%;
+    background: -webkit-linear-gradient(0deg, #0228dd, #229df9, #0228dd);
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_delice:hover:after {
+    width: 100%;
+  }
+  h2.delice_delice_enchantee {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.delice_left, img.delice_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
+    font-size: 0.8em;
+  }
 }
 
-/*******    LE CHIC A LA FRANCAISE    ******/
-/* alignement */
-.chic_francaise {
-  margin-bottom: 5%;
-}
-
-.background_chic {
-  background-color: #fff5fe;
+/*******    Le chic à la française    ******/
+.plat_chic,
+.entree_chic,
+.dessert_chic {
+  font-family: "Caricaturista";
+  color: #3d1319;
+  font-size: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140% auto;
+      grid-template-columns: 140% auto;
 }
 
 .entree_titre_chic,
 .plat_titre_chic,
 .dessert_titre_chic {
   font-family: "TYPO_COMICS";
-  color: #ffffff00;
+  color: #000000;
   font-size: 2.5em;
 }
 
-.plat_chic,
-.dessert_chic,
 .entree_chic {
-  font-family: "Caricaturista";
-  color: #ffffff00;
-  font-size: 1.5em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 103% auto;
-      grid-template-columns: 103% auto;
+  color: #c67412;
+}
+
+.plat_chic {
+  color: #a56799;
+}
+
+.dessert_chic {
+  color: #6e4ccc;
 }
 
 .chic_1,
@@ -1473,20 +1702,7 @@ img.note_right {
   grid-column: 2;
 }
 
-.entree_chic {
-  color: #925cf9;
-}
-
-.plat_chic {
-  color: #a56799;
-}
-
-.dessert_chic {
-  color: #6e4ccc;
-}
-
-.chic_francaise,
-.nom_fin_chic {
+.chic_francaise {
   font-family: "CroissantOne-Regular";
   font-size: 4em;
   background: -webkit-linear-gradient(0deg, #e38913, #8f5bfd);
@@ -1496,17 +1712,32 @@ img.note_right {
   -moz-text-fill-color: transparent;
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
+  margin-top: -5%;
 }
 
-/* Placement des images du menu */
-img.chic.right {
-  margin-top: 5%;
-  margin-left: 45%;
+/* creation du souligné auto */
+.titre_chic {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff00;
+  padding: 10px 0px;
 }
 
-img.chic.left {
-  margin-top: 5%;
-  margin-left: -15%;
+.titre_chic:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 8px;
+  border-radius: 35%;
+  background: #ffffff00;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.titre_chic:hover:after {
+  width: 100%;
 }
 
 /* creation du souligné auto */
@@ -1534,47 +1765,30 @@ img.chic.left {
   background: #6e4ccc;
 }
 
-.titre_chic {
-  position: relative;
-  text-decoration: none;
-  color: #ffffff00;
-  padding: 10px 0px;
+/* Aligenemnt des images "barre" */
+img.chic_right {
+  margin-left: 40%;
 }
 
-.titre_chic:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 8px;
-  border-radius: 35%;
-  background: #ffffff00;
-  -webkit-transition: width 2s ease-in-out;
-  transition: width 2s ease-in-out;
+img.chic_left,
+img.chic_right {
+  margin-top: 5%;
 }
 
-.titre_chic:hover:after {
-  width: 100%;
-}
-
-/* Chic */
+/* chic */
 /*****MOBILE*****/
 /* portrait */
 @media screen and (min-width: 320px) and (max-width: 567px) {
-  .chic_francaise,
-  .nom_fin_chic {
+  .chic_titre_h2 {
+    font-size: 0.4em;
+  }
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
     font-size: 0.6em;
   }
-  img.chic.left,
-  img.chic.right {
-    width: 70%;
-  }
-  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
-    padding-top: 2%;
-    font-size: 0.75em;
-  }
   .titre_chic {
+    padding-top: 15%;
     position: relative;
     text-decoration: none;
     color: #ffffff00;
@@ -1595,47 +1809,54 @@ img.chic.left {
   .titre_chic:hover:after {
     width: 100%;
   }
-  .titre_chic:after {
-    margin-bottom: 10px;
+  h2.chic_chic_francaise {
+    font-size: 0.3em;
+    margin-top: -10%;
+    margin-bottom: -15%;
   }
-  .plat_chic, .dessert_chic, .entree_chic {
-    font-size: 0.6em;
-    padding-left: 10%;
+  img.chic_left, img.chic_right {
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 0.8em;
+  }
+  .chic_1,
+  .chic_2,
+  .chic_3,
+  .chic_4 {
+    padding-right: 5%;
   }
 }
 
 /*****MOBILE*****/
 /* paysage */
 @media screen and (min-width: 568px) and (max-width: 767px) {
-  .nom_restaurant {
-    font-size: 1.5em;
+  .chic_francaise {
+    padding-top: 5%;
+    font-size: 2em;
   }
-  .titre_chic {
-    font-size: 1.8em;
-  }
-  .entree_chic,
   .plat_chic,
+  .entree_chic,
   .dessert_chic {
-    margin-right: -80px;
+    margin-right: -12%;
+    margin-left: 15%;
   }
-  img.chic.left,
-  img.chic.right {
-    margin-top: 20px;
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
   }
-}
-
-/*****TABLETTE*****/
-/* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .titre_chic_h2 {
-    font-size: 0.7em;
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 1em;
   }
   .titre_chic {
-    font-size: 0.6em;
+    padding-top: 15%;
     position: relative;
     text-decoration: none;
     color: #ffffff00;
-    padding: 0px 0px;
+    padding: 10px 0px;
   }
   .titre_chic:after {
     content: "";
@@ -1643,7 +1864,7 @@ img.chic.left {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 4px;
+    height: 3px;
     border-radius: 35%;
     background: #ffffff00;
     -webkit-transition: width 2s ease-in-out;
@@ -1652,30 +1873,118 @@ img.chic.left {
   .titre_chic:hover:after {
     width: 100%;
   }
-  img.chic.left,
-  img.chic.right {
-    width: 80%;
-    margin-top: 30px;
+  .chic_1,
+  .chic_2,
+  .chic_3,
+  .chic_4 {
+    padding-right: 10%;
+    margin-left: 5%;
   }
-  img.chic.right {
-    margin-left: 37%;
+  .chic_prix_1,
+  .chic_prix_2,
+  .chic_prix_3,
+  .chic_prix_4 {
+    margin-left: -20px;
   }
-  .entree_chic,
   .plat_chic,
+  .entree_chic,
   .dessert_chic {
     font-size: 0.8em;
-    margin-right: -100px;
+  }
+}
+
+/*****TABLETTE*****/
+/* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .chic_titre_h2 {
+    font-size: 0.5em;
+  }
+  .plat_chic,
+  .entree_chic,
+  .dessert_chic {
+    font-size: 0.7em;
+  }
+  .titre_chic {
+    font-size: 1.7em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff00;
+    padding: 10px 0px;
+  }
+  .titre_chic:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #ffffff00;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_chic:hover:after {
+    width: 100%;
+  }
+  h2.chic_chic_francaise {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 6%;
+  }
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 0.8em;
   }
 }
 
 /*****TABLETTE*****/
 /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-  .entree_chic,
+  .chic_titre_h2 {
+    font-size: 0.5em;
+  }
   .plat_chic,
+  .entree_chic,
   .dessert_chic {
-    font-size: 1.1em;
-    margin-right: -150px;
+    font-size: 1em;
+  }
+  .titre_chic {
+    font-size: 2em;
+    padding-top: 15%;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff00;
+    padding: 10px 0px;
+  }
+  .titre_chic:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 35%;
+    background: #ffffff00;
+    -webkit-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
+  }
+  .titre_chic:hover:after {
+    width: 100%;
+  }
+  h2.chic_chic_francaise {
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+  img.chic_left, img.chic_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+  .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
+    font-size: 0.8em;
   }
 }
 
@@ -1686,6 +1995,28 @@ h1.legal {
 
 p.legal_text {
   text-align: justify;
+}
+
+span.titre_legal {
+  font-weight: underline;
+}
+
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 /*****TABLETTE*****/

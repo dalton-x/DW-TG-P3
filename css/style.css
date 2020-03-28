@@ -701,7 +701,7 @@ img.note_right {
 @media screen and (min-width: 568px) and (max-width: 767px) {
   .note_titre_h2 {
     padding-top: 5%;
-    font-size: 2em;
+    font-size: 0.8em;
   }
 
   h2.note_note_enchantee {
@@ -1087,7 +1087,7 @@ img.gout_right {
 @media screen and (min-width: 568px) and (max-width: 767px) {
   .gout_titre_h2 {
     padding-top: 5%;
-    font-size: 2em;
+    font-size: 0.7em;
   }
 
   h2.gout_gout_enchantee {
@@ -1916,6 +1916,30 @@ p.legal_text {
   text-align: justify;
 }
 
+.bold_legal {
+  font-weight: bold;
+}
+
+main {
+  margin-bottom: 15%;
+}
+
+/*****MOBILE*****/
+/* portrait */
+@media screen and (min-width: 320px) and (max-width: 567px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/*****MOBILE*****/
+/* paysage */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 /*****TABLETTE*****/
 /* portrait */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
