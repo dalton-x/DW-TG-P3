@@ -46,7 +46,7 @@ header,footer,main,img{
     box-shadow: $box-shadow;
 }
 
-.note, .note_enchantee, .nom_fin, .nom_restaurant, .dessert_no_prix{
+.note, .note_enchantee, .nom_fin, .nom_restaurant{
     grid-column: 1/6;
 }
 
@@ -59,17 +59,9 @@ header,footer,main,img{
     margin-left: 20%;
 }
 
-.entree_prix, .plat_prix, .dessert_prix{
-    text-align: right;
-}
-
-.entree_right, .plat_right, .dessert_right, .entree_prix, .plat_prix, .dessert_prix{
+.entree_right, .plat_right, .dessert_right{
     grid-column: 4/6;
     margin-right: 20%;
-}
-
-.dessert_no_prix, .dessert_gout{
-    margin: 0% 8%;
 }
 
 /* Placement de la font-awesome du haut */
@@ -89,13 +81,12 @@ header,footer,main,img{
 }
 
 /* Placement sur la ligne 5 */
-.entree, .entree_prix{
+.entree{
     grid-row: 5;
 }
 
-.entree, .plat, .dessert, .dessert_gout{
+.entree, .plat, .dessert{
     grid-column: 1/4;
-    margin-left: 13.5%;
 }
 
 /* Placement sur la ligne 7 */
@@ -104,7 +95,7 @@ header,footer,main,img{
 }
 
 /* Placement sur la ligne 8 */
-.plat, .plat_prix, .menu_soon{
+.plat, .menu_soon{
     grid-row: 8;
 }
 
@@ -114,7 +105,7 @@ header,footer,main,img{
 }
 
 /* Placement sur la ligne 11 */
-.dessert, .dessert_prix, .dessert_no_prix, .dessert_prix_gout{
+.dessert{
     grid-row: 11;
 }
 
@@ -130,7 +121,7 @@ header,footer,main,img{
 
 /* BASE */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
     .menu_note,.menu_delice,.menu_chic,.menu_palette{
         grid-column: 2/15;
@@ -155,7 +146,7 @@ header,footer,main,img{
     }
 }
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
         
     .menu_note, .menu_delice{
@@ -176,7 +167,6 @@ header,footer,main,img{
         grid-row: 7;
     }
 }
-
 
 /*****TABLETTE*****/ /* portrait */
 @media screen and (min-width: 768px) and (max-width: 1023px) {

@@ -11,7 +11,7 @@ header{
 
 /* HEADER */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
     header{
         @include setfont ('P22Underground-Book',4.5em,$yellow);
@@ -20,7 +20,7 @@ header{
 }
 
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
     header{
         @include setfont ('P22Underground-Book',6em,$yellow);

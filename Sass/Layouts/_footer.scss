@@ -29,18 +29,31 @@ footer{
 
 /* FOOTER */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
     footer{
-        @include setfont ('P22Underground-Book',1.5em,$yellow);
+       font-size: 1em;
     }
 }
 
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 667px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
     footer{
-        @include setfont ('P22Underground-Book',2em,$yellow);
+        font-size: 2em;
     }
-
+}
+/*****TABLETTE*****/ /* portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    footer{
+        font-size: 2em;
+    }
+}
+  /*****TABLETTE*****/ /* paysage */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    
+    footer{
+        font-size: 1.5em;
+    }
 }
