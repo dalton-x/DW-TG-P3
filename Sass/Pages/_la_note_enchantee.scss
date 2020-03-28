@@ -3,14 +3,12 @@
   background-color: #fcdfdb;
 }
 
-.prix_note,
-.plat_prix_note,
-.dessert_prix_note,
 .plat_note,
-.dessert_prix,
 .entree_note,
 .dessert_note {
   @include setfont ('Caricaturista',1.5em,$burgundy);
+  display: grid;
+  grid-template-columns: 140% auto;
 }
 
 .entree_titre_note,
@@ -19,27 +17,24 @@
   @include setfont ('TYPO_COMICS',2.5em,$burgundy);
 }
 
+.note_1,
+.note_2,
+.note_3,
+.note_4{
+  margin-left: 15%;
+  grid-column: 1;
+}
+.note_prix_1,
+.note_prix_2,
+.note_prix_3,
+.note_prix_4{
+  grid-column: 2;
+}
+
+
 .note_enchantee {
   @include setfont ('Devonshire-Regular',5em,$burgundy);
   margin-top: -5%;
-}
-
-/* Mise en forme des barre de decoration des titres du menu */
-.barre_note {
-  width: 60%;
-  height: 8px;
-  margin: auto;
-  background: $burgundy;
-}
-
-/* Creation du border-radius pour les lignes */
-.barre_note.right {
-  border-radius: 2000% 300% 780% 500%;  //clip-path ?? ou SVG ??
-}
-.barre_note.left {
-  border-radius: 300% 2000% 500% 780%;  //clip-path ?? ou SVG ??
-  //clip-path: polygon(48% 23%, 76% 41%, 100% 54%, 100% 68%, 80% 87%, 52% 93%, 20% 96%, 0 86%, 0 44%, 20% 33%);
-  //clip-path: polygon(20px 46px,19px 62px,148px 62px,235px 56px,304px 60px,432px 59px,509px 59px,569px 61px,667px 63px,744px 64px,844px 56px,845px 45px,649px 38px,589px 37px,500px 44px,365px 40px,211px 40px,32px 36px);
 }
 
 /* creation du souligné auto */
@@ -59,65 +54,39 @@
   color: $purple;
 }
 
+/* Aligenemnt des images "barre" */
+
+img.note_right{
+  margin-left: 40%;
+}
+img.note_left,
+img.note_right{
+  margin-top: 5%;
+}
+
 /* Note */
 /*****MOBILE*****/ /* portrait */
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 567px) {
 
   .note_titre_h2{
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 
-  .prix_note,
-  .plat_prix_note,
-  .dessert_prix_note,
   .plat_note,
-  .dessert_prix,
   .entree_note,
   .dessert_note {
     font-size: 0.6em;
   }
 
-  .prix_note_entree{
-    line-height: 24.5px;
-  }
-  .prix_note_plat{
-    line-height: 20px;
-  }
-
-  .entree_titre_note,
-  .plat_titre_note,
-  .dessert_titre_note {
-    font-size: 1.2em;
-  }
-
-
-  /* creation du souligné auto */
   .titre_note {  
     padding-top: 15%;
     @include soulignement(5px,20px 0px,$burgundy);
-  }
-
-  /* Mise en forme des barre de decoration des titres du menu */
-  .barre_note {
-    width: 35%;
-    height: 5px;
-    margin-top: 10px;
-    background: $burgundy;
-  }
-
-  /* Creation du border-radius pour les lignes */
-  .barre_note.right {
-    border-radius: 2000% 300% 780% 500%;  //clip-path ?? ou SVG ??
-  }
-  .barre_note.left {
-    border-radius: 300% 2000% 500% 780%;  //clip-path ?? ou SVG ??
   }
 
   .nom_fin.note_enchantee .fa{
     font-size: 1.2em;
   }
 
-  /* alignement et mise en forme */
   .note .fa {
     font-size: 4em;
   }
@@ -131,10 +100,31 @@
     margin-top: -10%;
     margin-bottom: -15%;
   }
-}
 
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+
+  .titre_note {  
+    padding-top: 15%;
+    @include soulignement(3px,2px 0px,$burgundy);
+  }
+
+  .note_1,
+  .note_2,
+  .note_3,
+  .note_4{
+    padding-right: 5%;
+  }
+}
 /*****MOBILE*****/ /* paysage */
-@media screen and (min-width: 666px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
   .note_titre_h2{
     padding-top: 5%;
@@ -146,54 +136,149 @@
     margin-bottom: -15%;
   }
   .fa.bas {
-    font-size: 8em;
+    font-size: 1em;
   }
   .plat_note,
-  .entree_note{
-    margin-right: -30px;
+  .entree_note,
+  .dessert_note{
+    margin-right: -12%;
+    margin-left: 15%;
   }
-  .prix_note_entree,
-  .prix_note_plat{
-    line-height: 11px;
+
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 1em;
+  }
+
+  .titre_note {  
+    padding-top: 15%;
+    @include soulignement(3px,2px 0px,$burgundy);
+  }
+
+  .note_1,
+  .note_2,
+  .note_3,
+  .note_4{
+    padding-right: 10%;
+    margin-left: 5%;
+  }
+  .note_prix_1,
+  .note_prix_2,
+  .note_prix_3,
+  .note_prix_4{
+    margin-left: -20px;
+  }
+
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 0.8em;
   }
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   
-  .note_titre_h2,
-  .note_note_enchantee{
-    font-size: 1em;
-  }
-  .titre_note{
-    font-size: 0.6em;
-    @include soulignement(4px,0px 0px,$burgundy);
+  .note_titre_h2{
+    font-size: 0.5em;
   }
 
-  .entree_note,
   .plat_note,
-  .dessert_note{
-    font-size: 0.9em;
-    margin-right: -200px;
+  .entree_note,
+  .dessert_note {
+    font-size: 0.7em;
   }
 
-  .prix_note,
-  .plat_prix_note{
-    font-size: 0.9em;
+  .titre_note {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignement(5px,20px 0px,$burgundy);
+  }
+
+  .nom_fin.note_enchantee .fa{
+    font-size: 1.2em;
+  }
+
+  .note .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.note_enchantee .fa {
+    font-size:  0.7em;
+  }
+
+  h2.note_note_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 9%;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+
+  .titre_note {  
+    padding-top: 15%;
+    @include soulignement(3px,2px 0px,$burgundy);
   }
 }
 /*****TABLETTE*****/ /* paysage */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-
-  .entree_note,
-  .plat_note,
-  .dessert_note{
-    font-size: 1.2em;
-    margin-right: -200px;
+  
+  .note_titre_h2{
+    font-size: 0.5em;
   }
 
-  .prix_note,
-  .plat_prix_note{
+  .plat_note,
+  .entree_note,
+  .dessert_note {
+    font-size: 1em;
+  }
+
+  .titre_note {  
+    font-size: 2em;
+    padding-top: 15%;
+    @include soulignement(5px,20px 0px,$burgundy);
+  }
+
+  .nom_fin.note_enchantee .fa{
     font-size: 1.2em;
+  }
+
+  .note .fa {
+    font-size: 4em;
+  }
+
+  .nom_fin.note_enchantee .fa {
+    font-size:  0.7em;
+  }
+
+  h2.note_note_enchantee{
+    font-size: 0.8em;
+    margin-bottom: -15%;
+  }
+
+  img.note_left, img.note_right {
+    width: 70%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+
+  .entree_titre_note, .plat_titre_note, .dessert_titre_note {
+    font-size: 0.8em;
+  }
+
+  .titre_note {  
+    padding-top: 15%;
+    @include soulignement(3px,2px 0px,$burgundy);
   }
 }
