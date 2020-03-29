@@ -14,7 +14,7 @@ header{
 @media screen and (min-width: 320px) and (max-width: 567px) {
 
     header{
-        @include setfont ('P22Underground-Book',4.5em,$yellow);
+        @include setfont ('P22Underground-Book',3.5em,$yellow);
         letter-spacing: -8px;
     }
 }
@@ -23,7 +23,7 @@ header{
 @media screen and (min-width: 568px) and (max-width: 767px) {
 
     header{
-        @include setfont ('P22Underground-Book',6em,$yellow);
+        @include setfont ('P22Underground-Book',4em,$yellow);
         letter-spacing: -11px;
     }
 }
