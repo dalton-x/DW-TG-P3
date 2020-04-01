@@ -8,7 +8,7 @@
 .dessert_note {
   @include setfont ('Caricaturista',1.5em,$burgundy);
   display: grid;
-  grid-template-columns: 140% auto;
+  grid-template-columns: auto 10%;
 }
 
 .entree_titre_note,
@@ -21,7 +21,7 @@
 .note_2,
 .note_3,
 .note_4{
-  margin-left: 15%;
+  // margin-left: 15%;
   grid-column: 1;
 }
 .note_prix_1,
@@ -56,12 +56,10 @@
 
 /* Aligenemnt des images "barre" */
 
-img.note_right{
-  margin-left: 40%;
-}
 img.note_left,
 img.note_right{
-  margin-top: 5%;
+  margin-top: 17%;
+  width: 100%;
 }
 
 /* Note */
@@ -97,14 +95,10 @@ img.note_right{
 
   h2.note_note_enchantee{
     font-size: 0.3em;
-    margin-top: -10%;
-    margin-bottom: -15%;
   }
 
   img.note_left, img.note_right {
-    width: 70%;
-    margin-top: 0%;
-    margin-bottom: 6%;
+    margin-top:45%;
   }
 
   .entree_titre_note, .plat_titre_note, .dessert_titre_note {
@@ -114,13 +108,6 @@ img.note_right{
   .titre_note {  
     padding-top: 15%;
     @include soulignement(3px,2px 0px,$burgundy);
-  }
-
-  .note_1,
-  .note_2,
-  .note_3,
-  .note_4{
-    padding-right: 5%;
   }
 }
 /*****MOBILE*****/ /* paysage */
@@ -138,17 +125,9 @@ img.note_right{
   .fa.bas {
     font-size: 1em;
   }
-  .plat_note,
-  .entree_note,
-  .dessert_note{
-    margin-right: -12%;
-    margin-left: 15%;
-  }
 
   img.note_left, img.note_right {
-    width: 70%;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top:23%;
   }
 
   .entree_titre_note, .plat_titre_note, .dessert_titre_note {
@@ -158,20 +137,6 @@ img.note_right{
   .titre_note {  
     padding-top: 15%;
     @include soulignement(3px,2px 0px,$burgundy);
-  }
-
-  .note_1,
-  .note_2,
-  .note_3,
-  .note_4{
-    padding-right: 10%;
-    margin-left: 5%;
-  }
-  .note_prix_1,
-  .note_prix_2,
-  .note_prix_3,
-  .note_prix_4{
-    margin-left: -20px;
   }
 
   .plat_note,
@@ -218,8 +183,7 @@ img.note_right{
   }
 
   img.note_left, img.note_right {
-    width: 70%;
-    margin-top: 9%;
+    margin-top: 18%;
   }
 
   .entree_titre_note, .plat_titre_note, .dessert_titre_note {
@@ -268,9 +232,7 @@ img.note_right{
   }
 
   img.note_left, img.note_right {
-    width: 70%;
-    margin-top: 8%;
-    margin-bottom: 6%;
+    margin-top: 13%;
   }
 
   .entree_titre_note, .plat_titre_note, .dessert_titre_note {

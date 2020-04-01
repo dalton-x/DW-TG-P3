@@ -1,11 +1,15 @@
 /*******    Le chic à la française    ******/
+.background_chic{
+  padding-bottom: 10%;
+}
+
 
 .plat_chic,
 .entree_chic,
 .dessert_chic {
   @include setfont ('Caricaturista',1.5em,$burgundy);
   display: grid;
-  grid-template-columns: 140% auto;
+  grid-template-columns: auto 10%;
 }
 
 .entree_titre_chic,
@@ -28,7 +32,6 @@
 .chic_2,
 .chic_3,
 .chic_4{
-  margin-left: 15%;
   grid-column: 1;
 }
 .chic_prix_1,
@@ -40,7 +43,6 @@
 
 .chic_francaise {
   @include gradient( 'CroissantOne-Regular',4em,$orange-gradient,$violet-gradient);
-  margin-top: -5%;
 }
 
 /* creation du souligné auto */
@@ -70,11 +72,9 @@
 
 /* Aligenemnt des images "barre" */
 
-img.chic_right{
-  margin-left: 40%;
-}
 img.chic_left,
 img.chic_right{
+  width: 100%;
   margin-top: 5%;
 }
 
@@ -104,7 +104,7 @@ img.chic_right{
   }
 
   img.chic_left, img.chic_right {
-    width: 50%;
+    width: 100%;
     margin-top: 0%;
     margin-bottom: 6%;
   }
@@ -124,43 +124,15 @@ img.chic_right{
 @media screen and (min-width: 568px) and (max-width: 767px) {
 
   .chic_francaise{
-    padding-top: 5%;
     font-size: 2em;
-  }
-  .plat_chic,
-  .entree_chic,
-  .dessert_chic{
-    margin-right: -12%;
-    margin-left: 15%;
-  }
-
-  img.chic_left, img.chic_right {
-    width: 70%;
-    margin-top: 6%;
-    margin-bottom: 6%;
   }
 
   .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
     font-size: 1em;
   }
 
-  .titre_chic {  
-    padding-top: 15%;
+  .titre_chic {
     @include soulignement(3px,10px 0px);
-  }
-
-  .chic_1,
-  .chic_2,
-  .chic_3,
-  .chic_4{
-    padding-right: 10%;
-    margin-left: 5%;
-  }
-  .chic_prix_1,
-  .chic_prix_2,
-  .chic_prix_3,
-  .chic_prix_4{
-    margin-left: -20px;
   }
 
   .plat_chic,
@@ -171,7 +143,7 @@ img.chic_right{
 }
 
 /*****TABLETTE*****/ /* portrait */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   
   .chic_titre_h2{
     font-size: 0.5em;
@@ -192,11 +164,6 @@ img.chic_right{
   h2.chic_chic_francaise{
     font-size: 0.8em;
     margin-bottom: -15%;
-  }
-
-  img.chic_left, img.chic_right {
-    width: 70%;
-    margin-top: 6%;
   }
 
   .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
@@ -225,12 +192,6 @@ img.chic_right{
   h2.chic_chic_francaise{
     font-size: 0.8em;
     margin-bottom: -15%;
-  }
-
-  img.chic_left, img.chic_right {
-    width: 70%;
-    margin-top: 8%;
-    margin-bottom: 6%;
   }
 
   .entree_titre_chic, .plat_titre_chic, .dessert_titre_chic {
