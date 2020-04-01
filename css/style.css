@@ -362,6 +362,11 @@ h1 {
   text-align: center;
 }
 
+article {
+  display: grid;
+  grid-template-columns: auto 10%;
+}
+
 /* COMMON */
 /*****MOBILE*****/
 /* portrait */
@@ -507,8 +512,6 @@ h1 {
   font-family: "Caricaturista";
   color: #3d1319;
   font-size: 1.5em;
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_note,
@@ -834,8 +837,6 @@ img.note_right {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.7em;
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_gout,
@@ -1114,8 +1115,6 @@ img.gout_right {
   font-family: "Caricaturista";
   color: #000000;
   font-size: 1.5em;
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_delice,
@@ -1388,8 +1387,6 @@ img.delice_right {
   font-family: "Caricaturista";
   color: #3d1319;
   font-size: 1.5em;
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_chic,

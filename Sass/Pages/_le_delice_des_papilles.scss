@@ -7,8 +7,6 @@
 .entree_delice,
 .dessert_delice {
   @include setfont ('Caricaturista',1.5em,$black);
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_delice,

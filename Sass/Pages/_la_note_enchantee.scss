@@ -7,8 +7,6 @@
 .entree_note,
 .dessert_note {
   @include setfont ('Caricaturista',1.5em,$burgundy);
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_note,

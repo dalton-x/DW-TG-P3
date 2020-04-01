@@ -8,8 +8,6 @@
 .entree_chic,
 .dessert_chic {
   @include setfont ('Caricaturista',1.5em,$burgundy);
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_chic,

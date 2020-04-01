@@ -8,8 +8,6 @@
 .entree_gout,
 .dessert_gout {
   @include setfont ('Caricaturista',1.7em,$black);
-  display: grid;
-  grid-template-columns: auto 10%;
 }
 
 .entree_titre_gout,
