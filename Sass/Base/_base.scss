@@ -38,7 +38,7 @@ header,footer,main,img{
 /* MENU */
 .wrapper {
     display: grid;
-    grid-template-columns: 10% repeat(2, 1fr) 30% repeat(2, 1fr) 10%;
+    grid-template-columns: 10% repeat(2, 1fr) 40% repeat(2, 1fr) 10%;
     grid-gap: 3px;
     grid-auto-rows: minmax(50px, auto);
     margin: 3% 10% 20% 10%; 

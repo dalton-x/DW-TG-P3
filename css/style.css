@@ -83,7 +83,7 @@ header, footer, main, img {
 /* MENU */
 .wrapper {
   display: grid;
-  grid-template-columns: 10% repeat(2, 1fr) 30% repeat(2, 1fr) 10%;
+  grid-template-columns: 10% repeat(2, 1fr) 40% repeat(2, 1fr) 10%;
   grid-gap: 3px;
   grid-auto-rows: minmax(50px, auto);
   margin: 3% 10% 20% 10%;
@@ -588,7 +588,7 @@ article {
 /* Aligenemnt des images "barre" */
 img.note_left,
 img.note_right {
-  margin-top: 17%;
+  margin-top: 20%;
   width: 100%;
 }
 
@@ -1176,7 +1176,7 @@ img.gout_right {
 img.delice_left,
 img.delice_right {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 20%;
 }
 
 /* delice */
@@ -1486,7 +1486,7 @@ img.delice_right {
 img.chic_left,
 img.chic_right {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 20%;
 }
 
 /* chic */
