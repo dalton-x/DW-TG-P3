@@ -1,10 +1,14 @@
 /*******    LA delice ENCHANTEE    ******/
+.background_delice{
+  padding-bottom: 10%;
+}
+
 .plat_delice,
 .entree_delice,
 .dessert_delice {
   @include setfont ('Caricaturista',1.5em,$black);
   display: grid;
-  grid-template-columns: 140% auto;
+  grid-template-columns: auto 10%;
 }
 
 .entree_titre_delice,
@@ -17,7 +21,6 @@
 .delice_2,
 .delice_3,
 .delice_4{
-  margin-left: 15%;
   grid-column: 1;
 }
 .delice_prix_1,
@@ -30,7 +33,6 @@
 
 .delice_papilles {
   @include gradient( 'DancingScript-Regular',6em,$blue,$blue-clear);
-  margin-top: -5%;
 }
 
 /* creation du souligné auto */
@@ -40,11 +42,9 @@
 
 /* Aligenemnt des images "barre" */
 
-img.delice_right{
-  margin-left: 40%;
-}
 img.delice_left,
 img.delice_right{
+  width: 100%;
   margin-top: 5%;
 }
 
@@ -62,81 +62,48 @@ img.delice_right{
     font-size: 0.6em;
   }
 
-  .titre_delice {  
-    padding-top: 15%;
+  .titre_delice {
     font-size: 0.8em;
-    @include soulignementDouble($blue, $sky-blue);
+    @include soulignementDouble($blue, $sky-blue,2px);
+    &:after{      
+      margin-bottom: 10%;
+    }
   }
 
   h2.delice_delice_enchantee{
     font-size: 0.3em;
-    margin-top: -10%;
-    margin-bottom: -15%;
-  }
-
-  img.delice_left, img.delice_right {
-    width: 70%;
-    margin-top: 0%;
-    margin-bottom: 6%;
   }
 
   .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
-
-  .delice_1,
-  .delice_2,
-  .delice_3,
-  .delice_4{
-    padding-right: 5%;
+    
+  img.delice_left,
+  img.delice_right{
+    margin-bottom: 9%;
   }
 }
 /*****MOBILE*****/ /* paysage */
 @media screen and (min-width: 568px) and (max-width: 767px) {
 
   .delice_titre_h2{
-    padding-top: 5%;
     font-size: 0.5em;
   }
+
   h2.delice_delice_enchantee{
     font-size: 0.3em;
     margin-top: 0%;
-    margin-bottom: -15%;
-  }
-  .plat_delice,
-  .entree_delice,
-  .dessert_delice{
-    margin-right: -12%;
-    margin-left: 15%;
-  }
-
-  img.delice_left, img.delice_right {
-    width: 70%;
-    margin-top: 6%;
-    margin-bottom: 6%;
   }
 
   .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
     font-size: 1em;
   }
 
-  .titre_delice {  
-    padding-top: 15%;
-    @include soulignementDouble($blue, $sky-blue);
-  }
-
-  .delice_1,
-  .delice_2,
-  .delice_3,
-  .delice_4{
-    padding-right: 10%;
-    margin-left: 5%;
-  }
-  .delice_prix_1,
-  .delice_prix_2,
-  .delice_prix_3,
-  .delice_prix_4{
-    margin-left: -20px;
+  .titre_delice {
+    @include soulignementDouble($blue, $sky-blue,2px);
+    &:after{      
+      margin-bottom: 5%;
+    }
   }
 
   .plat_delice,
@@ -161,17 +128,18 @@ img.delice_right{
 
   .titre_delice {  
     font-size: 2em;
-    padding-top: 15%;
-    @include soulignementDouble($blue, $sky-blue);
+    @include soulignementDouble($blue, $sky-blue,3px);
+    &:after{      
+      margin-bottom: 5%;
+    }
   }
 
   h2.delice_delice_enchantee{
     font-size: 0.8em;
-    margin-bottom: -15%;
   }
 
   img.delice_left, img.delice_right {
-    width: 70%;
+    width: 100%;
     margin-top: 9%;
   }
 
@@ -195,18 +163,19 @@ img.delice_right{
   .titre_delice {  
     font-size: 2em;
     padding-top: 15%;
-    @include soulignementDouble($blue, $sky-blue);
+    @include soulignementDouble($blue, $sky-blue,3px);
+    &:after{      
+      margin-bottom: 5%;
+    }
   }
 
   h2.delice_delice_enchantee{
     font-size: 0.8em;
-    margin-bottom: -15%;
   }
 
   img.delice_left, img.delice_right {
-    width: 70%;
+    width: 100%;
     margin-top: 8%;
-    margin-bottom: 6%;
   }
 
   .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
