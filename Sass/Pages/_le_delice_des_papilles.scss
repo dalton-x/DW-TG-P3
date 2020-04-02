@@ -39,7 +39,6 @@
 }
 
 /* Aligenemnt des images "barre" */
-
 img.delice_left,
 img.delice_right{
   width: 100%;
@@ -109,6 +108,11 @@ img.delice_right{
   .dessert_delice {
     font-size: 0.8em;
   }
+
+  img.delice_left,
+  img.delice_right{
+    margin-top: 17%;
+  }
 }
 
 /*****TABLETTE*****/ /* portrait */
@@ -138,7 +142,7 @@ img.delice_right{
 
   img.delice_left, img.delice_right {
     width: 100%;
-    margin-top: 9%;
+    margin-top: 17%;
   }
 
   .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {
@@ -173,7 +177,7 @@ img.delice_right{
 
   img.delice_left, img.delice_right {
     width: 100%;
-    margin-top: 8%;
+    margin-top: 15%;
   }
 
   .entree_titre_delice, .plat_titre_delice, .dessert_titre_delice {

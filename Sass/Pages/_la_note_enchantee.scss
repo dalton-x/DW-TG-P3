@@ -106,20 +106,18 @@ img.note_right{
 @media screen and (min-width: 568px) and (max-width: 767px) {
 
   .note_titre_h2{
-    padding-top: 5%;
     font-size: 0.8em;
   }
   h2.note_note_enchantee{
     font-size: 0.3em;
-    margin-top: 0%;
-    margin-bottom: -15%;
   }
   .fa.bas {
     font-size: 1em;
   }
 
-  img.note_left, img.note_right {
-    margin-top:23%;
+  img.note_left, 
+  img.note_right {
+    margin-top:17%;
   }
 
   .entree_titre_note, .plat_titre_note, .dessert_titre_note {
@@ -156,7 +154,8 @@ img.note_right{
 
   .titre_note {  
     font-size: 2em;
-    @include soulignement(5px,20px 0px,$burgundy);
+    @include soulignement(5px,0px 0px,$burgundy);
+
   }
 
   .nom_fin.note_enchantee .fa{
