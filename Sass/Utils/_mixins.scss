@@ -45,7 +45,8 @@
         display: inline-block;
         transform-origin: center;
         animation: wiggle-anim 0.52s cubic-bezier(1,.28,0,.97) infinite;
-    }
+        -webkit-animation: wiggle-anim 0.52s cubic-bezier(1,.28,0,.97) infinite;
+}
 
     @keyframes wiggle-anim {
         10%, 90%, 40%, 60% {

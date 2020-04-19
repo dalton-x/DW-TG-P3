@@ -75,7 +75,7 @@ img.note_right{
   }
 
   .titre_note {
-    @include soulignement(5px,20px 0px,$burgundy);
+    @include soulignement(2px,3px 0px,$burgundy);
   }
 
   .nom_fin.note_enchantee .fa{
